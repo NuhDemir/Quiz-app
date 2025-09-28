@@ -1,0 +1,124 @@
+[
+  {
+    "id": "first_quiz",
+    "name": "First Steps",
+    "nameTr": "İlk Adımlar",
+    "description": "Complete your first quiz",
+    "descriptionTr": "İlk quizini tamamla",
+    "icon": "🎯",
+    "color": "#4CAF50",
+    "rarity": "common",
+    "points": 50,
+    "requirements": {
+      "type": "quiz_completed",
+      "value": 1
+    }
+  },
+  {
+    "id": "grammar_master",
+    "name": "Grammar Master", 
+    "nameTr": "Gramer Ustası",
+    "description": "Answer 50 grammar questions correctly",
+    "descriptionTr": "50 gramer sorusunu doğru yanıtla",
+    "icon": "📝",
+    "color": "#2196F3",
+    "rarity": "rare",
+    "points": 200,
+    "requirements": {
+      "type": "category_correct",
+      "category": "grammar",
+      "value": 50
+    }
+  },
+  {
+    "id": "vocab_collector",
+    "name": "Vocabulary Collector",
+    "nameTr": "Kelime Koleksiyoncusu", 
+    "description": "Learn 100 new words",
+    "descriptionTr": "100 yeni kelime öğren",
+    "icon": "📚",
+    "color": "#4CAF50",
+    "rarity": "rare",
+    "points": 250,
+    "requirements": {
+      "type": "category_correct",
+      "category": "vocabulary",
+      "value": 100
+    }
+  },
+  {
+    "id": "streak_5",
+    "name": "On Fire!",
+    "nameTr": "Ateş Gibi!",
+    "description": "Maintain a 5-day streak",
+    "descriptionTr": "5 günlük seri koru",
+    "icon": "🔥",
+    "color": "#FF9800",
+    "rarity": "uncommon",
+    "points": 150,
+    "requirements": {
+      "type": "streak",
+      "value": 5
+    }
+  },
+  {
+    "id": "perfectionist",
+    "name": "Perfectionist",
+    "nameTr": "Mükemmeliyetçi",
+    "description": "Get 100% accuracy in a quiz",
+    "descriptionTr": "Bir quizde %100 doğruluk elde et",
+    "icon": "💯",
+    "color": "#9C27B0",
+    "rarity": "epic",
+    "points": 300,
+    "requirements": {
+      "type": "perfect_quiz",
+      "value": 1
+    }
+  },
+  {
+    "id": "speed_demon",
+    "name": "Speed Demon",
+    "nameTr": "Hız Şeytanı",
+    "description": "Complete a quiz in under 5 minutes",
+    "descriptionTr": "Bir quizi 5 dakikadan kısa sürede tamamla",
+    "icon": "⚡",
+    "color": "#FFC107",
+    "rarity": "epic", 
+    "points": 250,
+    "requirements": {
+      "type": "quiz_time",
+      "value": 300
+    }
+  },
+  {
+    "id": "scholar",
+    "name": "Scholar",
+    "nameTr": "Bilgin",
+    "description": "Answer 1000 questions correctly",
+    "descriptionTr": "1000 soruyu doğru yanıtla",
+    "icon": "🎓",
+    "color": "#795548",
+    "rarity": "legendary",
+    "points": 1000,
+    "requirements": {
+      "type": "total_correct",
+      "value": 1000
+    }
+  },
+  {
+    "id": "polyglot",
+    "name": "Polyglot",
+    "nameTr": "Çok Dilli",
+    "description": "Master all categories (80% accuracy each)",
+    "descriptionTr": "Tüm kategorilerde ustalaş (her birinde %80 doğruluk)",
+    "icon": "🌍",
+    "color": "#607D8B",
+    "rarity": "legendary",
+    "points": 2000,
+    "requirements": {
+      "type": "all_categories_mastery",
+      "value": 80
+    }
+  }
+]

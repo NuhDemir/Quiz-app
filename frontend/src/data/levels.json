@@ -1,0 +1,62 @@
+[
+  {
+    "id": "A1",
+    "name": "Beginner",
+    "nameTr": "Başlangıç",
+    "description": "Basic English for beginners",
+    "descriptionTr": "Yeni başlayanlar için temel İngilizce",
+    "color": "#4CAF50",
+    "minAccuracy": 0,
+    "maxAccuracy": 40
+  },
+  {
+    "id": "A2", 
+    "name": "Elementary",
+    "nameTr": "Temel",
+    "description": "Elementary level English",
+    "descriptionTr": "Temel seviye İngilizce",
+    "color": "#8BC34A",
+    "minAccuracy": 40,
+    "maxAccuracy": 55
+  },
+  {
+    "id": "B1",
+    "name": "Pre-Intermediate", 
+    "nameTr": "Orta-Alt",
+    "description": "Pre-intermediate English skills",
+    "descriptionTr": "Orta-alt seviye İngilizce becerileri",
+    "color": "#FFC107",
+    "minAccuracy": 55,
+    "maxAccuracy": 70
+  },
+  {
+    "id": "B2",
+    "name": "Intermediate",
+    "nameTr": "Orta",
+    "description": "Intermediate English proficiency", 
+    "descriptionTr": "Orta seviye İngilizce yeterliliği",
+    "color": "#FF9800",
+    "minAccuracy": 70,
+    "maxAccuracy": 80
+  },
+  {
+    "id": "C1",
+    "name": "Upper-Intermediate",
+    "nameTr": "İleri",
+    "description": "Advanced English skills",
+    "descriptionTr": "İleri seviye İngilizce becerileri", 
+    "color": "#FF5722",
+    "minAccuracy": 80,
+    "maxAccuracy": 90
+  },
+  {
+    "id": "C2",
+    "name": "Advanced",
+    "nameTr": "İleri+",
+    "description": "Near-native English proficiency",
+    "descriptionTr": "Anadil seviyesine yakın İngilizce yeterliliği",
+    "color": "#9C27B0",
+    "minAccuracy": 90,
+    "maxAccuracy": 100
+  }
+]

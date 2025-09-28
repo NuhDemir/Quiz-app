@@ -1,0 +1,52 @@
+[
+  {
+    "id": "grammar",
+    "name": "Grammar",
+    "nameTr": "Gramer",
+    "description": "Test your English grammar knowledge",
+    "descriptionTr": "İngilizce gramer bilginizi test edin",
+    "icon": "📝",
+    "color": "#2196F3",
+    "totalQuestions": 2500
+  },
+  {
+    "id": "vocabulary",
+    "name": "Vocabulary", 
+    "nameTr": "Kelime Bilgisi",
+    "description": "Expand your English vocabulary",
+    "descriptionTr": "İngilizce kelime dağarcığınızı genişletin",
+    "icon": "📚",
+    "color": "#4CAF50",
+    "totalQuestions": 3000
+  },
+  {
+    "id": "reading",
+    "name": "Reading Comprehension",
+    "nameTr": "Okuma Anlama", 
+    "description": "Improve your reading skills",
+    "descriptionTr": "Okuma becerilerinizi geliştirin",
+    "icon": "📖",
+    "color": "#FF9800",
+    "totalQuestions": 2000
+  },
+  {
+    "id": "structure",
+    "name": "Sentence Structure",
+    "nameTr": "Cümle Yapısı",
+    "description": "Master English sentence patterns",
+    "descriptionTr": "İngilizce cümle kalıplarında ustalaşın",
+    "icon": "🏗️",
+    "color": "#9C27B0",
+    "totalQuestions": 1800
+  },
+  {
+    "id": "idioms",
+    "name": "Idioms",
+    "nameTr": "İdiyomlar",
+    "description": "Learn common English idioms",
+    "descriptionTr": "Yaygın İngilizce deyimleri öğrenin",
+    "icon": "🎭",
+    "color": "#F44336",
+    "totalQuestions": 700
+  }
+]

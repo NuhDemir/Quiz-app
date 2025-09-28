@@ -1,0 +1,137 @@
+[
+  {
+    "id": "q001",
+    "category": "grammar",
+    "level": "A1",
+    "type": "multiple-choice",
+    "difficulty": 1,
+    "question": {
+      "text": "She _____ to school every day.",
+      "options": ["go", "goes", "going", "went"]
+    },
+    "correctAnswer": "goes",
+    "explanation": "'She' is third person singular, so we use 'goes' in present simple tense.",
+    "tags": ["present-simple", "third-person"],
+    "timeLimit": 30,
+    "points": 10
+  },
+  {
+    "id": "q002",
+    "category": "vocabulary",
+    "level": "A1",
+    "type": "multiple-choice",
+    "difficulty": 1,
+    "question": {
+      "text": "What do you call a person who teaches students?",
+      "options": ["doctor", "teacher", "engineer", "lawyer"]
+    },
+    "correctAnswer": "teacher",
+    "explanation": "A teacher is a person whose job is teaching students.",
+    "tags": ["professions", "basic-vocabulary"],
+    "timeLimit": 20,
+    "points": 10
+  },
+  {
+    "id": "q003",
+    "category": "grammar",
+    "level": "A2",
+    "type": "fill-blank",
+    "difficulty": 2,
+    "question": {
+      "text": "I _____ been to London twice.",
+      "blanks": ["have"]
+    },
+    "correctAnswer": "have",
+    "explanation": "Present perfect tense is formed with 'have/has' + past participle.",
+    "tags": ["present-perfect", "auxiliary-verbs"],
+    "timeLimit": 35,
+    "points": 15
+  },
+  {
+    "id": "q004",
+    "category": "reading",
+    "level": "B1",
+    "type": "multiple-choice",
+    "difficulty": 3,
+    "question": {
+      "text": "Read the following sentence: 'Despite the rain, they continued their journey.' What does 'despite' mean?",
+      "options": ["because of", "in spite of", "due to", "thanks to"]
+    },
+    "correctAnswer": "in spite of",
+    "explanation": "'Despite' means 'in spite of' or 'regardless of'.",
+    "tags": ["prepositions", "reading-comprehension"],
+    "timeLimit": 45,
+    "points": 20
+  },
+  {
+    "id": "q005",
+    "category": "structure",
+    "level": "B1",
+    "type": "true-false",
+    "difficulty": 2,
+    "question": {
+      "text": "The sentence 'He is more taller than his brother' is grammatically correct."
+    },
+    "correctAnswer": false,
+    "explanation": "It should be 'He is taller than his brother' or 'He is much taller than his brother'. We don't use 'more' with comparative adjectives that already have '-er'.",
+    "tags": ["comparatives", "adjectives"],
+    "timeLimit": 30,
+    "points": 15
+  },
+  {
+    "id": "q006",
+    "category": "idioms",
+    "level": "B2",
+    "type": "multiple-choice",
+    "difficulty": 4,
+    "question": {
+      "text": "What does the idiom 'break the ice' mean?",
+      "options": ["to destroy something", "to start a conversation", "to be very cold", "to solve a problem"]
+    },
+    "correctAnswer": "to start a conversation",
+    "explanation": "'Break the ice' means to start a conversation or make people feel more comfortable in a social situation.",
+    "tags": ["idioms", "social-expressions"],
+    "timeLimit": 40,
+    "points": 25
+  },
+  {
+    "id": "q007",
+    "category": "vocabulary",
+    "level": "C1",
+    "type": "matching",
+    "difficulty": 5,
+    "question": {
+      "text": "Match the words with their synonyms:",
+      "pairs": [
+        {"left": "meticulous", "right": "careful"},
+        {"left": "abundant", "right": "plentiful"},
+        {"left": "ambiguous", "right": "unclear"}
+      ]
+    },
+    "correctAnswer": {
+      "meticulous": "careful",
+      "abundant": "plentiful", 
+      "ambiguous": "unclear"
+    },
+    "explanation": "Meticulous means very careful, abundant means plentiful, and ambiguous means unclear or having multiple meanings.",
+    "tags": ["advanced-vocabulary", "synonyms"],
+    "timeLimit": 60,
+    "points": 30
+  },
+  {
+    "id": "q008",
+    "category": "grammar",
+    "level": "C2",
+    "type": "multiple-choice",
+    "difficulty": 5,
+    "question": {
+      "text": "Choose the correct form: 'Had I known about the meeting, I _____ attended.'",
+      "options": ["would have", "will have", "would", "had"]
+    },
+    "correctAnswer": "would have",
+    "explanation": "This is a third conditional with inversion. The structure is: Had + subject + past participle, subject + would have + past participle.",
+    "tags": ["conditionals", "inversion", "advanced-grammar"],
+    "timeLimit": 50,
+    "points": 35
+  }
+]
