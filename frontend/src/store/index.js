@@ -1,7 +1,7 @@
-import { configureStore } from '@reduxjs/toolkit'
-import authSlice from './authSlice'
-import quizSlice from './quizSlice'
-import userSlice from './userSlice'
+import { configureStore } from "@reduxjs/toolkit";
+import authSlice from "./authSlice";
+import quizSlice from "./quizSlice";
+import userSlice from "./userSlice";
 
 export const store = configureStore({
   reducer: {
@@ -9,6 +9,6 @@ export const store = configureStore({
     quiz: quizSlice,
     user: userSlice,
   },
-})
+});
 
-export default store
+export default store;

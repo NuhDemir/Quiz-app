@@ -16,7 +16,7 @@
   },
   {
     "id": "grammar_master",
-    "name": "Grammar Master", 
+    "name": "Grammar Master",
     "nameTr": "Gramer Ustası",
     "description": "Answer 50 grammar questions correctly",
     "descriptionTr": "50 gramer sorusunu doğru yanıtla",
@@ -33,7 +33,7 @@
   {
     "id": "vocab_collector",
     "name": "Vocabulary Collector",
-    "nameTr": "Kelime Koleksiyoncusu", 
+    "nameTr": "Kelime Koleksiyoncusu",
     "description": "Learn 100 new words",
     "descriptionTr": "100 yeni kelime öğren",
     "icon": "📚",
@@ -84,7 +84,7 @@
     "descriptionTr": "Bir quizi 5 dakikadan kısa sürede tamamla",
     "icon": "⚡",
     "color": "#FFC107",
-    "rarity": "epic", 
+    "rarity": "epic",
     "points": 250,
     "requirements": {
       "type": "quiz_time",

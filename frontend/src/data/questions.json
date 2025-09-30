@@ -86,7 +86,12 @@
     "difficulty": 4,
     "question": {
       "text": "What does the idiom 'break the ice' mean?",
-      "options": ["to destroy something", "to start a conversation", "to be very cold", "to solve a problem"]
+      "options": [
+        "to destroy something",
+        "to start a conversation",
+        "to be very cold",
+        "to solve a problem"
+      ]
     },
     "correctAnswer": "to start a conversation",
     "explanation": "'Break the ice' means to start a conversation or make people feel more comfortable in a social situation.",
@@ -103,14 +108,14 @@
     "question": {
       "text": "Match the words with their synonyms:",
       "pairs": [
-        {"left": "meticulous", "right": "careful"},
-        {"left": "abundant", "right": "plentiful"},
-        {"left": "ambiguous", "right": "unclear"}
+        { "left": "meticulous", "right": "careful" },
+        { "left": "abundant", "right": "plentiful" },
+        { "left": "ambiguous", "right": "unclear" }
       ]
     },
     "correctAnswer": {
       "meticulous": "careful",
-      "abundant": "plentiful", 
+      "abundant": "plentiful",
       "ambiguous": "unclear"
     },
     "explanation": "Meticulous means very careful, abundant means plentiful, and ambiguous means unclear or having multiple meanings.",

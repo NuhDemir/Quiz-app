@@ -1,5 +1,5 @@
-import React from 'react'
-import { Typography, Box } from '@mui/material'
+import React from "react";
+import { Typography, Box } from "@mui/material";
 
 const Leaderboard = () => {
   return (
@@ -7,11 +7,9 @@ const Leaderboard = () => {
       <Typography variant="h4" component="h1" gutterBottom>
         Liderlik Tablosu
       </Typography>
-      <Typography>
-        Liderlik tablosu yakında eklenecek...
-      </Typography>
+      <Typography>Liderlik tablosu yakında eklenecek...</Typography>
     </Box>
-  )
-}
+  );
+};
 
-export default Leaderboard
+export default Leaderboard;

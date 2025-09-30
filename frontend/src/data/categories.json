@@ -11,7 +11,7 @@
   },
   {
     "id": "vocabulary",
-    "name": "Vocabulary", 
+    "name": "Vocabulary",
     "nameTr": "Kelime Bilgisi",
     "description": "Expand your English vocabulary",
     "descriptionTr": "İngilizce kelime dağarcığınızı genişletin",
@@ -22,7 +22,7 @@
   {
     "id": "reading",
     "name": "Reading Comprehension",
-    "nameTr": "Okuma Anlama", 
+    "nameTr": "Okuma Anlama",
     "description": "Improve your reading skills",
     "descriptionTr": "Okuma becerilerinizi geliştirin",
     "icon": "📖",

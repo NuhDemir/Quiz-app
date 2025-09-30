@@ -37,6 +37,7 @@ Quiz-app/
 ## 🛠️ Teknolojiler
 
 ### Frontend-Only Yaklaşım
+
 - React 18+
 - Material-UI / Ant Design
 - Redux Toolkit (Local State Management)
@@ -47,15 +48,47 @@ Quiz-app/
 
 ## 🚀 Kurulum ve Çalıştırma
 
+### Frontend
+
 ```bash
 cd frontend
 npm install
 npm start
 ```
 
+### Backend (Netlify Functions)
+
+Proje kök dizininde testleri ve serverless fonksiyonları çalıştırmak için:
+
+```bash
+npm install
+npm test
+```
+
+Netlify lokal geliştirme (isteğe bağlı):
+
+```bash
+npm install -g netlify-cli
+netlify dev
+```
+
+## 🔐 Ortam Değişkenleri
+
+Kök dizindeki `.env.example` dosyasını `.env` olarak kopyalayın ve değerleri doldurun.
+
+| Değişken               | Açıklama                                    |
+| ---------------------- | ------------------------------------------- |
+| `MONGODB_URI`          | MongoDB bağlantı URI                        |
+| `JWT_SECRET`           | JWT imzalama gizli anahtarı                 |
+| `JWT_EXPIRES_IN`       | (Opsiyonel) Token süresi (örn: `7d`, `30d`) |
+| `BCRYPT_SALT_ROUNDS`   | (Opsiyonel) Hash güçlü ayarı                |
+| `RATE_LIMIT_WINDOW_MS` | (Planlanan) Rate limit pencere süresi       |
+| `RATE_LIMIT_MAX`       | (Planlanan) Rate limit isteği üst sınırı    |
+
 ## 📊 Veri Yönetimi
 
 Uygulama aşağıdaki JSON dosyalarından veri çeker:
+
 - `questions.json` - Quiz soruları
 - `categories.json` - Quiz kategorileri
 - `levels.json` - Seviye bilgileri

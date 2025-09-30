@@ -1,183 +1,362 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
-import { 
-  HiMoon, 
-  HiSun, 
-  HiTranslate, 
-  HiVolumeUp, 
+import React, { useState, useEffect, useCallback, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import {
+  HiMoon,
+  HiSun,
+  HiTranslate,
+  HiVolumeUp,
   HiBell,
   HiRefresh,
   HiTrash,
-  HiInformationCircle
-} from 'react-icons/hi'
-import { resetStats } from '../store/userSlice'
+  HiInformationCircle,
+} from "react-icons/hi";
+import { resetStats, updatePreferences } from "../store/userSlice";
+import { useSelector } from "react-redux";
+import apiRequest from "../utils/apiClient";
+import LogoutButton from "../components/LogoutButton";
 
 const Settings = ({ darkMode, toggleDarkMode }) => {
-  const navigate = useNavigate()
-  const dispatch = useDispatch()
+  // Settings state
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const auth = useSelector((s) => s.auth);
+  const reduxPrefs = useSelector((s) => s.user.preferences);
+  const [settings, setSettings] = useState({
+    notifications: reduxPrefs.notifications ?? false,
+    sound: false,
+    language: reduxPrefs.language || "tr",
+    theme: darkMode ? "dark" : "light",
+  });
+  // loading: initial fetch loading state
+  const [loading, setLoading] = useState(false);
+  const [initialLoaded, setInitialLoaded] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState(null);
+  const saveTimeoutRef = useRef(null);
+  // Kullanıcı token'ı alınmalı (örnek: localStorage'dan)
+  const token = localStorage.getItem("token");
+  // Fetch current settings once
+  useEffect(() => {
+    let active = true;
+    (async () => {
+      if (!token) {
+        setInitialLoaded(true);
+        return;
+      }
+      setLoading(true);
+      try {
+        const res = await apiRequest("settings-get", { method: "GET", token });
+        if (!active) return;
+        const merged = { ...settings, ...(res.settings || {}) };
+        setSettings(merged);
+        dispatch(
+          updatePreferences({
+            language: merged.language,
+            notifications: merged.notifications,
+            theme: merged.theme,
+          })
+        );
+      } catch (e) {
+        if (active) setError(e.message);
+      } finally {
+        if (active) {
+          setLoading(false);
+          setInitialLoaded(true);
+        }
+      }
+    })();
+    return () => {
+      active = false;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Debounced save
+  const queueSave = useCallback(
+    (next) => {
+      setSettings(next);
+      setError(null);
+      if (saveTimeoutRef.current) clearTimeout(saveTimeoutRef.current);
+      saveTimeoutRef.current = setTimeout(async () => {
+        if (!token) return;
+        setSaving(true);
+        try {
+          const res = await apiRequest("settings-update", {
+            method: "POST",
+            data: next,
+            token,
+          });
+          dispatch(
+            updatePreferences({
+              language: res.settings.language,
+              notifications: res.settings.notifications,
+              theme: res.settings.theme,
+            })
+          );
+        } catch (e) {
+          setError(e.message);
+        } finally {
+          setSaving(false);
+        }
+      }, 500); // 500ms debounce
+    },
+    [dispatch, token]
+  );
+
+  const toggleTheme = () => {
+    const newDark = !darkMode;
+    toggleDarkMode();
+    queueSave({ ...settings, theme: newDark ? "dark" : "light" });
+  };
+  // navigate & dispatch already declared above
 
   const handleResetStats = () => {
-    if (window.confirm('Tüm istatistikleriniz silinecek. Emin misiniz?')) {
-      dispatch(resetStats())
-      alert('İstatistikler sıfırlandı!')
+    if (window.confirm("Tüm istatistikleriniz silinecek. Emin misiniz?")) {
+      dispatch(resetStats());
+      alert("İstatistikler sıfırlandı!");
     }
-  }
+  };
 
   const handleResetWelcome = () => {
-    localStorage.removeItem('hasVisited')
-    alert('Hoş geldin ekranı sıfırlandı. Uygulamayı yeniden yüklediğinizde göreceksiniz.')
-  }
+    localStorage.removeItem("hasVisited");
+    alert(
+      "Hoş geldin ekranı sıfırlandı. Uygulamayı yeniden yüklediğinizde göreceksiniz."
+    );
+  };
 
   return (
-    <div className="min-h-screen bg-background-light dark:bg-background-dark text-background-dark dark:text-background-light">
-      {/* Header */}
-      <header className="p-6 pt-16">
-        <button 
-          onClick={() => navigate('/')}
-          className="mb-4 p-2 rounded-full hover:bg-primary/10 transition-colors duration-300"
+    <div className="settings-page">
+      <div className="settings-header">
+        <button
+          onClick={() => navigate("/")}
+          className="secondary-button"
+          style={{ width: "fit-content", padding: "0.6rem 1.1rem" }}
         >
-          ← Back
+          ← Geri
         </button>
-        <h1 className="text-3xl font-bold mb-2">Settings</h1>
-        <p className="text-background-dark/60 dark:text-background-light/60">
-          Customize your app experience
+        <h1 className="settings-header__title">Ayarlar</h1>
+        <p className="settings-header__subtitle">
+          Uygulama deneyimini kişiselleştir. Tema, dil, bildirim tercihleri ve
+          daha fazlası.
         </p>
-      </header>
-
-      {/* Settings List */}
-      <div className="px-6 space-y-4">
-        
-        {/* Theme */}
-        <div className="bg-white/60 dark:bg-white/10 backdrop-blur-sm rounded-2xl p-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              {darkMode ? <HiMoon className="text-2xl text-primary" /> : <HiSun className="text-2xl text-primary" />}
+      </div>
+      <div className="settings-grid">
+        <div className="settings-card">
+          <div className="settings-card__row">
+            <div className="settings-card__info">
+              <div className="settings-card__icon">
+                {darkMode ? <HiMoon /> : <HiSun />}
+              </div>
               <div>
-                <h3 className="font-bold">Tema</h3>
-                <p className="text-sm text-background-dark/60 dark:text-background-light/60">
-                  {darkMode ? 'Koyu tema' : 'Açık tema'}
-                </p>
+                <div className="settings-card__title">Tema</div>
+                <div className="settings-card__desc">
+                  {darkMode ? "Koyu tema" : "Açık tema"}
+                </div>
               </div>
             </div>
-            <button
-              onClick={toggleDarkMode}
-              className={`w-12 h-6 rounded-full transition-colors duration-300 relative ${
-                darkMode ? 'bg-primary' : 'bg-background-dark/20 dark:bg-background-light/20'
-              }`}
+            <div
+              className={`switch ${darkMode ? "switch--on" : ""}`}
+              role="switch"
+              aria-checked={darkMode}
+              tabIndex={0}
+              onClick={toggleTheme}
+              onKeyDown={(e) =>
+                (e.key === "Enter" || e.key === " ") && toggleTheme()
+              }
             >
-              <div className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300 absolute top-0.5 ${
-                darkMode ? 'translate-x-6' : 'translate-x-0.5'
-              }`}></div>
-            </button>
+              <div className="switch__thumb" />
+            </div>
           </div>
         </div>
-
-        {/* Language */}
-        <div className="bg-white/60 dark:bg-white/10 backdrop-blur-sm rounded-2xl p-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <HiTranslate className="text-2xl text-primary" />
+        <div className="settings-card">
+          <div className="settings-card__row">
+            <div className="settings-card__info">
+              <div className="settings-card__icon">
+                <HiTranslate />
+              </div>
               <div>
-                <h3 className="font-bold">Dil</h3>
-                <p className="text-sm text-background-dark/60 dark:text-background-light/60">
-                  Türkçe
-                </p>
+                <div className="settings-card__title">Dil</div>
+                <div className="settings-card__desc">Arayüz dili</div>
               </div>
             </div>
-            <div className="text-background-dark/40 dark:text-background-light/40">
-              Coming Soon
-            </div>
+            <select
+              value={settings.language}
+              onChange={(e) =>
+                queueSave({ ...settings, language: e.target.value })
+              }
+              disabled={loading}
+              style={{ maxWidth: "140px" }}
+            >
+              <option value="tr">Türkçe</option>
+              <option value="en">English</option>
+            </select>
           </div>
         </div>
-
-        {/* Notifications */}
-        <div className="bg-white/60 dark:bg-white/10 backdrop-blur-sm rounded-2xl p-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <HiBell className="text-2xl text-primary" />
+        <div className="settings-card">
+          <div className="settings-card__row">
+            <div className="settings-card__info">
+              <div className="settings-card__icon">
+                <HiBell />
+              </div>
               <div>
-                <h3 className="font-bold">Bildirimler</h3>
-                <p className="text-sm text-background-dark/60 dark:text-background-light/60">
-                  Günlük hatırlatmalar
-                </p>
+                <div className="settings-card__title">Bildirimler</div>
+                <div className="settings-card__desc">Günlük hatırlatmalar</div>
               </div>
             </div>
-            <div className="text-background-dark/40 dark:text-background-light/40">
-              Coming Soon
+            <div
+              className={`switch ${settings.notifications ? "switch--on" : ""}`}
+              role="switch"
+              aria-checked={settings.notifications}
+              tabIndex={0}
+              onClick={() =>
+                queueSave({
+                  ...settings,
+                  notifications: !settings.notifications,
+                })
+              }
+              onKeyDown={(e) =>
+                (e.key === "Enter" || e.key === " ") &&
+                queueSave({
+                  ...settings,
+                  notifications: !settings.notifications,
+                })
+              }
+            >
+              <div className="switch__thumb" />
             </div>
           </div>
         </div>
-
-        {/* Sound */}
-        <div className="bg-white/60 dark:bg-white/10 backdrop-blur-sm rounded-2xl p-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <HiVolumeUp className="text-2xl text-primary" />
+        <div className="settings-card">
+          <div className="settings-card__row">
+            <div className="settings-card__info">
+              <div className="settings-card__icon">
+                <HiVolumeUp />
+              </div>
               <div>
-                <h3 className="font-bold">Ses Efektleri</h3>
-                <p className="text-sm text-background-dark/60 dark:text-background-light/60">
+                <div className="settings-card__title">Ses Efektleri</div>
+                <div className="settings-card__desc">
                   Quiz seslerini aç/kapat
-                </p>
+                </div>
               </div>
             </div>
-            <div className="text-background-dark/40 dark:text-background-light/40">
-              Coming Soon
+            <div
+              className={`switch ${settings.sound ? "switch--on" : ""}`}
+              role="switch"
+              aria-checked={settings.sound}
+              tabIndex={0}
+              onClick={() => queueSave({ ...settings, sound: !settings.sound })}
+              onKeyDown={(e) =>
+                (e.key === "Enter" || e.key === " ") &&
+                queueSave({ ...settings, sound: !settings.sound })
+              }
+            >
+              <div className="switch__thumb" />
             </div>
           </div>
         </div>
-
-        {/* Reset Welcome Screen */}
-        <button
+        <div
+          className="settings-card"
+          role="button"
+          tabIndex={0}
           onClick={handleResetWelcome}
-          className="w-full bg-white/60 dark:bg-white/10 backdrop-blur-sm rounded-2xl p-4"
+          onKeyDown={(e) =>
+            (e.key === "Enter" || e.key === " ") && handleResetWelcome()
+          }
         >
-          <div className="flex items-center gap-3">
-            <HiRefresh className="text-2xl text-primary" />
-            <div className="text-left">
-              <h3 className="font-bold">Hoş Geldin Ekranını Sıfırla</h3>
-              <p className="text-sm text-background-dark/60 dark:text-background-light/60">
-                İlk açılış ekranını tekrar göster
-              </p>
+          <div className="settings-card__info">
+            <div className="settings-card__icon">
+              <HiRefresh />
             </div>
-          </div>
-        </button>
-
-        {/* Reset Stats */}
-        <button
-          onClick={handleResetStats}
-          className="w-full bg-red-500/10 backdrop-blur-sm rounded-2xl p-4 border border-red-500/20"
-        >
-          <div className="flex items-center gap-3">
-            <HiTrash className="text-2xl text-red-500" />
-            <div className="text-left">
-              <h3 className="font-bold text-red-500">İstatistikleri Sıfırla</h3>
-              <p className="text-sm text-background-dark/60 dark:text-background-light/60">
-                Tüm verileriniz silinecek
-              </p>
-            </div>
-          </div>
-        </button>
-
-        {/* App Info */}
-        <div className="bg-white/60 dark:bg-white/10 backdrop-blur-sm rounded-2xl p-4">
-          <div className="flex items-center gap-3">
-            <HiInformationCircle className="text-2xl text-primary" />
             <div>
-              <h3 className="font-bold">English Quiz Master</h3>
-              <p className="text-sm text-background-dark/60 dark:text-background-light/60">
-                Versiyon 1.0.0
-              </p>
-              <p className="text-xs text-background-dark/50 dark:text-background-light/50 mt-1">
-                React + Tailwind CSS + GSAP ile geliştirildi
-              </p>
+              <div className="settings-card__title">
+                Hoş Geldin Ekranını Sıfırla
+              </div>
+              <div className="settings-card__desc">
+                İlk açılış ekranını tekrar göster
+              </div>
             </div>
           </div>
         </div>
-
+        <div
+          className="settings-card"
+          style={{
+            borderColor: "rgba(255,55,95,0.35)",
+            background: "rgba(255,55,95,0.08)",
+          }}
+          role="button"
+          tabIndex={0}
+          onClick={handleResetStats}
+          onKeyDown={(e) =>
+            (e.key === "Enter" || e.key === " ") && handleResetStats()
+          }
+        >
+          <div className="settings-card__info">
+            <div
+              className="settings-card__icon"
+              style={{ background: "rgba(255,55,95,0.18)", color: "#ff375f" }}
+            >
+              <HiTrash />
+            </div>
+            <div>
+              <div
+                className="settings-card__title"
+                style={{ color: "#ff375f" }}
+              >
+                İstatistikleri Sıfırla
+              </div>
+              <div className="settings-card__desc">
+                Tüm verileriniz silinecek
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="settings-card">
+          {saving && (
+            <span className="settings-meta-inline settings-meta-inline--saving">
+              KAYDEDİLİYOR
+            </span>
+          )}
+          {error && !saving && (
+            <span className="settings-meta-inline settings-meta-inline--error">
+              HATA
+            </span>
+          )}
+          <div className="settings-card__info">
+            <div className="settings-card__icon">
+              <HiInformationCircle />
+            </div>
+            <div>
+              <div className="settings-card__title">English Quiz Master</div>
+              <div className="settings-card__desc">
+                Versiyon 1.0.0 • React + Tailwind + Netlify
+              </div>
+              <div className="settings-card__desc" style={{ marginTop: "4px" }}>
+                Stil sistemi: global.css bileşen odaklı
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="settings-card">
+          <div
+            className="settings-card__title"
+            style={{ marginBottom: "0.25rem" }}
+          >
+            Oturum
+          </div>
+          <LogoutButton />
+          {auth?.user && (
+            <div
+              className="settings-card__desc"
+              style={{ marginTop: "0.5rem", wordBreak: "break-all" }}
+            >
+              {auth.user.email}
+            </div>
+          )}
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Settings
+export default Settings;

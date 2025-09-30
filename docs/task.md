@@ -1,416 +1,205 @@
-# İngilizce Quiz Uygulaması - Görev Listesi ve Zaman Planı
-
-## Proje Süreç Takvimi
-
-**Toplam Süre:** 12-16 hafta  
-**Ekip Büyüklüğü:** 2-4 geliştirici  
-**Metodoloji:** Agile/Scrum  
-
-## Faz 1: Proje Kurulumu ve Altyapı (1-2 Hafta)
-
-### Hafta 1: Proje İnisiyalizasyonu
-- [ ] **Geliştirme ortamı kurulumu**
-  - Node.js ve npm/yarn kurulumu
-  - MongoDB kurulumu (local ve Atlas)
-  - Git repository oluşturma
-  - VS Code extensions ve konfigürasyon
-  - **Süre:** 1 gün
-  - **Sorumlu:** Full-stack Developer
-
-- [ ] **Backend proje yapısı**
-  - Express.js projesi oluşturma
-  - Klasör yapısı oluşturma (models, routes, controllers, middleware)
-  - Package.json bağımlılıkları
-  - Environment variables konfigürasyonu
-  - **Süre:** 1 gün
-  - **Sorumlu:** Backend Developer
-
-- [ ] **Frontend proje yapısı**
-  - React projesi oluşturma (Create React App veya Vite)
-  - Klasör yapısı oluşturma (components, pages, hooks, utils)
-  - UI kütüphanesi kurulumu (Material-UI/Ant Design)
-  - Redux Toolkit kurulumu
-  - **Süre:** 1 gün
-  - **Sorumlu:** Frontend Developer
-
-- [ ] **Veritabanı tasarımı**
-  - MongoDB Atlas kurulumu
-  - Collection şemaları oluşturma
-  - Index stratejisi planlaması
-  - Seed data hazırlığı
-  - **Süre:** 2 gün
-  - **Sorumlu:** Backend Developer
-
-### Hafta 2: Temel Konfigürasyonlar
-- [ ] **Authentication altyapısı**
-  - JWT token sistemi
-  - Bcrypt şifre hashleme
-  - Middleware yazılımları
-  - **Süre:** 3 gün
-  - **Sorumlu:** Backend Developer
-
-- [ ] **API temel yapısı**
-  - Express router konfigürasyonu
-  - Error handling middleware
-  - Validation middleware (Joi)
-  - API documentation (Swagger)
-  - **Süre:** 2 gün
-  - **Sorumlu:** Backend Developer
-
-- [ ] **CI/CD pipeline kurulumu**
-  - GitHub Actions konfigürasyonu
-  - Test automation
-  - Deployment scripts
-  - **Süre:** 2 gün
-  - **Sorumlu:** DevOps/Full-stack Developer
-
-## Faz 2: Temel Özellikler Geliştirme (3-4 Hafta)
-
-### Hafta 3: Kullanıcı Yönetimi
-- [ ] **User Authentication Backend**
-  - Register endpoint (/api/auth/register)
-  - Login endpoint (/api/auth/login)
-  - JWT token validation middleware
-  - Password reset functionality
-  - **Süre:** 3 gün
-  - **Sorumlu:** Backend Developer
-
-- [ ] **User Profile Backend**
-  - User model ve endpoints
-  - Profile CRUD operations
-  - Avatar upload functionality
-  - **Süre:** 2 gün
-  - **Sorumlu:** Backend Developer
-
-- [ ] **Authentication Frontend**
-  - Login/Register sayfaları
-  - Form validation (Formik + Yup)
-  - Redux auth state management
-  - Protected routes
-  - **Süre:** 4 gün
-  - **Sorumlu:** Frontend Developer
-
-- [ ] **Profile Management Frontend**
-  - Profile görüntüleme sayfası
-  - Profile düzenleme formu
-  - Avatar upload component
-  - **Süre:** 2 gün
-  - **Sorumlu:** Frontend Developer
-
-### Hafta 4: Soru ve Quiz Sistemi Backend
-- [ ] **Questions API**
-  - Question model oluşturma
-  - CRUD endpoints
-  - Category ve level filtreleme
-  - Random question selection
-  - **Süre:** 3 gün
-  - **Sorumlu:** Backend Developer
-
-- [ ] **Quiz Session API**
-  - Quiz session management
-  - Answer submission endpoints
-  - Scoring algoritması
-  - Progress tracking
-  - **Süre:** 3 gün
-  - **Sorumlu:** Backend Developer
-
-- [ ] **Admin Panel Backend**
-  - Admin authentication
-  - Bulk question import
-  - Question management endpoints
-  - **Süre:** 1 gün
-  - **Sorumlu:** Backend Developer
-
-### Hafta 5: Quiz Sistemi Frontend
-- [ ] **Quiz Lobby Sayfası**
-  - Category seçimi
-  - Level seçimi
-  - Quiz başlatma
-  - **Süre:** 2 gün
-  - **Sorumlu:** Frontend Developer
-
-- [ ] **Quiz Player Component**
-  - Soru görüntüleme
-  - Cevap seçimi interface
-  - Timer component
-  - Progress bar
-  - **Süre:** 4 gün
-  - **Sorumlu:** Frontend Developer
-
-- [ ] **Quiz Results Sayfası**
-  - Sonuçları görüntüleme
-  - Detaylı analiz
-  - Yeniden oynatma seçeneği
-  - **Süre:** 1 gün
-  - **Sorumlu:** Frontend Developer
-
-### Hafta 6: UI/UX İyileştirmeler
-- [ ] **Responsive Design**
-  - Tüm sayfaları mobile-first yaklaşımla düzenleme
-  - Tablet ve desktop optimizasyonu
-  - Touch-friendly interface
-  - **Süre:** 3 gün
-  - **Sorumlu:** Frontend Developer
-
-- [ ] **Animasyonlar ve Geçişler**
-  - Page transitions
-  - Loading animations  
-  - Success/error feedback animations
-  - **Süre:** 2 gün
-  - **Sorumlu:** Frontend Developer
-
-- [ ] **Accessibility**
-  - ARIA labels
-  - Klavye navigasyonu
-  - Screen reader compatibility
-  - High contrast mode
-  - **Süre:** 2 gün
-  - **Sorumlu:** Frontend Developer
-
-## Faz 3: Gelişmiş Özellikler (4-5 Hafta)
-
-### Hafta 7: İstatistik ve Analitik
-- [ ] **User Statistics Backend**
-  - Progress tracking algoritmaları
-  - Performance analytics
-  - Leaderboard sistemi
-  - **Süre:** 3 gün
-  - **Sorumlu:** Backend Developer
-
-- [ ] **Statistics Frontend**
-  - Dashboard sayfası
-  - Chart.js/Recharts entegrasyonu
-  - Progress visualization
-  - **Süre:** 4 gün
-  - **Sorumlu:** Frontend Developer
-
-### Hafta 8: Rozet ve Başarım Sistemi
-- [ ] **Achievement System Backend**
-  - Badge model ve logic
-  - Achievement tracking
-  - Notification system
-  - **Süre:** 3 gün
-  - **Sorumlu:** Backend Developer
-
-- [ ] **Achievement Frontend**
-  - Badge gallery
-  - Achievement notifications
-  - Progress indicators
-  - **Süre:** 4 gün
-  - **Sorumlu:** Frontend Developer
-
-### Hafta 9: Sosyal Özellikler
-- [ ] **Friend System Backend**
-  - Friend requests
-  - Friend list management
-  - Challenge system
-  - **Süre:** 4 gün
-  - **Sorumlu:** Backend Developer
-
-- [ ] **Social Features Frontend**
-  - Friend list interface
-  - Challenge interface
-  - Leaderboard sayfası
-  - **Süre:** 3 gün
-  - **Sorumlu:** Frontend Developer
-
-### Hafta 10: İçerik Yönetimi ve Optimizasyon
-- [ ] **Content Management System**
-  - Admin paneli geliştirme
-  - Bulk question import
-  - Content moderation tools
-  - **Süre:** 4 gün
-  - **Sorumlu:** Full-stack Developer
-
-- [ ] **Performance Optimization**
-  - Database query optimization
-  - Frontend bundle optimization
-  - Image optimization
-  - **Süre:** 3 gün
-  - **Sorumlu:** Full-stack Developer
-
-### Hafta 11: Öğrenme Araçları
-- [ ] **Personal Dictionary Backend**
-  - Word collection system
-  - Favorite words
-  - Study plan generation
-  - **Süre:** 3 gün
-  - **Sorumlu:** Backend Developer
-
-- [ ] **Learning Tools Frontend**
-  - Personal dictionary interface
-  - Study plan display
-  - Reminder system
-  - **Süre:** 4 gün
-  - **Sorumlu:** Frontend Developer
-
-## Faz 4: Optimizasyon ve Test (2-3 Hafta)
-
-### Hafta 12: Performans Optimizasyonu
-- [ ] **Backend Optimization**
-  - Database query optimization
-  - Caching stratejisi (Redis)
-  - API response optimization
-  - **Süre:** 3 gün
-  - **Sorumlu:** Backend Developer
-
-- [ ] **Frontend Optimization**
-  - Code splitting
-  - Image lazy loading
-  - Bundle size optimization
-  - **Süre:** 4 gün
-  - **Sorumlu:** Frontend Developer
-
-### Hafta 13: Güvenlik ve Test
-- [ ] **Security Hardening**
-  - Rate limiting implementation
-  - Input validation strengthening
-  - Security headers
-  - **Süre:** 2 gün
-  - **Sorumlu:** Backend Developer
-
-- [ ] **Automated Testing**
-  - Unit testler (Jest)
-  - Integration testler
-  - E2E testler (Cypress)
-  - **Süre:** 5 gün
-  - **Sorumlu:** Full-stack Developer
-
-### Hafta 14-15: Content ve Polish
-- [ ] **Content Creation**
-  - 10,000+ soru hazırlığı
-  - Image content preparation
-  - Content quality assurance
-  - **Süre:** 7 gün
-  - **Sorumlu:** Content Creator/Team
-
-- [ ] **Final Polish**
-  - Bug fixes
-  - UI/UX tweaks
-  - Performance fine-tuning
-  - **Süre:** 7 gün
-  - **Sorumlu:** Tüm Ekip
-
-## Faz 5: Deployment ve Launch (1-2 Hafta)
-
-### Hafta 16: Production Deployment
-- [ ] **Production Setup**
-  - MongoDB Atlas production cluster
-  - Cloudinary production setup
-  - Domain ve SSL certificate
-  - **Süre:** 2 gün
-  - **Sorumlu:** DevOps
-
-- [ ] **Deployment**
-  - Backend deployment (Heroku/AWS)
-  - Frontend deployment (Vercel/Netlify)
-  - Database migration
-  - **Süre:** 2 gün
-  - **Sorumlu:** DevOps
-
-- [ ] **Launch Preparation**
-  - Final testing
-  - Documentation completion
-  - Launch strategy
-  - **Süre:** 1 gün
-  - **Sorumlu:** Tüm Ekip
-
-## Alternatif Zaman Planları
-
-### Hızlı Geliştirme (8-10 Hafta)
-**Sadece temel özellikler:**
-- Authentication
-- Basic Quiz System  
-- User Statistics
-- Simple UI
-
-### Uzun Vadeli Geliştirme (20+ Hafta)
-**Tüm özellikler + ek bonuslar:**
-- Voice recognition
-- AI-powered question generation
-- Mobile app (React Native)
-- Advanced analytics
-
-## Milestone'lar ve Değerlendirme Noktaları
-
-### Milestone 1 (2. Hafta Sonu)
-- [ ] Proje altyapısı tamamlandı
-- [ ] Authentication sistemi çalışıyor
-- [ ] Basic API endpoints hazır
-
-### Milestone 2 (6. Hafta Sonu)
-- [ ] MVP (Minimum Viable Product) tamamlandı
-- [ ] Temel quiz functionality çalışıyor
-- [ ] User registration/login çalışıyor
-
-### Milestone 3 (11. Hafta Sonu)
-- [ ] Tüm ana özellikler tamamlandı
-- [ ] Social features çalışıyor
-- [ ] Statistics ve achievements sistemi aktif
-
-### Milestone 4 (15. Hafta Sonu)
-- [ ] Production-ready application
-- [ ] Tüm testler geçiyor
-- [ ] Performance optimizasyonları tamamlandı
-
-## Risk Yönetimi ve Acil Durum Planları
-
-### Yüksek Risk Alanları
-1. **Veri Güvenliği:** Kullanıcı bilgileri ve şifreler
-2. **Performans:** Büyük veri setleri ile çalışma
-3. **Scalability:** Çok kullanıcılı sistem tasarımı
-4. **Content Quality:** Soru kalitesi ve doğruluğu
-
-### Acil Durum Stratejileri
-1. **Gecikmeler için:** Feature prioritization
-2. **Technical issues:** Pair programming
-3. **Quality issues:** Code review süreci
-4. **Resource constraints:** MVP scope reduction
-
-## Takım Rolleri ve Sorumluluklar
-
-### Backend Developer
-- API development
-- Database design
-- Security implementation
-- Performance optimization
-
-### Frontend Developer
-- UI/UX implementation
-- State management
-- Responsive design
-- User experience optimization
-
-### Full-stack Developer
-- Integration tasks
-- DevOps setup
-- Testing implementation
-- Bug fixes
-
-### Content Creator (External/Part-time)
-- Question database creation
-- Audio content production
-- Quality assurance
-- Educational content review
-
-## Araçlar ve Teknolojiler
-
-### Development Tools
-- **IDE:** Visual Studio Code
-- **Version Control:** Git + GitHub
-- **API Testing:** Postman/Insomnia
-- **Design:** Figma/Adobe XD
-
-### Project Management
-- **Task Management:** Jira/Trello
-- **Communication:** Slack/Discord
-- **Documentation:** Notion/Confluence
-- **Time Tracking:** Toggl/Clockify
-
-### Monitoring ve Analytics
-- **Error Tracking:** Sentry
-- **Analytics:** Google Analytics
-- **Performance:** Lighthouse
-- **Uptime:** Pingdom
-
-Bu detaylı görev listesi, projenin başarılı bir şekilde tamamlanması için gerekli tüm adımları içerir ve ekip üyelerine net bir yol haritası sunar.
+﻿# Implementation Plan (Quiz App)
+
+Bu plan; proje ilerlemesini standartlaştırılmış, numaralı ve takip edilebilir bir formatta sunar. Her görev ilgili ise gereksinim belgesindeki (requirements.md) bölümlerle ilişkilendirilmiştir.
+
+Durum Etiketleri:
+
+- [x] Tamamlandı | [ ] Henüz Yapılmadı | [~] Kısmi / Devam Ediyor
+
+---
+
+## 1. Altyapı ve Temel Kurulum
+
+### 1.1 Proje Ortamı ve Çekirdek Yapı
+
+- [x] Node.js + Netlify Functions kurulum ve çalışma (local dev proxy) (Ref: 2.2 kısmi)
+- [x] Environment değişkenleri yapılandırma (`MONGODB_URI`, `JWT_SECRET`) (Ref: 2.2)
+- [x] Frontend Vite + React + Redux Toolkit başlangıç yapısı (Ref: 2.1)
+
+### 1.2 Veritabanı & Bağlantı Yönetimi
+
+- [x] MongoDB bağlantı helper (retry / timeout iyileştirmeleri) (Ref: 2.2, 3.3)
+- [x] Model kayıt sırası / MissingSchemaError önleme düzenlemeleri
+
+---
+
+## 2. Veri Modelleri (Gamification & Öğrenme)
+
+- [x] User (quizStats alanı ile) (Ref: 1.1, 1.4)
+- [x] Quiz & Question (Ref: 1.2, 1.3)
+- [x] QuizAttempt (denormalize metriklere temel) (Ref: 1.4)
+- [x] ReviewLog (SRS temel) (Ref: 1.5 kısmi)
+- [x] DailyUserStat (ileride grafikler için) (Ref: 1.4)
+- [x] Badge & Achievement (Ref: 1.4 Rozet ve Başarım Sistemi)
+- [x] WordEntry (kişisel kelime defteri başlangıcı) (Ref: 1.5)
+- [x] GrammarTopic (kategori/konu ilerlemesi) (Ref: 1.2, 1.4)
+- [x] LeaderboardSnapshot (haftalık/sezonluk analiz altyapısı)
+
+---
+
+## 3. Migration ve Dönüşüm
+
+- [x] Eski Progress modelinden yeni yapıya migrasyon scripti (`scripts/migrate_progress.js`)
+- [x] Progress doküman bağımlılıklarının kaldırılması
+- [ ] Eski verinin badge/achievement kodlarıyla tutarlı eşleştirilmesi için otomatik eşleme aracı (gerektiğinde)
+
+---
+
+## 4. Authentication & Authorization
+
+- [x] Email doğrulama (Ref: 1.1)
+- [x] Şifre sıfırlama akışı (Ref: 1.1)
+- [x] Sosyal giriş (Google / Facebook / Clerk) (Ref: 1.1)
+- [x] Rol tabanlı yetkilendirme (admin) (Ref: 1.1, 7.1)
+  - [x] Admin role yönetim endpointi: `admin-user-role-set` (son admin koruması)
+
+---
+
+## 5. Quiz Akışı ve İstatistikler
+
+- [x] Quiz oluşturma (temel) (Ref: 1.2)
+- [x] Quiz detay listeleme (Ref: 1.2)
+- [x] Quiz submit (persist + istatistik güncelleme) (Ref: 1.2, 1.4)
+- [x] Toplam doğru / yanlış / doğruluk oranı hesaplama (Ref: 1.4)
+- [x] Tek endpoint üzerinden progress hesaplama (`progress`) (Ref: 1.4)
+- [ ] Kategori bazlı performans / seviye ilerlemesi (Ref: 1.4, 1.2)
+- [ ] Zaman sınırı / süre ölçümü (Ref: 1.2 opsiyonel)
+- [ ] Farklı soru tipleri (boşluk doldurma, eşleştirme, görsel) (Ref: 1.2, 1.3)
+
+---
+
+## 6. Gamification & Achievement Sistemi
+
+- [x] Achievement Engine (merkezi kriter değerlendirme)
+- [x] `achievements-evaluate` fonksiyonu refactor
+- [x] `quiz-submit` içine otomatik tetikleme (FIRST_QUIZ)
+- [ ] Ek kriterler: 10 quiz, %80 doğruluk, 5 gün streak (Ref: 1.4)
+- [ ] Dinamik kriterlerin DB üstünden yönetimi (admin UI) (Ref: 7.1)
+- [ ] Kullanıcıya rozet kazandı bildirimi (frontend toast/modal) (Ref: 1.4)
+
+---
+
+## 7. Öğrenme Araçları & SRS
+
+- [x] SRS review temel fonksiyonu (`srs-review`) (Ref: 1.5)
+- [x] Kelime ekleme (`word-add`) (Ref: 1.5)
+- [ ] Tekrar aralıklarının (interval) optimize edilmesi (Leitner/SM2 varyasyonu) (Ref: 1.5)
+- [ ] Kişisel kelime defteri UI (Ref: 1.5)
+- [ ] Önerilen quizler / adaptif çalışma planı (Ref: 1.5)
+
+---
+
+## 8. Leaderboard & Sosyal Özellikler
+
+- [x] Leaderboard endpoint (Ref: 1.4)
+- [x] Snapshot alma fonksiyonu (`leaderboard-snapshot`)
+- [ ] Günlük/haftalık otomatik schedule (Netlify Scheduled Functions) (Ref: 1.6 Rekabet)
+- [ ] Arkadaş karşılaştırması / challenge sistemi (Ref: 1.6)
+- [ ] Turnuva / sezon mantığı (Ref: 1.6)
+
+---
+
+## 9. UI / Frontend Genişletmeleri
+
+- [x] Progress bileşeni token uyumu
+- [ ] Badge kazanımı anlık bildirim
+- [ ] Profilde rozet/başarım detay modali
+- [ ] Çoklu dil desteği (i18n) (Ref: 4.3)
+- [ ] Erişilebilirlik (WCAG 2.1 AA) iyileştirmeleri (Ref: 4.2)
+- [ ] PWA / offline mod temel
+
+---
+
+## 10. Performans & Ölçeklenebilirlik
+
+- [x] Bağlantı yönetimi stabilizasyonu (Ref: 3.1/3.2 kısmen)
+- [ ] Ağır aggregation'lar için projection / index stratejisi dokümantasyonu (Ref: 2.3, 3.2)
+- [ ] Soru koleksiyonlarında index planı (kategori, seviye, zorluk) (Ref: 2.3)
+- [ ] Load test (kullanıcı ölçek hedefleri tanımlanacak) (Ref: 3.1, 3.2)
+
+---
+
+## 11. Güvenlik & Dayanıklılık
+
+- [x] JWT tabanlı auth (Ref: 2.2, 3.3 Güvenlik kısmi)
+- [ ] Rate limiting (Ref: 3.3)
+- [ ] Brute force / login throttling (Ref: 3.3)
+- [ ] Input validation (Joi / Zod) (Ref: 2.2)
+- [ ] Audit log / davranış analizi (Ref: 7.2)
+- [ ] Veri yedekleme stratejisi dokümantasyonu (Ref: 7.2)
+
+---
+
+## 12. Gözlemlenebilirlik (Observability) & Loglama
+
+- [ ] Merkezi log sistemi (örn. Winston + Netlify plugin) (Ref: 7.2)
+- [ ] Hata izleme (Sentry) entegrasyonu
+- [ ] Performans metrikleri toplayıcı (Ref: 3.1)
+
+---
+
+## 13. Test Altyapısı ve Kapsam
+
+- [x] Jest + mongodb-memory-server kurulum
+- [x] Auth akışı testleri
+- [x] Quiz submit + progress testleri
+- [x] Otomatik badge testi (FIRST_QUIZ)
+- [ ] Ek achievement senaryoları testleri
+- [ ] Leaderboard & snapshot testleri
+- [ ] SRS review testleri
+- [ ] WordEntry ekleme & retrieval testleri
+- [ ] Yük / performans test planı (ayrı araç - k6/JMeter) taslağı
+
+---
+
+## 14. Dokümantasyon
+
+- [x] Gereksinimler belgesi (`requirements.md`)
+- [x] Bu implementation plan (`task.md`)
+- [ ] API endpoint referansı (otomatik veya manuel)
+- [ ] Model şema sözlüğü
+- [ ] Achievement kriter tanımlama kılavuzu
+
+---
+
+## 15. Kısa Vadeli Öncelik Önerilen Sıra
+
+1. Ek achievement kriterleri + testler (10 quiz, %80 accuracy, streak)
+2. Badge kazanımı frontend bildirimi
+3. Leaderboard snapshot scheduling
+4. Dinamik achievement şeması (DB üzerinden)
+5. Rate limiting + temel güvenlik sertleştirmeleri
+
+---
+
+## 16. Riskler & İzleme
+
+- Achievement kriterleri hard-coded: Değişim deploy gerektiriyor.
+- `quiz-submit` synchronous birden fazla DB çağrısı: batching / minimal projection öneriliyor.
+- Leaderboard snapshot işleyişi manuel tetiklenirse veri eskiyebilir.
+- Artan populate maliyetleri için lightweight DTO katmanı gerekebilir.
+
+Risk Azaltma Önerileri:
+
+1. Kriterleri JSON tanımlarıyla (koleksiyon: AchievementDefinitions) yönet.
+2. Projection + lean kullanımı ile sorgu yükünü azalt.
+3. Scheduled function ile otomasyon.
+4. Test genişletme ile regresyon riskini erken yakalama.
+
+---
+
+## 17. Katkı Rehberi (Kısa)
+
+Yeni fonksiyon eklerken:
+
+1. İlgili modelleri require et (schema register).
+2. Auth gerektiğinde token doğrula; yoksa read-only senaryo belirt.
+3. İş kuralını küçük saf fonksiyonlara böl.
+4. Tekrarlayan kriter / ödül mantığını engine üzerinden yürüt.
+5. Test: memory server pattern + izolasyon.
+
+---
+
+Güncelleme Zamanı: (yyyy-mm-dd) 2025-09-30
+
+Bu plan düzenli olarak revize edilmelidir. Tamamlanan her başlık işaretlenip yeni alt görevler eklenebilir.

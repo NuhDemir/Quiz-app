@@ -1,0 +1,37 @@
+{
+  "name": "quiz-app-backend",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node start/start.js",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "netlify:serve": "netlify dev",
+    "netlify:build": "netlify build",
+    "test": "jest --runInBand",
+    "test:watch": "jest --watch",
+    "test:ci": "jest --ci --coverage"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.8.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.1.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "roots": [
+      "<rootDir>/test"
+    ],
+    "collectCoverageFrom": [
+      "netlify/functions/**/*.js",
+      "models/**/*.js",
+      "!**/node_modules/**"
+    ]
+  }
+}

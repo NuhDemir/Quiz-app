@@ -10,7 +10,7 @@
     "maxAccuracy": 40
   },
   {
-    "id": "A2", 
+    "id": "A2",
     "name": "Elementary",
     "nameTr": "Temel",
     "description": "Elementary level English",
@@ -21,7 +21,7 @@
   },
   {
     "id": "B1",
-    "name": "Pre-Intermediate", 
+    "name": "Pre-Intermediate",
     "nameTr": "Orta-Alt",
     "description": "Pre-intermediate English skills",
     "descriptionTr": "Orta-alt seviye İngilizce becerileri",
@@ -33,7 +33,7 @@
     "id": "B2",
     "name": "Intermediate",
     "nameTr": "Orta",
-    "description": "Intermediate English proficiency", 
+    "description": "Intermediate English proficiency",
     "descriptionTr": "Orta seviye İngilizce yeterliliği",
     "color": "#FF9800",
     "minAccuracy": 70,
@@ -44,7 +44,7 @@
     "name": "Upper-Intermediate",
     "nameTr": "İleri",
     "description": "Advanced English skills",
-    "descriptionTr": "İleri seviye İngilizce becerileri", 
+    "descriptionTr": "İleri seviye İngilizce becerileri",
     "color": "#FF5722",
     "minAccuracy": 80,
     "maxAccuracy": 90
