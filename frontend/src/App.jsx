@@ -1,18 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Home from "./pages/Home";
 import Quiz from "./pages/Quiz";
 import Profile from "./pages/Profile";
 import Leaderboard from "./pages/Leaderboard";
 import Categories from "./pages/Categories";
+import Grammar from "./pages/categories/Grammar";
 import Settings from "./pages/Settings";
+import Stats from "./pages/Stats";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 // Şifre sıfırlama ve email doğrulama sayfaları kaldırıldı
 import BottomNavigation from "./components/BottomNavigation";
 import WelcomeScreen from "./components/WelcomeScreen";
 import ProtectedRoute from "./components/ProtectedRoute";
+import AdminRoute from "./pages/admin/AdminRoute";
+import AdminLayout from "./pages/admin/AdminLayout";
+import AdminLogin from "./pages/admin/AdminLogin";
+import QuizManager from "./pages/admin/QuizManager";
 import useGsapAnimations from "./hooks/useGsapAnimations";
 import { fetchCurrentUser } from "./store/authSlice";
 
@@ -22,6 +28,8 @@ function App() {
   const { timeline } = useGsapAnimations();
   const dispatch = useDispatch();
   const { token } = useSelector((state) => state.auth);
+  const location = useLocation();
+  const isAdminView = location.pathname.startsWith("/admin");
 
   useEffect(() => {
     // Check if user has visited before
@@ -96,10 +104,23 @@ function App() {
             }
           />
           <Route path="/categories" element={<Categories />} />
-          <Route path="/quiz/:category" element={<Quiz />} />
+          <Route path="/categories/grammar" element={<Grammar />} />
+          <Route path="/quiz/:identifier" element={<Quiz />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route
+            path="/admin/*"
+            element={
+              <AdminRoute>
+                <AdminLayout />
+              </AdminRoute>
+            }
+          >
+            <Route index element={<QuizManager />} />
+            <Route path="quizzes" element={<QuizManager />} />
+          </Route>
           {/* Forgot / Reset / Verify routes removed */}
           <Route element={<ProtectedRoute />}>
             <Route path="/profile" element={<Profile />} />
@@ -109,10 +130,11 @@ function App() {
                 <Settings darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
               }
             />
+            <Route path="/stats" element={<Stats />} />
           </Route>
         </Routes>
       </main>
-      <BottomNavigation />
+      {!isAdminView && <BottomNavigation />}
     </div>
   );
 }

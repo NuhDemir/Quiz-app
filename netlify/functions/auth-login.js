@@ -42,8 +42,6 @@ exports.handler = async (event) => {
       throw createHttpError(401, "Invalid credentials");
     }
 
-    // Email doğrulama gereksinimi kaldırıldı
-
     const passwordValid = await comparePassword(password, user.passwordHash);
 
     if (!passwordValid) {

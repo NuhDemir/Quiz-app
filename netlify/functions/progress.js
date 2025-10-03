@@ -67,6 +67,38 @@ async function buildProgressDTO(userId) {
     takenAt: (a.finishedAt || a.createdAt || new Date()).toISOString(),
   }));
 
+  // Derive categoryStats & levelStats (new) from quizStats Map fields
+  // We approximate per-category accuracy using average questions per quiz if totalQuestions known.
+  const avgQuestionsPerQuiz = totalQuizzes
+    ? Math.max(1, Math.round((qs.totalQuestions || 0) / totalQuizzes))
+    : 10; // fallback heuristic
+
+  const categoryStats = {};
+  if (qs.category && typeof qs.category.forEach === "function") {
+    qs.category.forEach((val, key) => {
+      const attempts = val?.attempts || 0;
+      const correct = val?.correct || 0;
+      const denom = attempts * avgQuestionsPerQuiz;
+      const accuracy = denom
+        ? Math.min(100, Math.round((correct / denom) * 100))
+        : 0;
+      categoryStats[key] = { attempts, correct, accuracy };
+    });
+  }
+
+  const levelStats = {};
+  if (qs.level && typeof qs.level.forEach === "function") {
+    qs.level.forEach((val, key) => {
+      const attempts = val?.attempts || 0;
+      const correct = val?.correct || 0;
+      const denom = attempts * avgQuestionsPerQuiz;
+      const accuracy = denom
+        ? Math.min(100, Math.round((correct / denom) * 100))
+        : 0;
+      levelStats[key] = { attempts, correct, accuracy };
+    });
+  }
+
   return {
     userId: user._id.toString(),
     totalQuizzes,
@@ -79,6 +111,8 @@ async function buildProgressDTO(userId) {
         )
       : [],
     recentSessions,
+    categoryStats, // newly added aggregate per category
+    levelStats, // newly added aggregate per level
     updatedAt: user.updatedAt,
     createdAt: user.createdAt,
   };

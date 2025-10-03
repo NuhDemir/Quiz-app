@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { apiRequest } from "../utils/apiClient";
+import { authApi } from "../utils/endpoints";
 
 const AUTH_STORAGE_KEY = "authState";
 
@@ -43,13 +43,10 @@ const initialState = {
   error: null,
 };
 
-const buildAuthThunk = (type, endpoint) =>
+const buildAuthThunk = (type, fnName) =>
   createAsyncThunk(`auth/${type}`, async (payload, { rejectWithValue }) => {
     try {
-      const response = await apiRequest(endpoint, {
-        method: "POST",
-        data: payload,
-      });
+      const response = await authApi[fnName](payload);
       return response;
     } catch (error) {
       return rejectWithValue({
@@ -59,8 +56,9 @@ const buildAuthThunk = (type, endpoint) =>
     }
   });
 
-export const registerUser = buildAuthThunk("register", "auth-register");
-export const loginUser = buildAuthThunk("login", "auth-login");
+export const registerUser = buildAuthThunk("register", "register");
+export const loginUser = buildAuthThunk("login", "login");
+export const adminLogin = buildAuthThunk("adminLogin", "adminLogin");
 
 export const fetchCurrentUser = createAsyncThunk(
   "auth/me",
@@ -72,10 +70,7 @@ export const fetchCurrentUser = createAsyncThunk(
     }
 
     try {
-      const response = await apiRequest("auth-me", {
-        method: "GET",
-        token,
-      });
+      const response = await authApi.me(token);
       return { user: response.user };
     } catch (error) {
       return rejectWithValue({
@@ -147,6 +142,25 @@ const authSlice = createSlice({
           action.payload?.message ||
           action.error?.message ||
           "Giriş işlemi başarısız";
+        state.isAuthenticated = false;
+      })
+      .addCase(adminLogin.pending, (state) => {
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(adminLogin.fulfilled, (state, action) => {
+        state.loading = false;
+        state.user = action.payload.user;
+        state.token = action.payload.token;
+        state.isAuthenticated = true;
+        persistAuth({ user: state.user, token: state.token });
+      })
+      .addCase(adminLogin.rejected, (state, action) => {
+        state.loading = false;
+        state.error =
+          action.payload?.message ||
+          action.error?.message ||
+          "Admin girişi başarısız";
         state.isAuthenticated = false;
       })
       .addCase(fetchCurrentUser.pending, (state) => {

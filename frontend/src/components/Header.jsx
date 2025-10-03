@@ -11,11 +11,11 @@ import {
   IconButton,
 } from "@mui/material";
 import {
-  AccountCircle,
-  ExitToApp,
-  Home,
-  Leaderboard as LeaderboardIcon,
-} from "@mui/icons-material";
+  AccountCircleIcon,
+  LogoutIcon,
+  HomeIcon,
+  LeaderboardIcon,
+} from "./icons";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../store/authSlice";
@@ -60,7 +60,7 @@ const Header = () => {
         <Box sx={{ flexGrow: 1, display: "flex", gap: 2 }}>
           <Button
             color="inherit"
-            startIcon={<Home />}
+            startIcon={<HomeIcon />}
             onClick={() => navigate("/")}
           >
             Ana Sayfa
@@ -93,11 +93,11 @@ const Header = () => {
                 anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
               >
                 <MenuItem onClick={handleProfile}>
-                  <AccountCircle sx={{ mr: 1 }} />
+                  <AccountCircleIcon sx={{ mr: 1 }} />
                   Profil
                 </MenuItem>
                 <MenuItem onClick={handleLogout}>
-                  <ExitToApp sx={{ mr: 1 }} />
+                  <LogoutIcon sx={{ mr: 1 }} />
                   Çıkış Yap
                 </MenuItem>
               </Menu>

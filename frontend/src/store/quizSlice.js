@@ -1,4 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { quizApi } from "../utils/endpoints";
 
 const initialState = {
   currentSession: null,
@@ -9,7 +10,57 @@ const initialState = {
   isActive: false,
   results: null,
   loading: false,
+  list: [],
+  listLoading: false,
+  listError: null,
+  listLoaded: false,
+  listLastFetched: null,
+  detailLoading: false,
+  detailError: null,
+  submitLoading: false,
+  submitError: null,
 };
+
+export const fetchQuizList = createAsyncThunk(
+  "quiz/list",
+  async (_, { rejectWithValue }) => {
+    try {
+      const data = await quizApi.list();
+      return data;
+    } catch (error) {
+      return rejectWithValue(error.data || { error: error.message });
+    }
+  }
+);
+
+export const fetchQuizDetail = createAsyncThunk(
+  "quiz/detail",
+  async (id, { rejectWithValue }) => {
+    try {
+      const data = await quizApi.detail(id);
+      return data;
+    } catch (error) {
+      return rejectWithValue(error.data || { error: error.message });
+    }
+  }
+);
+
+export const submitQuiz = createAsyncThunk(
+  "quiz/submit",
+  async ({ token, quizId, answers, durationSec }, { rejectWithValue }) => {
+    try {
+      const data = await quizApi.submit({
+        token,
+        quizId,
+        answers,
+        durationSec,
+      });
+      return data;
+    } catch (error) {
+      return rejectWithValue(error.data || { error: error.message });
+    }
+  }
+);
 
 const quizSlice = createSlice({
   name: "quiz",
@@ -88,6 +139,68 @@ const quizSlice = createSlice({
     setLoading: (state, action) => {
       state.loading = action.payload;
     },
+    clearErrors: (state) => {
+      state.listError = null;
+      state.detailError = null;
+      state.submitError = null;
+    },
+  },
+  extraReducers: (builder) => {
+    builder
+      // List
+      .addCase(fetchQuizList.pending, (state) => {
+        state.listLoading = true;
+        state.listError = null;
+      })
+      .addCase(fetchQuizList.fulfilled, (state, action) => {
+        state.listLoading = false;
+        state.list = action.payload || [];
+        state.listLoaded = true;
+        state.listLastFetched = Date.now();
+      })
+      .addCase(fetchQuizList.rejected, (state, action) => {
+        state.listLoading = false;
+        state.listError = action.payload?.error || action.error?.message;
+        state.listLoaded = false;
+      })
+      // Detail
+      .addCase(fetchQuizDetail.pending, (state) => {
+        state.detailLoading = true;
+        state.detailError = null;
+      })
+      .addCase(fetchQuizDetail.fulfilled, (state, action) => {
+        state.detailLoading = false;
+        // Provide questions to startQuiz manually or store raw detail
+        state.currentSession = null; // reset any existing session
+        state.questions = (action.payload?.questions || []).map((q) => ({
+          id: q._id || q.id,
+          text: q.text,
+          answers: q.answers || q.options || [],
+          correctAnswer: q.correctAnswer, // may be hidden on backend for fairness
+        }));
+      })
+      .addCase(fetchQuizDetail.rejected, (state, action) => {
+        state.detailLoading = false;
+        state.detailError = action.payload?.error || action.error?.message;
+      })
+      // Submit
+      .addCase(submitQuiz.pending, (state) => {
+        state.submitLoading = true;
+        state.submitError = null;
+      })
+      .addCase(submitQuiz.fulfilled, (state, action) => {
+        state.submitLoading = false;
+        state.results = {
+          totalQuestions: action.payload.totalQuestions,
+          correctAnswers: action.payload.correctCount,
+          incorrectAnswers: action.payload.incorrectCount,
+          accuracy: action.payload.score,
+        };
+      })
+      .addCase(submitQuiz.rejected, (state, action) => {
+        state.submitLoading = false;
+        state.submitError = action.payload?.error || action.error?.message;
+      });
   },
 });
 
@@ -100,6 +213,7 @@ export const {
   endQuiz,
   resetQuiz,
   setLoading,
+  clearErrors,
 } = quizSlice.actions;
 
 export default quizSlice.reducer;

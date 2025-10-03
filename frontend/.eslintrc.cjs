@@ -35,11 +35,5 @@ module.exports = {
         node: true,
       },
     },
-    {
-      files: ["../netlify/**/*.js", "../start/**/*.js"],
-      env: {
-        node: true,
-      },
-    },
   ],
 };

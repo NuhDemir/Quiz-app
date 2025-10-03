@@ -1,14 +1,8 @@
-import React, {
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-} from "react";
+import React, { useEffect, useMemo, useRef } from "react";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import useProfileAnimations from "../hooks/useProfileAnimations";
-import { apiRequest } from "../utils/apiClient";
+import { fetchProfile, fetchAttempts } from "../store/userSlice";
 import badgesData from "../data/badges.json";
 
 const numberFormatter = new Intl.NumberFormat("tr-TR");
@@ -35,10 +29,11 @@ const formatDateTime = (value) =>
     : "—";
 
 const Profile = () => {
+  const dispatch = useDispatch();
   const { token } = useSelector((state) => state.auth);
-  const [profile, setProfile] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const profile = useSelector((s) => s.user.profile);
+  const loading = useSelector((s) => s.user.profileLoading);
+  const error = useSelector((s) => s.user.profileError);
 
   const heroRef = useRef(null);
   const metricGridRef = useRef(null);
@@ -54,31 +49,12 @@ const Profile = () => {
     fillProgressBar,
   } = useProfileAnimations();
 
-  const loadProfile = useCallback(async () => {
-    if (!token) {
-      setProfile(null);
-      setLoading(false);
-      return;
-    }
-
-    try {
-      setLoading(true);
-      setError(null);
-      const response = await apiRequest("profile", {
-        method: "GET",
-        token,
-      });
-      setProfile(response.profile);
-    } catch (err) {
-      setError(err.data?.error || err.message || "Profil verisi alınamadı");
-    } finally {
-      setLoading(false);
-    }
-  }, [token]);
-
   useEffect(() => {
-    loadProfile();
-  }, [loadProfile]);
+    if (token) {
+      dispatch(fetchProfile(token));
+      dispatch(fetchAttempts({ token, limit: 10 }));
+    }
+  }, [token, dispatch]);
 
   useEffect(() => {
     if (!profile) return undefined;
@@ -195,7 +171,7 @@ const Profile = () => {
   }, [profile]);
 
   const handleRetry = () => {
-    loadProfile();
+    if (token) dispatch(fetchProfile(token));
   };
 
   if (loading) {

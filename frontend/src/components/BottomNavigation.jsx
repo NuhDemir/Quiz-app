@@ -1,30 +1,32 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
   BottomNavigation as MuiBottomNavigation,
   BottomNavigationAction,
   Paper,
 } from "@mui/material";
-import {
-  Home as HomeIcon,
-  ViewModule as CategoriesIcon,
-  TrendingUp as ProgressIcon,
-  Person as ProfileIcon,
-  Settings as SettingsIcon,
-  Login as LoginIcon,
-  PersonAddAlt1 as RegisterIcon,
-} from "@mui/icons-material";
 import { styled } from "@mui/material/styles";
-import LogoutButton from "./LogoutButton";
-import { FiLogOut } from "react-icons/fi";
+import {
+  HomeIcon,
+  CategoriesIcon,
+  StatsIcon,
+  LeaderboardIcon,
+  ProfileIcon,
+  SettingsIcon,
+  LoginIcon,
+  RegisterIcon,
+  LogoutIcon,
+} from "./icons";
+import { logout } from "../store/authSlice";
 
 const StyledBottomNavigation = styled(MuiBottomNavigation)(() => ({
   background: "var(--bottom-nav-bg)",
   backdropFilter: "blur(10px)",
   WebkitBackdropFilter: "blur(10px)",
   borderTop: "1px solid var(--bottom-nav-border)",
-  transition: "background var(--transition-base), color var(--transition-base), border-color var(--transition-base)",
+  transition:
+    "background var(--transition-base), color var(--transition-base), border-color var(--transition-base)",
   "& .MuiBottomNavigationAction-root": {
     color: "var(--bottom-nav-action)",
     transition: "color var(--transition-base)",
@@ -51,21 +53,23 @@ const StyledPaper = styled(Paper)({
 const BottomNavigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const dispatch = useDispatch();
   const { isAuthenticated } = useSelector((state) => state.auth);
 
   const navItems = isAuthenticated
     ? [
         { path: "/", icon: <HomeIcon />, label: "Ana Sayfa" },
+        { path: "/stats", icon: <StatsIcon />, label: "İstatistik" },
         { path: "/categories", icon: <CategoriesIcon />, label: "Kategoriler" },
-        { path: "/leaderboard", icon: <ProgressIcon />, label: "İlerleme" },
+        { path: "/leaderboard", icon: <LeaderboardIcon />, label: "Liderlik" },
         { path: "/profile", icon: <ProfileIcon />, label: "Profil" },
         { path: "/settings", icon: <SettingsIcon />, label: "Ayarlar" },
-        { path: "__logout__", icon: <FiLogOut />, label: "Çıkış" },
+        { path: "__logout__", icon: <LogoutIcon />, label: "Çıkış" },
       ]
     : [
         { path: "/", icon: <HomeIcon />, label: "Ana Sayfa" },
         { path: "/categories", icon: <CategoriesIcon />, label: "Kategoriler" },
-        { path: "/leaderboard", icon: <ProgressIcon />, label: "İlerleme" },
+        { path: "/leaderboard", icon: <LeaderboardIcon />, label: "Liderlik" },
         { path: "/login", icon: <LoginIcon />, label: "Giriş" },
         { path: "/register", icon: <RegisterIcon />, label: "Kayıt" },
       ];
@@ -74,9 +78,8 @@ const BottomNavigation = () => {
     const target = navItems[newValue];
     if (!target) return;
     if (target.path === "__logout__") {
-      // Trigger logout imperatively
-      const evt = new Event("app:logout");
-      window.dispatchEvent(evt);
+      dispatch(logout());
+      navigate("/login", { replace: true });
       return;
     }
     navigate(target.path);

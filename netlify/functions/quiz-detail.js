@@ -1,58 +1,44 @@
-const mongoose = require("mongoose");
 const connectDB = require("./db");
-const Quiz = require("../../models/Quiz");
+const { respond, handleError } = require("./auth-helpers");
+const { loadQuizByIdentifier } = require("./lib/quiz-service");
 
 exports.handler = async (event) => {
+  if (event.httpMethod === "OPTIONS") {
+    return respond(204, {});
+  }
+
   if (event.httpMethod !== "GET") {
-    return {
-      statusCode: 405,
-      headers: { Allow: "GET" },
-      body: JSON.stringify({ error: "Method Not Allowed" }),
-    };
+    return respond(405, { error: "Method Not Allowed" });
   }
 
   try {
     await connectDB();
 
-    const { id } = event.queryStringParameters || {};
+    const params = event.queryStringParameters || {};
+    const { id, slug } = params;
 
-    if (!id) {
-      return {
-        statusCode: 400,
-        body: JSON.stringify({ error: "Missing quiz id parameter" }),
-      };
+    if (!id && !slug) {
+      return respond(400, {
+        error: "Quiz detayı için id veya slug parametresi gerekli",
+      });
     }
 
-    if (!mongoose.Types.ObjectId.isValid(id)) {
-      return {
-        statusCode: 400,
-        body: JSON.stringify({ error: "Invalid quiz id" }),
-      };
+    let quiz;
+    try {
+      quiz = await loadQuizByIdentifier({ id, slug });
+    } catch (error) {
+      if (error.statusCode) {
+        return respond(error.statusCode, { error: error.message });
+      }
+      throw error;
     }
-
-    const quiz = await Quiz.findById(id).populate("questions");
 
     if (!quiz) {
-      return {
-        statusCode: 404,
-        body: JSON.stringify({ error: "Quiz not found" }),
-      };
+      return respond(404, { error: "Quiz bulunamadı" });
     }
 
-    return {
-      statusCode: 200,
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(quiz),
-    };
+    return respond(200, { quiz });
   } catch (error) {
-    return {
-      statusCode: 500,
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ error: error.message }),
-    };
+    return handleError(error, "quiz-detail");
   }
 };

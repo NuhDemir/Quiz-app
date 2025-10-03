@@ -1,0 +1,79 @@
+[
+  {
+    "_id": {
+      "$oid": "68defe826dff0b06a34a77ab"
+    },
+    "title": "A2 Grammar Test",
+    "slug": "a2-grammar-test",
+    "description": "Bu test, A2 seviyesi İngilizce gramer konularını (Geçmiş Zaman, Karşılaştırmalar, Gelecek Zaman vb.) ölçmek için tasarlanmıştır.",
+    "category": "grammar",
+    "level": "A2",
+    "difficulty": "medium",
+    "tags": ["grammar", "A2", "pre-intermediate"],
+    "timeLimitSec": 1800,
+    "questionCount": 45,
+    "isPublished": true,
+    "questions": [
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b01" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b02" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b03" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b04" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b05" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b06" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b07" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b08" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b09" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b10" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b11" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b12" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b13" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b14" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b15" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b16" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b17" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b18" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b19" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b20" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b21" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b22" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b23" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b24" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b25" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b26" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b27" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b28" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b29" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b30" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b31" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b32" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b33" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b34" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b35" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b36" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b37" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b38" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b39" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b40" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b41" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b42" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b43" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b44" },
+      { "$oid": "68df1e8a9f6d4c1a8b9c4b45" }
+    ],
+    "meta": {
+      "plays": 0,
+      "averageScore": 0,
+      "averageAccuracy": 0
+    },
+    "author": {
+      "$oid": "68dbc4bfc108a49af2ba0bc1"
+    },
+    "createdAt": {
+      "$date": "2025-10-02T22:36:50.349Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-02T23:55:00.000Z"
+    },
+    "__v": 0
+  }
+]

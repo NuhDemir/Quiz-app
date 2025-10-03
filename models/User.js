@@ -64,8 +64,6 @@ const UserSchema = new mongoose.Schema(
     },
     passwordHash: { type: String, required: true },
 
-    // Sosyal / federated kullanıcı alanı kaldırıldı (clerkUserId).
-
     // Rol tabanlı yetkilendirme
     role: {
       type: String,
@@ -73,8 +71,6 @@ const UserSchema = new mongoose.Schema(
       default: "user",
       index: true,
     },
-
-    // Email doğrulama KALDIRILDI (artık doğrulama gerekmiyor)
 
     settings: { type: Object, default: {} },
 

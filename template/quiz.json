@@ -1,0 +1,61 @@
+[
+  {
+    "_id": { "$oid": "64f100000000000000000001" },
+    "title": "Vocabulary Starter Quiz",
+    "slug": "vocabulary-starter-quiz",
+    "description": "Kick-off quiz that reviews everyday vocabulary and synonyms.",
+    "category": "vocabulary",
+    "level": "A2",
+    "difficulty": "easy",
+    "tags": ["vocabulary", "starter", "synonyms"],
+    "timeLimitSec": 300,
+    "questionCount": 5,
+    "isPublished": true,
+    "questions": [
+      { "$oid": "64f200000000000000000101" },
+      { "$oid": "64f200000000000000000102" },
+      { "$oid": "64f200000000000000000103" },
+      { "$oid": "64f200000000000000000104" },
+      { "$oid": "64f200000000000000000105" }
+    ],
+    "meta": {
+      "plays": 0,
+      "averageScore": 0,
+      "averageAccuracy": 0,
+      "lastPlayedAt": null
+    },
+    "author": { "$oid": "64f300000000000000000201" },
+    "createdAt": { "$date": "2024-01-15T08:00:00.000Z" },
+    "updatedAt": { "$date": "2024-01-15T08:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "64f100000000000000000002" },
+    "title": "Grammar Essentials B1",
+    "slug": "grammar-essentials-b1",
+    "description": "Targeted practice on verb tenses, conditionals, and sentence transformation.",
+    "category": "grammar",
+    "level": "B1",
+    "difficulty": "medium",
+    "tags": ["grammar", "tenses", "conditionals"],
+    "timeLimitSec": 420,
+    "questionCount": 6,
+    "isPublished": false,
+    "questions": [
+      { "$oid": "64f200000000000000000111" },
+      { "$oid": "64f200000000000000000112" },
+      { "$oid": "64f200000000000000000113" },
+      { "$oid": "64f200000000000000000114" },
+      { "$oid": "64f200000000000000000115" },
+      { "$oid": "64f200000000000000000116" }
+    ],
+    "meta": {
+      "plays": 12,
+      "averageScore": 68,
+      "averageAccuracy": 74,
+      "lastPlayedAt": { "$date": "2024-02-02T14:30:00.000Z" }
+    },
+    "author": { "$oid": "64f300000000000000000202" },
+    "createdAt": { "$date": "2024-01-20T10:10:00.000Z" },
+    "updatedAt": { "$date": "2024-02-02T14:30:00.000Z" }
+  }
+]

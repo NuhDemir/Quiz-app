@@ -5,7 +5,11 @@ exports.handler = async () => {
   try {
     await connectDB();
 
-    const quizzes = await Quiz.find().select("title description questions");
+    const quizzes = await Quiz.find({ isPublished: true })
+      .select(
+        "title description category level difficulty slug questionCount timeLimitSec questions meta"
+      )
+      .sort({ createdAt: -1 });
 
     return {
       statusCode: 200,

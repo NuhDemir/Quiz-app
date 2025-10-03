@@ -5,9 +5,10 @@
     "nameTr": "Gramer",
     "description": "Test your English grammar knowledge",
     "descriptionTr": "İngilizce gramer bilginizi test edin",
-    "icon": "📝",
+    "icon": "Spellcheck",
     "color": "#2196F3",
-    "totalQuestions": 2500
+    "totalQuestions": 2500,
+    "pagePath": "/categories/grammar"
   },
   {
     "id": "vocabulary",
@@ -15,7 +16,7 @@
     "nameTr": "Kelime Bilgisi",
     "description": "Expand your English vocabulary",
     "descriptionTr": "İngilizce kelime dağarcığınızı genişletin",
-    "icon": "📚",
+    "icon": "TextFields",
     "color": "#4CAF50",
     "totalQuestions": 3000
   },
@@ -25,7 +26,7 @@
     "nameTr": "Okuma Anlama",
     "description": "Improve your reading skills",
     "descriptionTr": "Okuma becerilerinizi geliştirin",
-    "icon": "📖",
+    "icon": "MenuBook",
     "color": "#FF9800",
     "totalQuestions": 2000
   },
@@ -35,7 +36,7 @@
     "nameTr": "Cümle Yapısı",
     "description": "Master English sentence patterns",
     "descriptionTr": "İngilizce cümle kalıplarında ustalaşın",
-    "icon": "🏗️",
+    "icon": "AccountTree",
     "color": "#9C27B0",
     "totalQuestions": 1800
   },
@@ -45,7 +46,7 @@
     "nameTr": "İdiyomlar",
     "description": "Learn common English idioms",
     "descriptionTr": "Yaygın İngilizce deyimleri öğrenin",
-    "icon": "🎭",
+    "icon": "EmojiObjects",
     "color": "#F44336",
     "totalQuestions": 700
   }

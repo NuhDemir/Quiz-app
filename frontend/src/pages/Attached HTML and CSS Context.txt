@@ -1,0 +1,313 @@
+Attached HTML and CSS Context
+
+<div class="MuiBottomNavigation-root css-1w2nn2v-MuiBottomNavigation-root"><button class="MuiButtonBase-root MuiBottomNavigationAction-root Mui-selected css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="HomeIcon"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg><span class="MuiBottomNavigationAction-label Mui-selected css-imwso6-MuiBottomNavigationAction-label">Ana Sayfa</span><span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiBottomNavigationAction-root css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ViewModuleIcon"><path d="M14.67 5v6.5H9.33V5zm1 6.5H21V5h-5.33zm-1 7.5v-6.5H9.33V19zm1-6.5V19H21v-6.5zm-7.34 0H3V19h5.33zm0-1V5H3v6.5z"></path></svg><span class="MuiBottomNavigationAction-label css-imwso6-MuiBottomNavigationAction-label">Kategoriler</span><span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiBottomNavigationAction-root css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="TrendingUpIcon"><path d="m16 6 2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"></path></svg><span class="MuiBottomNavigationAction-label css-imwso6-MuiBottomNavigationAction-label">İlerleme</span><span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiBottomNavigationAction-root css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="LoginIcon"><path d="M11 7 9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8z"></path></svg><span class="MuiBottomNavigationAction-label css-imwso6-MuiBottomNavigationAction-label">Giriş</span><span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button><button class="MuiButtonBase-root MuiBottomNavigationAction-root css-1bjk3jo-MuiButtonBase-root-MuiBottomNavigationAction-root" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="PersonAddAlt1Icon"><path d="M13 8c0-2.21-1.79-4-4-4S5 5.79 5 8s1.79 4 4 4 4-1.79 4-4m2 2v2h3v3h2v-3h3v-2h-3V7h-2v3zM1 18v2h16v-2c0-2.66-5.33-4-8-4s-8 1.34-8 4"></path></svg><span class="MuiBottomNavigationAction-label css-imwso6-MuiBottomNavigationAction-label">Kayıt</span><span class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"></span></button></div>
+
+
+/* Matched Rule from user-agent */
+div {
+  display: block;
+}
+
+/* Matched Rule from user-agent */
+address, blockquote, center, div, figure, figcaption, footer, form, header, hr, legend, listing, main, p, plaintext, pre, summary, xmp, article, aside, h1, h2, h3, h4, h5, h6, hgroup, nav, section, search, table, caption, colgroup, col, thead, tbody, tfoot, tr, td, th, dir, dd, dl, dt, menu, ol, ul, li, bdi, output, [dir="ltr" i], [dir="rtl" i], [dir="auto" i] {
+  unicode-bidi: isolate;
+}
+
+/* Matched Rule from regular */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+}
+
+/* Matched Rule from regular */
+.css-1w2nn2v-MuiBottomNavigation-root {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 56px;
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 56px;
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Inherited from ancestor level 1 (user-agent) */
+div {
+  display: block;
+}
+
+/* Inherited from ancestor level 1 (user-agent) */
+address, blockquote, center, div, figure, figcaption, footer, form, header, hr, legend, listing, main, p, plaintext, pre, summary, xmp, article, aside, h1, h2, h3, h4, h5, h6, hgroup, nav, section, search, table, caption, colgroup, col, thead, tbody, tfoot, tr, td, th, dir, dd, dl, dt, menu, ol, ul, li, bdi, output, [dir="ltr" i], [dir="rtl" i], [dir="auto" i] {
+  unicode-bidi: isolate;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+}
+
+/* Inherited from ancestor level 1 (regular) */
+.css-2vri3m-MuiPaper-root {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.87);
+  transition-behavior: normal;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0ms;
+  transition-property: box-shadow;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 20px;
+}
+
+/* Inherited from ancestor level 2 (user-agent) */
+div {
+  display: block;
+}
+
+/* Inherited from ancestor level 2 (user-agent) */
+address, blockquote, center, div, figure, figcaption, footer, form, header, hr, legend, listing, main, p, plaintext, pre, summary, xmp, article, aside, h1, h2, h3, h4, h5, h6, hgroup, nav, section, search, table, caption, colgroup, col, thead, tbody, tfoot, tr, td, th, dir, dd, dl, dt, menu, ol, ul, li, bdi, output, [dir="ltr" i], [dir="rtl" i], [dir="auto" i] {
+  unicode-bidi: isolate;
+}
+
+/* Inherited from ancestor level 2 (regular) */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+}
+
+/* Inherited from ancestor level 2 (regular) */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-background);
+  transition: background var(--transition-base);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inherited from ancestor level 3 (user-agent) */
+div {
+  display: block;
+}
+
+/* Inherited from ancestor level 3 (user-agent) */
+address, blockquote, center, div, figure, figcaption, footer, form, header, hr, legend, listing, main, p, plaintext, pre, summary, xmp, article, aside, h1, h2, h3, h4, h5, h6, hgroup, nav, section, search, table, caption, colgroup, col, thead, tbody, tfoot, tr, td, th, dir, dd, dl, dt, menu, ol, ul, li, bdi, output, [dir="ltr" i], [dir="rtl" i], [dir="auto" i] {
+  unicode-bidi: isolate;
+}
+
+/* Inherited from ancestor level 3 (regular) */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+}
+
+/* Inherited from ancestor level 3 (regular) */
+#root {
+  min-height: 100vh;
+  min-height: 100vh;
+}
+
+/* Inherited from ancestor level 4 (user-agent) */
+body {
+  display: block;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+/* Inherited from ancestor level 4 (regular) */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+}
+
+/* Inherited from ancestor level 4 (regular) */
+body {
+  min-height: 100vh;
+  font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.35s ease, color 0.35s ease;
+  min-height: 100vh;
+  font-family: Lexend, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  transition-behavior: normal, normal;
+  transition-duration: 0.35s, 0.35s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  transition-property: background-color, color;
+}
+
+/* Inherited from ancestor level 5 (user-agent) */
+html {
+  display: block;
+}
+
+/* Inherited from ancestor level 5 (user-agent) */
+:root {
+  view-transition-name: root;
+}
+
+/* Inherited from ancestor level 5 (regular) */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+}
+
+/* Inherited from ancestor level 5 (regular) */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* Inherited from ancestor level 5 (regular) */
+:root {
+  --color-background: #f5f5f7;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f1f2f6;
+  --color-text-primary: #111827;
+  --color-text-secondary: rgba(55, 65, 81, 0.7);
+  --color-border: rgba(15, 23, 42, 0.06);
+  --color-primary: #0077ff;
+  --color-primary-dark: #0061cc;
+  --color-success: #34c759;
+  --color-warning: #ff9500;
+  --color-danger: #ff375f;
+  --shadow-soft: 0 32px 80px rgba(15, 23, 42, 0.08);
+  --shadow-strong: 0 32px 60px rgba(0, 0, 0, 0.45);
+  --radius-lg: 24px;
+  --radius-md: 20px;
+  --radius-sm: 12px;
+  --transition-base: 0.3s ease;
+  --color-background: #f5f5f7;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f1f2f6;
+  --color-text-primary: #111827;
+  --color-text-secondary: rgba(55, 65, 81, 0.7);
+  --color-border: rgba(15, 23, 42, 0.06);
+  --color-primary: #0077ff;
+  --color-primary-dark: #0061cc;
+  --color-success: #34c759;
+  --color-warning: #ff9500;
+  --color-danger: #ff375f;
+  --shadow-soft: 0 32px 80px rgba(15, 23, 42, 0.08);
+  --shadow-strong: 0 32px 60px rgba(0, 0, 0, 0.45);
+  --radius-lg: 24px;
+  --radius-md: 20px;
+  --radius-sm: 12px;
+  --transition-base: 0.3s ease;
+}

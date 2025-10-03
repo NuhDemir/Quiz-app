@@ -25,12 +25,16 @@ describe("auth-helpers", () => {
       passwordHash: "xxx",
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
+      settings: { theme: "dark" },
+      role: "user",
     };
     const sanitized = sanitizeUser(user);
     expect(sanitized).toEqual({
       id: user._id,
       username: "alice",
       email: "alice@example.com",
+      role: "user",
+      settings: { theme: "dark" },
       createdAt: user.createdAt,
       updatedAt: user.updatedAt,
     });

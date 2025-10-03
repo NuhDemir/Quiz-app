@@ -45,16 +45,6 @@ Durum Etiketleri:
 
 ---
 
-## 4. Authentication & Authorization
-
-- [x] Email doğrulama (Ref: 1.1)
-- [x] Şifre sıfırlama akışı (Ref: 1.1)
-- [x] Sosyal giriş (Google / Facebook / Clerk) (Ref: 1.1)
-- [x] Rol tabanlı yetkilendirme (admin) (Ref: 1.1, 7.1)
-  - [x] Admin role yönetim endpointi: `admin-user-role-set` (son admin koruması)
-
----
-
 ## 5. Quiz Akışı ve İstatistikler
 
 - [x] Quiz oluşturma (temel) (Ref: 1.2)

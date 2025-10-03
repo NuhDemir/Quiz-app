@@ -1,19 +1,22 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
-  HiMoon,
-  HiSun,
-  HiTranslate,
-  HiVolumeUp,
-  HiBell,
-  HiRefresh,
-  HiTrash,
-  HiInformationCircle,
-} from "react-icons/hi";
-import { resetStats, updatePreferences } from "../store/userSlice";
-import { useSelector } from "react-redux";
-import apiRequest from "../utils/apiClient";
+  DarkModeIcon,
+  LightModeIcon,
+  TranslateIcon,
+  VolumeIcon,
+  NotificationsIcon,
+  RefreshIcon,
+  TrashIcon,
+  InfoIcon,
+} from "../components/icons";
+import {
+  resetStats,
+  updatePreferences,
+  fetchSettings,
+  updateSettings as updateSettingsThunk,
+} from "../store/userSlice";
 import LogoutButton from "../components/LogoutButton";
 
 const Settings = ({ darkMode, toggleDarkMode }) => {
@@ -29,26 +32,23 @@ const Settings = ({ darkMode, toggleDarkMode }) => {
     theme: darkMode ? "dark" : "light",
   });
   // loading: initial fetch loading state
-  const [loading, setLoading] = useState(false);
-  const [initialLoaded, setInitialLoaded] = useState(false);
+  // use global loading from store instead of local manual fetch loading
+  const settingsLoading = useSelector((s) => s.user.settingsLoading);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState(null);
   const saveTimeoutRef = useRef(null);
   // Kullanıcı token'ı alınmalı (örnek: localStorage'dan)
   const token = localStorage.getItem("token");
-  // Fetch current settings once
+
+  // Fetch current settings once through thunk
   useEffect(() => {
-    let active = true;
-    (async () => {
-      if (!token) {
-        setInitialLoaded(true);
-        return;
-      }
-      setLoading(true);
-      try {
-        const res = await apiRequest("settings-get", { method: "GET", token });
-        if (!active) return;
-        const merged = { ...settings, ...(res.settings || {}) };
+    if (!token) {
+      return;
+    }
+    dispatch(fetchSettings(token))
+      .unwrap()
+      .then((serverSettings) => {
+        const merged = { ...settings, ...(serverSettings || {}) };
         setSettings(merged);
         dispatch(
           updatePreferences({
@@ -57,21 +57,10 @@ const Settings = ({ darkMode, toggleDarkMode }) => {
             theme: merged.theme,
           })
         );
-      } catch (e) {
-        if (active) setError(e.message);
-      } finally {
-        if (active) {
-          setLoading(false);
-          setInitialLoaded(true);
-        }
-      }
-    })();
-    return () => {
-      active = false;
-    };
+      })
+      .catch((e) => setError(e.error || e.message));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
+  }, [token]);
   // Debounced save
   const queueSave = useCallback(
     (next) => {
@@ -82,16 +71,14 @@ const Settings = ({ darkMode, toggleDarkMode }) => {
         if (!token) return;
         setSaving(true);
         try {
-          const res = await apiRequest("settings-update", {
-            method: "POST",
-            data: next,
-            token,
-          });
+          const updated = await dispatch(
+            updateSettingsThunk({ token, settings: next })
+          ).unwrap();
           dispatch(
             updatePreferences({
-              language: res.settings.language,
-              notifications: res.settings.notifications,
-              theme: res.settings.theme,
+              language: updated.language,
+              notifications: updated.notifications,
+              theme: updated.theme,
             })
           );
         } catch (e) {
@@ -146,7 +133,7 @@ const Settings = ({ darkMode, toggleDarkMode }) => {
           <div className="settings-card__row">
             <div className="settings-card__info">
               <div className="settings-card__icon">
-                {darkMode ? <HiMoon /> : <HiSun />}
+                {darkMode ? <DarkModeIcon /> : <LightModeIcon />}
               </div>
               <div>
                 <div className="settings-card__title">Tema</div>
@@ -173,7 +160,7 @@ const Settings = ({ darkMode, toggleDarkMode }) => {
           <div className="settings-card__row">
             <div className="settings-card__info">
               <div className="settings-card__icon">
-                <HiTranslate />
+                <TranslateIcon />
               </div>
               <div>
                 <div className="settings-card__title">Dil</div>
@@ -185,7 +172,7 @@ const Settings = ({ darkMode, toggleDarkMode }) => {
               onChange={(e) =>
                 queueSave({ ...settings, language: e.target.value })
               }
-              disabled={loading}
+              disabled={settingsLoading}
               style={{ maxWidth: "140px" }}
             >
               <option value="tr">Türkçe</option>
@@ -197,7 +184,7 @@ const Settings = ({ darkMode, toggleDarkMode }) => {
           <div className="settings-card__row">
             <div className="settings-card__info">
               <div className="settings-card__icon">
-                <HiBell />
+                <NotificationsIcon />
               </div>
               <div>
                 <div className="settings-card__title">Bildirimler</div>
@@ -231,7 +218,7 @@ const Settings = ({ darkMode, toggleDarkMode }) => {
           <div className="settings-card__row">
             <div className="settings-card__info">
               <div className="settings-card__icon">
-                <HiVolumeUp />
+                <VolumeIcon />
               </div>
               <div>
                 <div className="settings-card__title">Ses Efektleri</div>
@@ -266,7 +253,7 @@ const Settings = ({ darkMode, toggleDarkMode }) => {
         >
           <div className="settings-card__info">
             <div className="settings-card__icon">
-              <HiRefresh />
+              <RefreshIcon />
             </div>
             <div>
               <div className="settings-card__title">
@@ -296,7 +283,7 @@ const Settings = ({ darkMode, toggleDarkMode }) => {
               className="settings-card__icon"
               style={{ background: "rgba(255,55,95,0.18)", color: "#ff375f" }}
             >
-              <HiTrash />
+              <TrashIcon />
             </div>
             <div>
               <div
@@ -324,7 +311,7 @@ const Settings = ({ darkMode, toggleDarkMode }) => {
           )}
           <div className="settings-card__info">
             <div className="settings-card__icon">
-              <HiInformationCircle />
+              <InfoIcon />
             </div>
             <div>
               <div className="settings-card__title">English Quiz Master</div>

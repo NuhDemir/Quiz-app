@@ -157,6 +157,14 @@ const Progress = ({ userId: propUserId = "guest-user" }) => {
     return null;
   }
 
+  const totalSessionCount = Array.isArray(progress.recentSessions)
+    ? progress.recentSessions.length
+    : 0;
+  const recentSessions = Array.isArray(progress.recentSessions)
+    ? progress.recentSessions.slice(0, 4)
+    : [];
+  const visibleSessionCount = recentSessions.length;
+
   return (
     <section
       ref={containerRef}
@@ -196,12 +204,15 @@ const Progress = ({ userId: propUserId = "guest-user" }) => {
         <div className="progress-card__sessions-header">
           <h3>Son oturumlar</h3>
           <span className="text-secondary">
-            {progress.recentSessions?.length || 0} kayıt
+            {visibleSessionCount} kayıt
+            {totalSessionCount > visibleSessionCount
+              ? ` / ${totalSessionCount}`
+              : ""}
           </span>
         </div>
-        {progress.recentSessions?.length ? (
+        {recentSessions.length ? (
           <ul ref={listRef} className="progress-card__session-list">
-            {progress.recentSessions.slice(0, 5).map((session, index) => (
+            {recentSessions.map((session, index) => (
               <SessionItem
                 key={`${session.quizId || index}-${session.takenAt || index}`}
                 session={session}

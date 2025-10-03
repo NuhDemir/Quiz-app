@@ -1,416 +1,499 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useMemo } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
-import {
-  Box,
-  Typography,
-  Card,
-  CardContent,
-  Grid,
-  IconButton,
-  LinearProgress,
-  Chip,
-  Stack,
-  Button,
-} from "@mui/material";
-import {
-  ArrowBackIosNewRounded,
-  AutoAwesomeRounded,
-  ChevronRightRounded,
-} from "@mui/icons-material";
-import { styled } from "@mui/material/styles";
-import useGsapAnimations from "../hooks/useGsapAnimations";
 import categories from "../data/categories.json";
 import levels from "../data/levels.json";
+import { fetchQuizList } from "../store/quizSlice";
+import { fetchProgress } from "../store/userSlice";
+import {
+  LibraryBooksIcon,
+  ExploreIcon,
+  VerifiedIcon,
+  BoltIcon,
+  CalculateIcon,
+  TargetIcon,
+  ProgressIcon,
+  SpellcheckIcon,
+  TextFieldsIcon,
+  MenuBookIcon,
+  AccountTreeIcon,
+  EmojiObjectsIcon,
+  LooksOneIcon,
+  LooksTwoIcon,
+  Looks3Icon,
+  Looks4Icon,
+  Looks5Icon,
+  Looks6Icon,
+} from "../components/icons";
 
-const PageContainer = styled(Box)(({ theme }) => ({
-  minHeight: "100vh",
-  backgroundColor: theme.palette.mode === "dark" ? "#0b0d15" : "#f5f5f7",
-  padding: theme.spacing(5, 3, 12),
-  transition: "background-color 0.3s ease",
-}));
+const categoryIconMap = {
+  Spellcheck: SpellcheckIcon,
+  TextFields: TextFieldsIcon,
+  MenuBook: MenuBookIcon,
+  AccountTree: AccountTreeIcon,
+  EmojiObjects: EmojiObjectsIcon,
+};
 
-const ContentWrapper = styled(Box)(() => ({
-  maxWidth: 960,
-  margin: "0 auto",
-  width: "100%",
-}));
+const levelIconMap = {
+  A1: LooksOneIcon,
+  A2: LooksTwoIcon,
+  B1: Looks3Icon,
+  B2: Looks4Icon,
+  C1: Looks5Icon,
+  C2: Looks6Icon,
+};
 
-const SurfaceCard = styled(Card)(({ theme }) => ({
-  borderRadius: 22,
-  backgroundColor:
-    theme.palette.mode === "dark" ? "rgba(15, 23, 42, 0.75)" : "#ffffff",
-  border: `1px solid ${
-    theme.palette.mode === "dark"
-      ? "rgba(255,255,255,0.08)"
-      : "rgba(15,23,42,0.05)"
-  }`,
-  boxShadow:
-    theme.palette.mode === "dark"
-      ? "0 32px 60px rgba(0, 0, 0, 0.45)"
-      : "0 32px 80px rgba(15, 23, 42, 0.08)",
-  backdropFilter: theme.palette.mode === "dark" ? "blur(18px)" : "none",
-  transition: "transform 0.3s ease, box-shadow 0.3s ease",
-}));
-
-const CategoryCard = styled(SurfaceCard)(({ theme }) => ({
-  cursor: "pointer",
-  "&:hover": {
-    transform: "translateY(-6px)",
-    boxShadow:
-      theme.palette.mode === "dark"
-        ? "0 30px 60px rgba(0, 0, 0, 0.4)"
-        : "0 36px 70px rgba(15, 23, 42, 0.12)",
-  },
-}));
-
-const LevelCard = styled(SurfaceCard)(({ theme }) => ({
-  textAlign: "center",
-  padding: theme.spacing(2.5),
-}));
-
-const SectionHeading = styled(Typography)(({ theme }) => ({
-  fontFamily: "Lexend, sans-serif",
-  fontWeight: 600,
-  color: theme.palette.mode === "dark" ? "#f5f5f7" : "#1f2937",
-}));
+// Helper to derive recommendation (least attempted or lowest accuracy)
+function deriveRecommendation(progress, localStats) {
+  const catStats = progress?.categoryStats || localStats?.categoryStats || {};
+  let best = null;
+  Object.keys(catStats).forEach((k) => {
+    const acc = catStats[k]?.accuracy ?? 0;
+    if (!best || acc < best.acc) best = { id: k, acc };
+  });
+  if (best) return best.id;
+  // fallback first category id
+  return categories[0]?.id;
+}
 
 const Categories = () => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { stats } = useSelector((state) => state.user);
-  const headerRef = useRef();
-  const categoriesRef = useRef();
-  const levelsRef = useRef();
-  const { slideUp, staggerList } = useGsapAnimations();
+  const { list, listLoading, listError, listLoaded } = useSelector(
+    (s) => s.quiz
+  );
+  const { progress, stats } = useSelector((s) => s.user);
+  const { user } = useSelector((s) => s.auth);
+
+  // Fetch quizzes & progress on mount
+  useEffect(() => {
+    if (!listLoaded && !listLoading) {
+      dispatch(fetchQuizList());
+    }
+  }, [dispatch, listLoaded, listLoading]);
 
   useEffect(() => {
-    const headerAnimation = slideUp(headerRef.current, {
-      offset: 30,
-      duration: 0.8,
-      ease: "power3.out",
-    });
+    if (user && !progress) {
+      dispatch(fetchProgress({ userId: user._id || user.id }));
+    }
+  }, [dispatch, user, progress]);
 
-    const categoryAnimation = staggerList(
-      categoriesRef.current?.children || [],
+  const recommendation = useMemo(
+    () => deriveRecommendation(progress, stats),
+    [progress, stats]
+  );
+
+  // Build category progress metrics merging server progress & local stats
+  const categoryProgress = useMemo(() => {
+    // Prefer server-provided categoryStats (already normalized in progress endpoint)
+    if (progress?.categoryStats && Object.keys(progress.categoryStats).length) {
+      const serverMap = {};
+      Object.entries(progress.categoryStats).forEach(([id, v]) => {
+        serverMap[id] = {
+          accuracy: v.accuracy ?? 0,
+          attempts: v.attempts ?? 0,
+          correct: v.correct ?? 0,
+        };
+      });
+      return serverMap;
+    }
+    // Fallback to locally accumulated stats
+    const localMap = {};
+    Object.entries(stats.categoryStats || {}).forEach(([id, v]) => {
+      localMap[id] = {
+        accuracy: v.accuracy || 0,
+        attempts: v.totalQuestions
+          ? Math.max(1, Math.round(v.totalQuestions / 10))
+          : 0,
+        correct: v.correctAnswers || 0,
+      };
+    });
+    return localMap;
+  }, [stats, progress]);
+
+  // Build quiz count per category & first quiz mapping
+  const quizCategoryIndex = useMemo(() => {
+    const counts = {};
+    const firstQuiz = {};
+    list.forEach((q) => {
+      const cat = q.category || "general";
+      if (!counts[cat]) counts[cat] = 0;
+      counts[cat] += 1;
+      if (!firstQuiz[cat]) firstQuiz[cat] = q; // keep first encountered
+    });
+    return { counts, firstQuiz };
+  }, [list]);
+
+  const summaryCards = useMemo(() => {
+    const totalQuizzes =
+      progress?.totalQuizzes ??
+      Object.values(categoryProgress).reduce(
+        (acc, item) => acc + (item?.attempts || 0),
+        0
+      );
+    const accuracyValue = progress?.accuracy ?? stats.accuracy ?? 0;
+    const streakValue = progress?.streak ?? stats.streak ?? 0;
+    const correctAnswers = stats.correctAnswers || 0;
+    const cards = [
       {
-        offset: 20,
-        duration: 0.6,
-        stagger: 0.1,
-        ease: "power3.out",
-      }
-    );
+        label: "Çözülen quiz",
+        value: totalQuizzes,
+        hint: "Tamamladığınız oturum sayısı",
+      },
+      {
+        label: "Ortalama doğruluk",
+        value: `%${Math.round(accuracyValue)}`,
+        hint: "Tüm kategorilerdeki başarı oranınız",
+      },
+      {
+        label: "Seri",
+        value: streakValue,
+        hint: "Art arda başarılı gün sayısı",
+      },
+    ];
+    if (correctAnswers > 0) {
+      cards.push({
+        label: "Doğru cevap",
+        value: correctAnswers,
+        hint: "Toplam doğru yanıt sayınız",
+      });
+    }
+    return cards;
+  }, [progress, stats, categoryProgress]);
 
-    const levelAnimation = staggerList(levelsRef.current?.children || [], {
-      from: { scale: 0.92 },
-      to: { scale: 1 },
-      duration: 0.5,
-      stagger: 0.1,
-      ease: "power3.out",
-    });
+  const focusCategories = useMemo(() => {
+    const entries = Object.entries(categoryProgress);
+    if (!entries.length) return [];
+    return entries
+      .sort((a, b) => (a[1].accuracy ?? 101) - (b[1].accuracy ?? 101))
+      .slice(0, 3)
+      .map(([id, value]) => ({
+        id,
+        label: categories.find((cat) => cat.id === id)?.nameTr || id,
+        accuracy: value.accuracy ?? 0,
+      }));
+  }, [categoryProgress]);
 
-    return () => {
-      headerAnimation?.kill?.();
-      categoryAnimation?.kill?.();
-      levelAnimation?.kill?.();
-    };
-  }, [slideUp, staggerList]);
+  const recommendedCategory = useMemo(
+    () => categories.find((cat) => cat.id === recommendation),
+    [recommendation]
+  );
+  const recommendedAccuracy =
+    categoryProgress[recommendation]?.accuracy ?? null;
+  const recommendedQuizCount = quizCategoryIndex.counts[recommendation] || 0;
 
-  const handleCategorySelect = (categoryId) => {
-    navigate(`/quiz/${categoryId}`);
-  };
-
-  const getCategoryProgress = (categoryId) => {
-    return stats.categoryStats?.[categoryId]?.accuracy || 0;
+  const handleCategoryClick = (id) => {
+    const catMeta = categories.find((cat) => cat.id === id);
+    if (catMeta?.pagePath) {
+      navigate(catMeta.pagePath);
+      return;
+    }
+    const direct = quizCategoryIndex.firstQuiz[id];
+    if (direct) {
+      navigate(`/quiz/${direct._id || direct.id || direct.slug}`);
+      return;
+    }
+    // Fallback old logic: any quiz whose slug or _id equals id
+    const quiz = list.find((q) => q.slug === id || q._id === id || q.id === id);
+    if (quiz) {
+      navigate(`/quiz/${quiz._id || quiz.id || quiz.slug}`);
+    } else {
+      navigate(`/quiz/${id}`);
+    }
   };
 
   return (
-    <PageContainer>
-      <ContentWrapper>
-        <SurfaceCard elevation={0} sx={{ mb: 5 }}>
-          <CardContent ref={headerRef} sx={{ p: { xs: 3, md: 4 } }}>
-            <Stack
-              direction="row"
-              justifyContent="space-between"
-              alignItems="flex-start"
-              spacing={2}
+    <div className="categories-page layout-wrapper">
+      <section className="surface-card card-content categories-header">
+        <div className="categories-header__top">
+          <div className="categories-header__info">
+            <span className="chip chip--accent">Çalışma rehberi</span>
+            <h1 className="categories-header__title">
+              Hangi beceriyi geliştirmek istersiniz?
+            </h1>
+            <p className="categories-header__subtitle">
+              Quiz uygulamamız, her kategoriyi Türkçe açıklamalarla ve günlük
+              konuşmalarla destekler. Aşağıda güçlü ve gelişmeye açık
+              konularınızı özet halinde görebilir, tek dokunuşla yeni bir
+              quiz&apos;e başlayabilirsiniz.
+            </p>
+            <div className="category-chip-row">
+              <span className="category-chip">
+                <span className="category-chip__icon" aria-hidden="true">
+                  <LibraryBooksIcon fontSize="inherit" />
+                </span>
+                Toplam {categories.length} kategori
+              </span>
+              <span className="category-chip">
+                <span className="category-chip__icon" aria-hidden="true">
+                  <ExploreIcon fontSize="inherit" />
+                </span>
+                Akıllı öneri: {recommendedCategory?.nameTr || recommendation}
+              </span>
+              <span className="category-chip">
+                <span className="category-chip__icon" aria-hidden="true">
+                  <VerifiedIcon fontSize="inherit" />
+                </span>
+                Ortalama doğruluk %
+                {Math.round(progress?.accuracy ?? stats.accuracy ?? 0)}
+              </span>
+            </div>
+          </div>
+          <div className="categories-header__highlight">
+            <span className="categories-header__badge">
+              <span>✨</span> Önerilen adım
+            </span>
+            <div className="categories-header__highlight-title">
+              {recommendedCategory?.nameTr || "Yeni bir kategori seçin"}
+            </div>
+            <p className="categories-header__highlight-description">
+              {recommendedCategory ? (
+                <>
+                  Bu kategoride başarı oranınız %
+                  {Math.round(recommendedAccuracy ?? 0)}.{" "}
+                  {recommendedQuizCount > 0
+                    ? `Hazır ${recommendedQuizCount} quiz sizi bekliyor.`
+                    : "Hazırlanan quizler yakında eklenecek."}
+                </>
+              ) : (
+                "Hazırladığımız kategorilerden biriyle başlayarak kişisel planınızı oluşturabilirsiniz."
+              )}
+            </p>
+            <button
+              className="primary-button"
+              onClick={() =>
+                handleCategoryClick(recommendedCategory?.id || "grammar")
+              }
             >
-              <Box>
-                <SectionHeading variant="h4" sx={{ fontWeight: 700 }}>
-                  Kategoriler
-                </SectionHeading>
-                <Typography
-                  variant="body1"
-                  sx={{
-                    mt: 1,
-                    color: "rgba(55,65,81,0.65)",
-                    fontFamily: "Lexend, sans-serif",
-                    ...(stats?.totalQuizzes && stats.totalQuizzes > 0
-                      ? { display: "block" }
-                      : {}),
-                  }}
-                >
-                  Kendinize uygun kategori ile çalışmaya başlayın.
-                </Typography>
-              </Box>
-              <IconButton
-                onClick={() => navigate("/")}
-                sx={{
-                  width: 48,
-                  height: 48,
-                  borderRadius: "50%",
-                  backgroundColor: "#f1f2f6",
-                  color: "#1f2937",
-                  "&:hover": { backgroundColor: "#e5e7eb" },
-                }}
-              >
-                <ArrowBackIosNewRounded fontSize="small" />
-              </IconButton>
-            </Stack>
+              Şimdi başla
+            </button>
+            <button
+              className="secondary-button"
+              onClick={() => navigate("/leaderboard")}
+            >
+              İlerlememi gör
+            </button>
+          </div>
+        </div>
+        <ul className="categories-header__list">
+          <li>
+            Her quiz sorusu, Türkçe açıklamalar ve ipuçlarıyla desteklenir.
+          </li>
+          <li>
+            Kategoriler seviyeye göre gruplanır; dil becerilerinizi adım adım
+            geliştirirsiniz.
+          </li>
+          <li>
+            İlerlemeniz otomatik kaydedilir; kaldığınız yerden devam etmek
+            sadece bir dokunuş.
+          </li>
+        </ul>
+        {listError && (
+          <div className="text-sm text-red-500 mt-4">Hata: {listError}</div>
+        )}
+      </section>
 
-            <Stack direction="row" spacing={1.5} sx={{ mt: 3 }}>
-              <Chip
-                icon={<AutoAwesomeRounded fontSize="small" />}
-                label="Önerilen"
-                sx={{
-                  borderRadius: 3,
-                  backgroundColor: "rgba(0,119,255,0.08)",
-                  color: "#0077FF",
-                  fontWeight: 600,
-                  fontFamily: "Lexend, sans-serif",
-                  paddingX: 1,
-                }}
+      <section className="categories-section">
+        <h2 className="section-heading">İlerlemenizin özeti</h2>
+        <div className="category-summary-grid">
+          {summaryCards.map((card) => (
+            <div
+              key={card.label}
+              className="surface-card category-summary-card"
+            >
+              <span className="category-summary-card__label">{card.label}</span>
+              <span className="category-summary-card__value">{card.value}</span>
+              <span className="category-summary-card__hint">{card.hint}</span>
+            </div>
+          ))}
+        </div>
+        {focusCategories.length > 0 && (
+          <div>
+            <p className="text-sm text-secondary mt-3 mb-2">
+              Daha fazla pratik önerdiğimiz kategoriler:
+            </p>
+            <div className="category-chip-row">
+              {focusCategories.map((item) => (
+                <span key={item.id} className="category-chip">
+                  <span className="category-chip__icon" aria-hidden="true">
+                    <BoltIcon fontSize="inherit" />
+                  </span>
+                  {item.label} · %{Math.round(item.accuracy)} başarı
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+      </section>
+
+      <section className="categories-section">
+        <div className="flex-between">
+          <h2 className="section-heading">Kategorileri keşfedin</h2>
+          <span className="text-secondary text-sm">
+            {categories.length} kategori · {list.length} quiz
+          </span>
+        </div>
+        {listLoading ? (
+          <div className="category-grid">
+            {Array.from({ length: 4 }).map((_, idx) => (
+              <div
+                key={`skeleton-${idx}`}
+                className="surface-card card-content skeleton skeleton--card"
               />
-              <Chip
-                label={`Toplam ${categories.length} kategori`}
-                sx={{
-                  borderRadius: 3,
-                  backgroundColor: "rgba(15,23,42,0.05)",
-                  color: "rgba(17,24,39,0.7)",
-                  fontFamily: "Lexend, sans-serif",
-                }}
-              />
-            </Stack>
-          </CardContent>
-        </SurfaceCard>
-
-        <Box sx={{ mb: 6 }}>
-          <SectionHeading variant="h6" sx={{ mb: 3 }}>
-            Tüm kategoriler
-          </SectionHeading>
-          <Grid container spacing={2.5} ref={categoriesRef}>
-            {categories.map((category) => {
-              const progress = getCategoryProgress(category.id);
-
-              return (
-                <Grid item xs={12} md={6} key={category.id}>
-                  <CategoryCard
-                    elevation={0}
-                    onClick={() => handleCategorySelect(category.id)}
+            ))}
+          </div>
+        ) : (
+          <>
+            <div className="category-grid">
+              {categories.map((cat) => {
+                const prog = categoryProgress[cat.id]?.accuracy || 0;
+                const quizCount = quizCategoryIndex.counts[cat.id] || 0;
+                const CategoryIcon =
+                  categoryIconMap[cat.icon] || LibraryBooksIcon;
+                return (
+                  <button
+                    key={cat.id}
+                    onClick={() => handleCategoryClick(cat.id)}
+                    className="category-card surface-card card-content"
                   >
-                    <CardContent sx={{ p: { xs: 3, md: 3.5 } }}>
-                      <Stack direction="row" alignItems="center" spacing={2.5}>
-                        <Box
-                          sx={{
-                            width: 72,
-                            height: 72,
-                            borderRadius: 20,
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            fontSize: 32,
-                            backgroundColor: `${category.color}15`,
-                          }}
+                    <div className="category-card__top">
+                      <span
+                        className="category-card__icon"
+                        style={{
+                          background: `${cat.color}18`,
+                          color: cat.color,
+                        }}
+                        aria-hidden="true"
+                      >
+                        <CategoryIcon fontSize="inherit" />
+                      </span>
+                      <div className="category-card__body">
+                        <div
+                          className="flex-between"
+                          style={{ alignItems: "flex-start" }}
                         >
-                          {category.icon}
-                        </Box>
-                        <Stack flex={1} spacing={1}>
-                          <Typography
-                            variant="h6"
-                            sx={{
-                              fontFamily: "Lexend, sans-serif",
-                              fontWeight: 600,
-                              color: "#1f2937",
-                            }}
-                          >
-                            {category.nameTr}
-                          </Typography>
-                          <Typography
-                            variant="body2"
-                            sx={{ color: "rgba(55,65,81,0.6)" }}
-                          >
-                            {category.descriptionTr}
-                          </Typography>
-                          <Stack
-                            direction="row"
-                            spacing={1}
-                            alignItems="center"
-                          >
-                            <Chip
-                              label={`${category.totalQuestions} soru`}
-                              size="small"
-                              sx={{
-                                backgroundColor: "rgba(15,23,42,0.05)",
-                                color: "rgba(17,24,39,0.7)",
-                                borderRadius: 2,
-                                fontFamily: "Lexend, sans-serif",
+                          <h3 className="category-card__title">{cat.nameTr}</h3>
+                          <span className="category-card__meta">
+                            <span>
+                              <span
+                                className="category-chip__icon"
+                                aria-hidden="true"
+                              >
+                                <CalculateIcon fontSize="inherit" />
+                              </span>
+                              {quizCount} quiz
+                            </span>
+                          </span>
+                        </div>
+                        <p className="category-card__description">
+                          {cat.descriptionTr}
+                        </p>
+                        <div className="category-card__meta">
+                          <span>
+                            <span
+                              className="category-chip__icon"
+                              aria-hidden="true"
+                            >
+                              <TargetIcon fontSize="inherit" />
+                            </span>
+                            %{Math.round(prog)} başarı
+                          </span>
+                          <span>
+                            <span
+                              className="category-chip__icon"
+                              aria-hidden="true"
+                            >
+                              <ProgressIcon fontSize="inherit" />
+                            </span>
+                            {categoryProgress[cat.id]?.attempts || 0} deneme
+                          </span>
+                          {recommendation === cat.id && (
+                            <span className="category-card__badge">
+                              Önerilen
+                            </span>
+                          )}
+                        </div>
+                        <div className="category-card__progress">
+                          <div className="h-2 w-full rounded-full bg-black/10 dark:bg-white/10 overflow-hidden">
+                            <div
+                              className="h-full rounded-full bg-primary transition-all duration-500"
+                              style={{
+                                width: `${Math.min(100, Math.round(prog))}%`,
                               }}
                             />
-                            {progress > 0 && (
-                              <Chip
-                                label={`%${Math.round(progress)} tamamlandı`}
-                                size="small"
-                                sx={{
-                                  backgroundColor: `${category.color}15`,
-                                  color: category.color,
-                                  borderRadius: 2,
-                                  fontWeight: 600,
-                                  fontFamily: "Lexend, sans-serif",
-                                }}
-                              />
-                            )}
-                          </Stack>
-                        </Stack>
-                        <ChevronRightRounded
-                          sx={{ color: "rgba(55,65,81,0.4)" }}
-                        />
-                      </Stack>
+                          </div>
+                          <div className="category-card__progress-value">
+                            %{Math.round(prog)} tamamlandı
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span className="category-card__arrow" aria-hidden="true">
+                      ›
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+            {!categories.length && (
+              <div className="category-empty-state">
+                Kategoriler yüklenirken bir sorun oluştu. Lütfen daha sonra
+                tekrar deneyin.
+              </div>
+            )}
+          </>
+        )}
+      </section>
 
-                      <Box sx={{ mt: 3 }}>
-                        <LinearProgress
-                          variant="determinate"
-                          value={progress}
-                          sx={{
-                            height: 8,
-                            borderRadius: 4,
-                            backgroundColor: "rgba(15,23,42,0.08)",
-                            "& .MuiLinearProgress-bar": {
-                              borderRadius: 4,
-                              backgroundColor: category.color,
-                            },
-                          }}
-                        />
-                      </Box>
-                    </CardContent>
-                  </CategoryCard>
-                </Grid>
-              );
-            })}
-          </Grid>
-        </Box>
-
-        <SectionHeading variant="h6" sx={{ mb: 3 }}>
-          Zorluk seviyeleri
-        </SectionHeading>
-        <Grid container spacing={2.5} ref={levelsRef}>
-          {levels.map((level) => (
-            <Grid item xs={6} md={3} key={level.id}>
-              <LevelCard elevation={0}>
-                <Stack spacing={1.5} alignItems="center">
-                  <Box
-                    sx={{
-                      width: 56,
-                      height: 56,
-                      borderRadius: 16,
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      fontSize: 26,
-                      backgroundColor: `${level.color}18`,
-                      color: level.color,
-                    }}
-                  >
-                    {level.icon || "🎯"}
-                  </Box>
-                  <Typography
-                    variant="subtitle2"
-                    sx={{ fontWeight: 600, color: "#1f2937" }}
-                  >
-                    {level.id}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{
-                      color: "rgba(55,65,81,0.6)",
-                      fontFamily: "Lexend, sans-serif",
-                    }}
-                  >
-                    {level.nameTr}
-                  </Typography>
-                  <Typography
-                    variant="caption"
-                    sx={{ color: "rgba(55,65,81,0.5)" }}
-                  >
-                    {level.descriptionTr}
-                  </Typography>
-                </Stack>
-              </LevelCard>
-            </Grid>
-          ))}
-        </Grid>
-
-        <SurfaceCard elevation={0} sx={{ mt: 6 }}>
-          <CardContent sx={{ p: { xs: 3, md: 4 } }}>
-            <Stack
-              direction={{ xs: "column", sm: "row" }}
-              spacing={2.5}
-              alignItems="center"
-              justifyContent="space-between"
-            >
-              <Box>
-                <SectionHeading variant="h6">
-                  Nasıl ilerlemek istersiniz?
-                </SectionHeading>
-                <Typography
-                  variant="body2"
-                  sx={{ color: "rgba(55,65,81,0.6)", mt: 0.5 }}
+      <section className="categories-section">
+        <h2 className="section-heading">Zorluk seviyeleri</h2>
+        <div className="level-grid">
+          {levels.map((lvl) => {
+            const LevelIcon = levelIconMap[lvl.id] || TargetIcon;
+            return (
+              <div key={lvl.id} className="surface-card level-card">
+                <span
+                  className="level-card__icon"
+                  style={{ background: `${lvl.color}18`, color: lvl.color }}
                 >
-                  Tekrar etmek veya yeni konular keşfetmek için kategorinizi
-                  seçin.
-                </Typography>
-              </Box>
-              <Stack
-                direction={{ xs: "column", sm: "row" }}
-                spacing={1.5}
-                width={{ xs: "100%", sm: "auto" }}
-              >
-                <Button
-                  variant="contained"
-                  onClick={() => navigate("/quiz/grammar")}
-                  sx={{
-                    backgroundColor: "#0077FF",
-                    borderRadius: 3,
-                    paddingX: 3,
-                    fontFamily: "Lexend, sans-serif",
-                    textTransform: "none",
-                    "&:hover": { backgroundColor: "#0061cc" },
-                  }}
-                >
-                  En popüler quiz
-                </Button>
-                <Button
-                  variant="outlined"
-                  onClick={() => navigate("/")}
-                  sx={{
-                    borderRadius: 3,
-                    paddingX: 3,
-                    borderColor: "rgba(15,23,42,0.15)",
-                    color: "#1f2937",
-                    fontFamily: "Lexend, sans-serif",
-                    textTransform: "none",
-                    "&:hover": {
-                      borderColor: "rgba(15,23,42,0.25)",
-                      backgroundColor: "rgba(15,23,42,0.04)",
-                    },
-                  }}
-                >
-                  Ana sayfaya dön
-                </Button>
-              </Stack>
-            </Stack>
-          </CardContent>
-        </SurfaceCard>
-      </ContentWrapper>
-    </PageContainer>
+                  <LevelIcon fontSize="inherit" />
+                </span>
+                <strong>{lvl.id}</strong>
+                <p className="text-secondary" style={{ fontSize: "0.85rem" }}>
+                  {lvl.nameTr}
+                </p>
+                <p className="text-secondary" style={{ fontSize: "0.75rem" }}>
+                  {lvl.descriptionTr}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      <section className="surface-card card-content categories-cta">
+        <div>
+          <h3 className="font-semibold">Hazırsanız başlayalım</h3>
+          <p className="text-secondary mt-2">
+            Türkçe anlatımlı quizlerimizle hedefiniz ne olursa olsun adım adım
+            ilerleyebilirsiniz. Önerilen kategoriyi seçin veya listeden yeni bir
+            konu belirleyin.
+          </p>
+        </div>
+        <div className="categories-cta__actions">
+          <button
+            className="primary-button"
+            onClick={() =>
+              handleCategoryClick(recommendedCategory?.id || "grammar")
+            }
+          >
+            Önerilen quize başla
+          </button>
+          <button className="secondary-button" onClick={() => navigate("/")}>
+            Ana sayfaya dön
+          </button>
+        </div>
+      </section>
+    </div>
   );
 };
 

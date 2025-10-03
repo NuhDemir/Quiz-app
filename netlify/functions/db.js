@@ -32,9 +32,11 @@ async function connectDB() {
   const uri = process.env.MONGODB_URI;
 
   if (!uri) {
-    throw new Error(
+    const error = new Error(
       "MONGODB_URI tanımlı değil. .env dosyasına MONGODB_URI ekleyin veya Netlify ortam değişkenini ayarlayın"
     );
+    error.statusCode = 500;
+    throw error;
   }
 
   const started = Date.now();
@@ -62,7 +64,10 @@ async function connectDB() {
     .catch((err) => {
       if (debug) console.error("[db] Connection failed", err);
       cachedConnection = null;
-      throw new Error(formatMongooseError(err));
+      const formatted = formatMongooseError(err);
+      const error = new Error(formatted);
+      error.statusCode = err.statusCode || 503;
+      throw error;
     })
     .finally(() => {
       connectingPromise = null;
