@@ -65,6 +65,12 @@ const Categories = () => {
   const { progress, stats } = useSelector((s) => s.user);
   const { user } = useSelector((s) => s.auth);
 
+  const quizList = useMemo(() => {
+    if (Array.isArray(list)) return list;
+    if (list && Array.isArray(list.items)) return list.items;
+    return [];
+  }, [list]);
+
   // Fetch quizzes & progress on mount
   useEffect(() => {
     if (!listLoaded && !listLoading) {
@@ -115,14 +121,14 @@ const Categories = () => {
   const quizCategoryIndex = useMemo(() => {
     const counts = {};
     const firstQuiz = {};
-    list.forEach((q) => {
+    quizList.forEach((q) => {
       const cat = q.category || "general";
       if (!counts[cat]) counts[cat] = 0;
       counts[cat] += 1;
       if (!firstQuiz[cat]) firstQuiz[cat] = q; // keep first encountered
     });
     return { counts, firstQuiz };
-  }, [list]);
+  }, [quizList]);
 
   const summaryCards = useMemo(() => {
     const totalQuizzes =
@@ -194,7 +200,9 @@ const Categories = () => {
       return;
     }
     // Fallback old logic: any quiz whose slug or _id equals id
-    const quiz = list.find((q) => q.slug === id || q._id === id || q.id === id);
+    const quiz = quizList.find(
+      (q) => q.slug === id || q._id === id || q.id === id
+    );
     if (quiz) {
       navigate(`/quiz/${quiz._id || quiz.id || quiz.slug}`);
     } else {
@@ -330,7 +338,7 @@ const Categories = () => {
         <div className="flex-between">
           <h2 className="section-heading">Kategorileri keşfedin</h2>
           <span className="text-secondary text-sm">
-            {categories.length} kategori · {list.length} quiz
+            {categories.length} kategori · {quizList.length} quiz
           </span>
         </div>
         {listLoading ? (

@@ -1,0 +1,40 @@
+{
+  "quiz": {
+    "title": "Verb Tenses Practice",
+    "slug": "verb-tenses-practice",
+    "description": "Master the most common English verb tenses with focused practice.",
+    "category": "grammar",
+    "level": "B1",
+    "difficulty": "medium",
+    "tags": [
+      "verb",
+      "tenses",
+      "grammar"
+    ],
+    "timeLimitSec": 900,
+    "isPublished": false
+  },
+  "questions": [
+    {
+      "prompt": "Which tense best completes the sentence? 'She ____ to the gym every morning.'",
+      "options": [
+        "go",
+        "goes",
+        "is going",
+        "has gone"
+      ],
+      "correctAnswer": "goes",
+      "explanation": "For routines we use the present simple tense.",
+      "hint": "Think about habitual actions.",
+      "points": 10,
+      "media": {
+        "type": "image",
+        "url": "https://example.com/gym.jpg",
+        "caption": "Morning gym routine"
+      },
+      "tags": [
+        "present simple"
+      ]
+    }
+  ]
+}

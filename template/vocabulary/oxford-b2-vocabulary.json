@@ -1,0 +1,218 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "B2",
+    "difficulty": "medium",
+    "status": "draft",
+    "tags": ["vocabulary", "oxford", "b2"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Oxford B2 Vocabulary",
+      "slug": "oxford-b2",
+      "description": "Upper-intermediate vocabulary from Oxford B2 word list.",
+      "level": "B2",
+      "color": "#8b5cf6",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "abandon",
+      "translation": "terk etmek",
+      "definition": "To leave someone or something completely.",
+      "notes": "Often implies giving up on something permanently.",
+      "examples": ["They had to abandon the project.", "Don't abandon your dreams."],
+      "tags": ["verb", "leaving"],
+      "level": "B2",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b2"},
+      "subcategories": [{"slug": "actions"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "abstract",
+      "translation": "soyut",
+      "definition": "Existing as an idea rather than a physical thing.",
+      "notes": "Opposite of concrete or tangible.",
+      "examples": ["Love is an abstract concept.", "Abstract art is difficult to understand."],
+      "tags": ["adjective", "concepts"],
+      "level": "B2",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b2"},
+      "subcategories": [{"slug": "concepts"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "abuse",
+      "translation": "kötüye kullanmak",
+      "definition": "To use something in a wrong or harmful way.",
+      "notes": "Can refer to physical, emotional, or substance abuse.",
+      "examples": ["Drug abuse is a serious problem.", "He was accused of abusing his power."],
+      "tags": ["verb", "noun", "harm"],
+      "level": "B2",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b2"},
+      "subcategories": [{"slug": "social-issues"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "accompany",
+      "translation": "eşlik etmek",
+      "definition": "To go somewhere with someone.",
+      "notes": "More formal than 'go with'.",
+      "examples": ["I'll accompany you to the meeting.", "The report was accompanied by charts."],
+      "tags": ["verb", "formal"],
+      "level": "B2",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b2"},
+      "subcategories": [{"slug": "formal"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "accomplish",
+      "translation": "başarmak, tamamlamak",
+      "definition": "To succeed in completing something.",
+      "notes": "Similar to 'achieve' but emphasizes completion.",
+      "examples": ["She accomplished her mission.", "What did you accomplish today?"],
+      "tags": ["verb", "success"],
+      "level": "B2",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b2"},
+      "subcategories": [{"slug": "achievement"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "accurate",
+      "translation": "doğru, kesin",
+      "definition": "Correct and exact.",
+      "notes": "Often used for measurements, information, or descriptions.",
+      "examples": ["The information is accurate.", "We need accurate measurements."],
+      "tags": ["adjective", "precision"],
+      "level": "B2",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b2"},
+      "subcategories": [{"slug": "precision"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "acquire",
+      "translation": "edinmek, elde etmek",
+      "definition": "To get or obtain something.",
+      "notes": "More formal than 'get' or 'buy'.",
+      "examples": ["He acquired new skills.", "The company acquired a competitor."],
+      "tags": ["verb", "formal"],
+      "level": "B2",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b2"},
+      "subcategories": [{"slug": "obtaining"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "adapt",
+      "translation": "uyum sağlamak",
+      "definition": "To change to suit new conditions.",
+      "notes": "Can refer to people, animals, or things.",
+      "examples": ["Animals adapt to their environment.", "We need to adapt our strategy."],
+      "tags": ["verb", "change"],
+      "level": "B2",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b2"},
+      "subcategories": [{"slug": "adaptation"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "adequate",
+      "translation": "yeterli",
+      "definition": "Enough for a particular purpose.",
+      "notes": "Suggests minimum acceptable level.",
+      "examples": ["The salary is adequate.", "We need adequate preparation."],
+      "tags": ["adjective", "sufficiency"],
+      "level": "B2",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b2"},
+      "subcategories": [{"slug": "evaluation"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "administration",
+      "translation": "yönetim",
+      "definition": "The process of managing an organization.",
+      "notes": "Can refer to government or business management.",
+      "examples": ["The school administration made new rules.", "He works in administration."],
+      "tags": ["noun", "management"],
+      "level": "B2",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b2"},
+      "subcategories": [{"slug": "management"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

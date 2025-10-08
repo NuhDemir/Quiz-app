@@ -1,0 +1,146 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "colors", "shapes"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Colors and Shapes",
+      "slug": "colors-shapes",
+      "description": "Basic colors and geometric shapes.",
+      "level": "A1",
+      "color": "#7c2d12",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "red",
+      "translation": "kırmızı",
+      "definition": "The color of blood or fire.",
+      "notes": "Primary color.",
+      "examples": ["The apple is red.", "I like red cars."],
+      "tags": ["color", "primary"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "colors-shapes"},
+      "subcategories": [{"slug": "colors"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "blue",
+      "translation": "mavi",
+      "definition": "The color of the sky or sea.",
+      "notes": "Primary color.",
+      "examples": ["The sky is blue.", "I wear blue jeans."],
+      "tags": ["color", "primary"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "colors-shapes"},
+      "subcategories": [{"slug": "colors"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "green",
+      "translation": "yeşil",
+      "definition": "The color of grass or leaves.",
+      "notes": "Color of nature.",
+      "examples": ["The grass is green.", "I have green eyes."],
+      "tags": ["color", "nature"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "colors-shapes"},
+      "subcategories": [{"slug": "colors"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "circle",
+      "translation": "daire",
+      "definition": "A round shape.",
+      "notes": "Has no corners or edges.",
+      "examples": ["The ball is a circle.", "Draw a circle."],
+      "tags": ["shape", "round"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "colors-shapes"},
+      "subcategories": [{"slug": "shapes"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "square",
+      "translation": "kare",
+      "definition": "A shape with four equal sides.",
+      "notes": "All sides are the same length.",
+      "examples": ["The window is square.", "A square has four corners."],
+      "tags": ["shape", "four-sides"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "colors-shapes"},
+      "subcategories": [{"slug": "shapes"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "triangle",
+      "translation": "üçgen",
+      "definition": "A shape with three sides.",
+      "notes": "Has three corners.",
+      "examples": ["The roof is a triangle.", "A triangle has three sides."],
+      "tags": ["shape", "three-sides"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "colors-shapes"},
+      "subcategories": [{"slug": "shapes"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

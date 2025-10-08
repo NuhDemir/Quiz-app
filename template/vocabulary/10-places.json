@@ -1,0 +1,146 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "places"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Places",
+      "slug": "places",
+      "description": "Common places and locations.",
+      "level": "A1",
+      "color": "#0891b2",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "home",
+      "translation": "ev, yuva",
+      "definition": "The place where you live.",
+      "notes": "Different from 'house' - more personal.",
+      "examples": ["I am at home.", "Home is comfortable."],
+      "tags": ["place", "personal"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "places"},
+      "subcategories": [{"slug": "personal"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "school",
+      "translation": "okul",
+      "definition": "A place where children learn.",
+      "notes": "Educational institution.",
+      "examples": ["I go to school every day.", "My school is big."],
+      "tags": ["place", "education"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "places"},
+      "subcategories": [{"slug": "education"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "park",
+      "translation": "park",
+      "definition": "A public area with grass and trees.",
+      "notes": "Place for recreation and relaxation.",
+      "examples": ["We play in the park.", "The park is beautiful."],
+      "tags": ["place", "recreation"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "places"},
+      "subcategories": [{"slug": "recreation"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "shop",
+      "translation": "dükkan, mağaza",
+      "definition": "A place where you buy things.",
+      "notes": "Also called 'store'.",
+      "examples": ["I buy food at the shop.", "The shop is closed."],
+      "tags": ["place", "shopping"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "places"},
+      "subcategories": [{"slug": "shopping"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "restaurant",
+      "translation": "restoran",
+      "definition": "A place where you eat meals.",
+      "notes": "You pay for food and service.",
+      "examples": ["We eat at a restaurant.", "The restaurant is expensive."],
+      "tags": ["place", "food"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "places"},
+      "subcategories": [{"slug": "food"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "street",
+      "translation": "sokak",
+      "definition": "A road in a city or town.",
+      "notes": "Usually has houses or shops on both sides.",
+      "examples": ["I live on this street.", "The street is busy."],
+      "tags": ["place", "urban"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "places"},
+      "subcategories": [{"slug": "urban"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

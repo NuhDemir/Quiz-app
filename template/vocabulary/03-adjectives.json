@@ -1,0 +1,164 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "adjectives"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Adjectives",
+      "slug": "adjectives",
+      "description": "Words that describe people, objects and feelings.",
+      "level": "A1",
+      "color": "#dc2626",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "big",
+      "translation": "büyük",
+      "definition": "Large in size.",
+      "notes": "Opposite of small.",
+      "examples": ["The house is big.", "I have a big dog."],
+      "tags": ["adjective", "size"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "adjectives"},
+      "subcategories": [{"slug": "size"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "small",
+      "translation": "küçük",
+      "definition": "Little in size.",
+      "notes": "Opposite of big.",
+      "examples": ["The cat is small.", "I live in a small town."],
+      "tags": ["adjective", "size"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "adjectives"},
+      "subcategories": [{"slug": "size"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "happy",
+      "translation": "mutlu",
+      "definition": "Feeling good and pleased.",
+      "notes": "Positive emotion.",
+      "examples": ["I am happy today.", "She looks happy."],
+      "tags": ["adjective", "emotions"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "adjectives"},
+      "subcategories": [{"slug": "emotions"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "sad",
+      "translation": "üzgün",
+      "definition": "Feeling unhappy.",
+      "notes": "Opposite of happy.",
+      "examples": ["He is sad.", "Don't be sad."],
+      "tags": ["adjective", "emotions"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "adjectives"},
+      "subcategories": [{"slug": "emotions"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "good",
+      "translation": "iyi",
+      "definition": "Of high quality or satisfactory.",
+      "notes": "Very common positive adjective.",
+      "examples": ["This is good food.", "You are a good student."],
+      "tags": ["adjective", "quality"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "adjectives"},
+      "subcategories": [{"slug": "quality"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "bad",
+      "translation": "kötü",
+      "definition": "Of poor quality or unpleasant.",
+      "notes": "Opposite of good.",
+      "examples": ["The weather is bad.", "This is bad news."],
+      "tags": ["adjective", "quality"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "adjectives"},
+      "subcategories": [{"slug": "quality"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "new",
+      "translation": "yeni",
+      "definition": "Recently made or not used before.",
+      "notes": "Opposite of old.",
+      "examples": ["I have a new car.", "This is my new house."],
+      "tags": ["adjective", "time"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "adjectives"},
+      "subcategories": [{"slug": "time"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

@@ -1,0 +1,433 @@
+{
+  "quiz": {
+    "title": "Possessive Adjectives - A1 Level",
+    "slug": "possessive-adjectives-a1",
+    "description": "Master possessive adjectives and their agreement with persons at A1 level.",
+    "category": "grammar",
+    "level": "A1",
+    "difficulty": "easy",
+    "tags": [
+      "possessive adjectives",
+      "my",
+      "your",
+      "his",
+      "her",
+      "its",
+      "our",
+      "their",
+      "grammar",
+      "beginner"
+    ],
+    "timeLimitSec": 1350,
+    "isPublished": false
+  },
+  "questions": [
+    {
+      "prompt": "This is ____ book. (I)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "my",
+      "explanation": "Use 'my' with 'I'.",
+      "hint": "What possessive adjective goes with 'I'?",
+      "points": 10,
+      "tags": ["possessive adjectives", "my"]
+    },
+    {
+      "prompt": "That is ____ car. (you)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "your",
+      "explanation": "Use 'your' with 'you'.",
+      "hint": "What possessive adjective goes with 'you'?",
+      "points": 10,
+      "tags": ["possessive adjectives", "your"]
+    },
+    {
+      "prompt": "John loves ____ dog. (John)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "his",
+      "explanation": "Use 'his' for a male person.",
+      "hint": "John is male.",
+      "points": 10,
+      "tags": ["possessive adjectives", "his"]
+    },
+    {
+      "prompt": "Mary likes ____ new dress. (Mary)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "her",
+      "explanation": "Use 'her' for a female person.",
+      "hint": "Mary is female.",
+      "points": 10,
+      "tags": ["possessive adjectives", "her"]
+    },
+    {
+      "prompt": "The cat is eating ____ food. (the cat)",
+      "options": ["his", "her", "its", "their"],
+      "correctAnswer": "its",
+      "explanation": "Use 'its' for animals and things.",
+      "hint": "What possessive adjective goes with animals?",
+      "points": 10,
+      "tags": ["possessive adjectives", "its"]
+    },
+    {
+      "prompt": "We are cleaning ____ house. (we)",
+      "options": ["my", "your", "our", "their"],
+      "correctAnswer": "our",
+      "explanation": "Use 'our' with 'we'.",
+      "hint": "What possessive adjective goes with 'we'?",
+      "points": 10,
+      "tags": ["possessive adjectives", "our"]
+    },
+    {
+      "prompt": "The students are doing ____ homework. (the students)",
+      "options": ["his", "her", "our", "their"],
+      "correctAnswer": "their",
+      "explanation": "Use 'their' for plural people.",
+      "hint": "'Students' is plural.",
+      "points": 10,
+      "tags": ["possessive adjectives", "their"]
+    },
+    {
+      "prompt": "I love ____ family.",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "my",
+      "explanation": "Use 'my' when talking about yourself.",
+      "hint": "Who is speaking?",
+      "points": 10,
+      "tags": ["possessive adjectives", "my"]
+    },
+    {
+      "prompt": "Is this ____ pen? (speaking to someone)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "your",
+      "explanation": "Use 'your' when asking someone about their possession.",
+      "hint": "Who are you asking?",
+      "points": 10,
+      "tags": ["possessive adjectives", "your"]
+    },
+    {
+      "prompt": "Tom is washing ____ hands. (Tom)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "his",
+      "explanation": "Use 'his' for a male person.",
+      "hint": "Tom is male.",
+      "points": 10,
+      "tags": ["possessive adjectives", "his"]
+    },
+    {
+      "prompt": "Lisa is combing ____ hair. (Lisa)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "her",
+      "explanation": "Use 'her' for a female person.",
+      "hint": "Lisa is female.",
+      "points": 10,
+      "tags": ["possessive adjectives", "her"]
+    },
+    {
+      "prompt": "The dog is wagging ____ tail. (the dog)",
+      "options": ["his", "her", "its", "their"],
+      "correctAnswer": "its",
+      "explanation": "Use 'its' for animals.",
+      "hint": "What possessive adjective goes with animals?",
+      "points": 10,
+      "tags": ["possessive adjectives", "its"]
+    },
+    {
+      "prompt": "We are proud of ____ children. (we)",
+      "options": ["my", "your", "our", "their"],
+      "correctAnswer": "our",
+      "explanation": "Use 'our' with 'we'.",
+      "hint": "What possessive adjective goes with 'we'?",
+      "points": 10,
+      "tags": ["possessive adjectives", "our"]
+    },
+    {
+      "prompt": "The birds are building ____ nest. (the birds)",
+      "options": ["his", "her", "our", "their"],
+      "correctAnswer": "their",
+      "explanation": "Use 'their' for plural animals.",
+      "hint": "'Birds' is plural.",
+      "points": 10,
+      "tags": ["possessive adjectives", "their"]
+    },
+    {
+      "prompt": "____ name is Sarah. (I)",
+      "options": ["My", "Your", "His", "Her"],
+      "correctAnswer": "My",
+      "explanation": "Use 'My' when talking about yourself.",
+      "hint": "Who is introducing themselves?",
+      "points": 10,
+      "tags": ["possessive adjectives", "my"]
+    },
+    {
+      "prompt": "What is ____ favorite color? (speaking to someone)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "your",
+      "explanation": "Use 'your' when asking someone about their preference.",
+      "hint": "Who are you asking?",
+      "points": 10,
+      "tags": ["possessive adjectives", "your"]
+    },
+    {
+      "prompt": "Peter is reading ____ book. (Peter)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "his",
+      "explanation": "Use 'his' for a male person.",
+      "hint": "Peter is male.",
+      "points": 10,
+      "tags": ["possessive adjectives", "his"]
+    },
+    {
+      "prompt": "Anna is calling ____ mother. (Anna)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "her",
+      "explanation": "Use 'her' for a female person.",
+      "hint": "Anna is female.",
+      "points": 10,
+      "tags": ["possessive adjectives", "her"]
+    },
+    {
+      "prompt": "The computer has ____ own screen. (the computer)",
+      "options": ["his", "her", "its", "their"],
+      "correctAnswer": "its",
+      "explanation": "Use 'its' for objects and machines.",
+      "hint": "What possessive adjective goes with objects?",
+      "points": 10,
+      "tags": ["possessive adjectives", "its"]
+    },
+    {
+      "prompt": "We are painting ____ room. (we)",
+      "options": ["my", "your", "our", "their"],
+      "correctAnswer": "our",
+      "explanation": "Use 'our' with 'we'.",
+      "hint": "What possessive adjective goes with 'we'?",
+      "points": 10,
+      "tags": ["possessive adjectives", "our"]
+    },
+    {
+      "prompt": "The children are playing with ____ toys. (the children)",
+      "options": ["his", "her", "our", "their"],
+      "correctAnswer": "their",
+      "explanation": "Use 'their' for plural people.",
+      "hint": "'Children' is plural.",
+      "points": 10,
+      "tags": ["possessive adjectives", "their"]
+    },
+    {
+      "prompt": "I am looking for ____ keys.",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "my",
+      "explanation": "Use 'my' when talking about your own things.",
+      "hint": "Whose keys is the speaker looking for?",
+      "points": 10,
+      "tags": ["possessive adjectives", "my"]
+    },
+    {
+      "prompt": "Can you show me ____ homework? (speaking to a student)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "your",
+      "explanation": "Use 'your' when asking someone to show their work.",
+      "hint": "Whose homework are you asking to see?",
+      "points": 10,
+      "tags": ["possessive adjectives", "your"]
+    },
+    {
+      "prompt": "David is fixing ____ bicycle. (David)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "his",
+      "explanation": "Use 'his' for a male person.",
+      "hint": "David is male.",
+      "points": 10,
+      "tags": ["possessive adjectives", "his"]
+    },
+    {
+      "prompt": "Emma is wearing ____ new shoes. (Emma)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "her",
+      "explanation": "Use 'her' for a female person.",
+      "hint": "Emma is female.",
+      "points": 10,
+      "tags": ["possessive adjectives", "her"]
+    }
+,
+    {
+
+      "prompt": "The phone is ringing. ____ sound is very loud. (the phone)",
+      "options": ["his", "her", "its", "their"],
+      "correctAnswer": "its",
+      "explanation": "Use 'its' for objects and devices.",
+      "hint": "What possessive adjective goes with objects?",
+      "points": 10,
+      "tags": ["possessive adjectives", "its"]
+    },
+    {
+      "prompt": "We are visiting ____ grandparents. (we)",
+      "options": ["my", "your", "our", "their"],
+      "correctAnswer": "our",
+      "explanation": "Use 'our' with 'we'.",
+      "hint": "What possessive adjective goes with 'we'?",
+      "points": 10,
+      "tags": ["possessive adjectives", "our"]
+    },
+    {
+      "prompt": "The teachers are grading ____ papers. (the teachers)",
+      "options": ["his", "her", "our", "their"],
+      "correctAnswer": "their",
+      "explanation": "Use 'their' for plural people.",
+      "hint": "'Teachers' is plural.",
+      "points": 10,
+      "tags": ["possessive adjectives", "their"]
+    },
+    {
+      "prompt": "____ sister is a nurse. (I)",
+      "options": ["My", "Your", "His", "Her"],
+      "correctAnswer": "My",
+      "explanation": "Use 'My' when talking about your family.",
+      "hint": "Whose sister is being mentioned?",
+      "points": 10,
+      "tags": ["possessive adjectives", "my"]
+    },
+    {
+      "prompt": "Where is ____ backpack? (speaking to someone)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "your",
+      "explanation": "Use 'your' when asking someone about their belongings.",
+      "hint": "Whose backpack are you asking about?",
+      "points": 10,
+      "tags": ["possessive adjectives", "your"]
+    },
+    {
+      "prompt": "Mark is eating ____ lunch. (Mark)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "his",
+      "explanation": "Use 'his' for a male person.",
+      "hint": "Mark is male.",
+      "points": 10,
+      "tags": ["possessive adjectives", "his"]
+    },
+    {
+      "prompt": "Sophie is doing ____ exercises. (Sophie)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "her",
+      "explanation": "Use 'her' for a female person.",
+      "hint": "Sophie is female.",
+      "points": 10,
+      "tags": ["possessive adjectives", "her"]
+    },
+    {
+      "prompt": "The tree is losing ____ leaves. (the tree)",
+      "options": ["his", "her", "its", "their"],
+      "correctAnswer": "its",
+      "explanation": "Use 'its' for plants and natural things.",
+      "hint": "What possessive adjective goes with trees?",
+      "points": 10,
+      "tags": ["possessive adjectives", "its"]
+    },
+    {
+      "prompt": "We are decorating ____ classroom. (we)",
+      "options": ["my", "your", "our", "their"],
+      "correctAnswer": "our",
+      "explanation": "Use 'our' with 'we'.",
+      "hint": "What possessive adjective goes with 'we'?",
+      "points": 10,
+      "tags": ["possessive adjectives", "our"]
+    },
+    {
+      "prompt": "The students are presenting ____ projects. (the students)",
+      "options": ["his", "her", "our", "their"],
+      "correctAnswer": "their",
+      "explanation": "Use 'their' for plural people.",
+      "hint": "'Students' is plural.",
+      "points": 10,
+      "tags": ["possessive adjectives", "their"]
+    },
+    {
+      "prompt": "____ brother is very tall. (I)",
+      "options": ["My", "Your", "His", "Her"],
+      "correctAnswer": "My",
+      "explanation": "Use 'My' when talking about your family.",
+      "hint": "Whose brother is being described?",
+      "points": 10,
+      "tags": ["possessive adjectives", "my"]
+    },
+    {
+      "prompt": "Is ____ mother a doctor? (speaking to someone)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "your",
+      "explanation": "Use 'your' when asking someone about their family.",
+      "hint": "Whose mother are you asking about?",
+      "points": 10,
+      "tags": ["possessive adjectives", "your"]
+    },
+    {
+      "prompt": "Robert is cleaning ____ room. (Robert)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "his",
+      "explanation": "Use 'his' for a male person.",
+      "hint": "Robert is male.",
+      "points": 10,
+      "tags": ["possessive adjectives", "his"]
+    },
+    {
+      "prompt": "Julia is organizing ____ closet. (Julia)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "her",
+      "explanation": "Use 'her' for a female person.",
+      "hint": "Julia is female.",
+      "points": 10,
+      "tags": ["possessive adjectives", "her"]
+    },
+    {
+      "prompt": "The building has ____ own parking lot. (the building)",
+      "options": ["his", "her", "its", "their"],
+      "correctAnswer": "its",
+      "explanation": "Use 'its' for buildings and structures.",
+      "hint": "What possessive adjective goes with buildings?",
+      "points": 10,
+      "tags": ["possessive adjectives", "its"]
+    },
+    {
+      "prompt": "We are enjoying ____ vacation. (we)",
+      "options": ["my", "your", "our", "their"],
+      "correctAnswer": "our",
+      "explanation": "Use 'our' with 'we'.",
+      "hint": "What possessive adjective goes with 'we'?",
+      "points": 10,
+      "tags": ["possessive adjectives", "our"]
+    },
+    {
+      "prompt": "The doctors are checking ____ patients. (the doctors)",
+      "options": ["his", "her", "our", "their"],
+      "correctAnswer": "their",
+      "explanation": "Use 'their' for plural people.",
+      "hint": "'Doctors' is plural.",
+      "points": 10,
+      "tags": ["possessive adjectives", "their"]
+    },
+    {
+      "prompt": "____ favorite subject is English. (I)",
+      "options": ["My", "Your", "His", "Her"],
+      "correctAnswer": "My",
+      "explanation": "Use 'My' when talking about your preferences.",
+      "hint": "Whose favorite subject is being mentioned?",
+      "points": 10,
+      "tags": ["possessive adjectives", "my"]
+    },
+    {
+      "prompt": "What time is ____ English class? (speaking to someone)",
+      "options": ["my", "your", "his", "her"],
+      "correctAnswer": "your",
+      "explanation": "Use 'your' when asking someone about their schedule.",
+      "hint": "Whose class time are you asking about?",
+      "points": 10,
+      "tags": ["possessive adjectives", "your"]
+    },
+    {
+      "prompt": "The flowers are showing ____ beautiful colors. (the flowers)",
+      "options": ["his", "her", "its", "their"],
+      "correctAnswer": "their",
+      "explanation": "Use 'their' for plural things.",
+      "hint": "'Flowers' is plural.",
+      "points": 10,
+      "tags": ["possessive adjectives", "their"]
+    }
+  ]
+}

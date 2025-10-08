@@ -189,4 +189,27 @@ describe("quiz-submit flow", () => {
     const attemptCount = await QuizAttempt.countDocuments();
     expect(attemptCount).toBe(0);
   }, 20000);
+
+  test("submission with slug identifier works without ObjectId", async () => {
+    const { quiz, questions } = await createQuiz();
+    const payload = {
+      quizId: quiz.slug, // intentionally send slug as identifier
+      answers: [
+        { questionId: questions[0]._id.toString(), answer: "Paris" },
+        { questionId: questions[1]._id.toString(), answer: "4" },
+      ],
+    };
+
+    const submitEvent = {
+      httpMethod: "POST",
+      body: JSON.stringify(payload),
+    };
+
+    const submitRes = await quizSubmitHandler(submitEvent);
+    expect(submitRes.statusCode).toBe(200);
+    const body = JSON.parse(submitRes.body);
+    expect(body.quizId).toBe(quiz.slug);
+    expect(body.correctCount).toBe(2);
+    expect(body.totalQuestions).toBe(2);
+  }, 20000);
 });

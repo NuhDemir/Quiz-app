@@ -1,0 +1,128 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "jobs", "professions"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Jobs and Professions",
+      "slug": "jobs-professions",
+      "description": "Common job titles and professions.",
+      "level": "A1",
+      "color": "#7c3aed",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "doctor",
+      "translation": "doktor",
+      "definition": "A person who helps sick people.",
+      "notes": "Works in hospitals or clinics.",
+      "examples": ["The doctor is kind.", "I need to see a doctor."],
+      "tags": ["job", "medical"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "jobs-professions"},
+      "subcategories": [{"slug": "medical"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "teacher",
+      "translation": "öğretmen",
+      "definition": "A person who teaches students.",
+      "notes": "Works in schools or universities.",
+      "examples": ["My teacher is helpful.", "She is a good teacher."],
+      "tags": ["job", "education"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "jobs-professions"},
+      "subcategories": [{"slug": "education"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "driver",
+      "translation": "şoför",
+      "definition": "A person who drives vehicles.",
+      "notes": "Can drive cars, buses, or trucks.",
+      "examples": ["The bus driver is friendly.", "He is a taxi driver."],
+      "tags": ["job", "transport"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "jobs-professions"},
+      "subcategories": [{"slug": "transport"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "nurse",
+      "translation": "hemşire",
+      "definition": "A person who takes care of sick people.",
+      "notes": "Works with doctors in hospitals.",
+      "examples": ["The nurse is caring.", "My sister is a nurse."],
+      "tags": ["job", "medical"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "jobs-professions"},
+      "subcategories": [{"slug": "medical"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "police officer",
+      "translation": "polis",
+      "definition": "A person who keeps people safe.",
+      "notes": "Protects people and enforces laws.",
+      "examples": ["The police officer helps us.", "Call the police officer."],
+      "tags": ["job", "safety"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "jobs-professions"},
+      "subcategories": [{"slug": "safety"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

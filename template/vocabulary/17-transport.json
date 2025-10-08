@@ -1,0 +1,128 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "transport"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Transport",
+      "slug": "transport",
+      "description": "Vehicles and means of transportation.",
+      "level": "A1",
+      "color": "#059669",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "car",
+      "translation": "araba",
+      "definition": "A vehicle with four wheels for people.",
+      "notes": "Most common personal transport.",
+      "examples": ["I drive a car.", "The car is fast."],
+      "tags": ["transport", "personal"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "transport"},
+      "subcategories": [{"slug": "personal"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "bus",
+      "translation": "otobüs",
+      "definition": "A large vehicle that carries many people.",
+      "notes": "Public transportation.",
+      "examples": ["I take the bus to work.", "The bus is late."],
+      "tags": ["transport", "public"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "transport"},
+      "subcategories": [{"slug": "public"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "train",
+      "translation": "tren",
+      "definition": "A long vehicle that runs on tracks.",
+      "notes": "Fast transport for long distances.",
+      "examples": ["The train is fast.", "I travel by train."],
+      "tags": ["transport", "long-distance"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "transport"},
+      "subcategories": [{"slug": "long-distance"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "bicycle",
+      "translation": "bisiklet",
+      "definition": "A vehicle with two wheels you pedal.",
+      "notes": "Also called 'bike'.",
+      "examples": ["I ride my bicycle.", "The bicycle is green."],
+      "tags": ["transport", "personal", "exercise"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "transport"},
+      "subcategories": [{"slug": "personal"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "airplane",
+      "translation": "uçak",
+      "definition": "A vehicle that flies in the sky.",
+      "notes": "Also called 'plane'.",
+      "examples": ["The airplane is big.", "I fly in an airplane."],
+      "tags": ["transport", "air"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "transport"},
+      "subcategories": [{"slug": "air"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

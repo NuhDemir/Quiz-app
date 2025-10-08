@@ -1,0 +1,164 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "nouns"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Common Nouns",
+      "slug": "common-nouns",
+      "description": "Everyday objects, places and people.",
+      "level": "A1",
+      "color": "#16a34a",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "house",
+      "translation": "ev",
+      "definition": "A building where people live.",
+      "notes": "Basic vocabulary for describing where you live.",
+      "examples": ["I live in a house.", "This is my house."],
+      "tags": ["noun", "places"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "common-nouns"},
+      "subcategories": [{"slug": "places"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "school",
+      "translation": "okul",
+      "definition": "A place where children go to learn.",
+      "notes": "Essential word for students.",
+      "examples": ["I go to school.", "My school is big."],
+      "tags": ["noun", "places", "education"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "common-nouns"},
+      "subcategories": [{"slug": "places"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "car",
+      "translation": "araba",
+      "definition": "A vehicle with four wheels that people drive.",
+      "notes": "Common means of transportation.",
+      "examples": ["My car is red.", "I drive a car."],
+      "tags": ["noun", "transport"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "common-nouns"},
+      "subcategories": [{"slug": "transport"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "teacher",
+      "translation": "öğretmen",
+      "definition": "A person who teaches students.",
+      "notes": "Important person in education.",
+      "examples": ["My teacher is nice.", "The teacher helps us."],
+      "tags": ["noun", "people", "jobs"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "common-nouns"},
+      "subcategories": [{"slug": "people"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "friend",
+      "translation": "arkadaş",
+      "definition": "A person you like and know well.",
+      "notes": "Important for social relationships.",
+      "examples": ["She is my friend.", "I have many friends."],
+      "tags": ["noun", "people", "relationships"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "common-nouns"},
+      "subcategories": [{"slug": "people"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "book",
+      "translation": "kitap",
+      "definition": "Something you read with pages and words.",
+      "notes": "Essential for learning and education.",
+      "examples": ["I read a book.", "This book is good."],
+      "tags": ["noun", "objects", "education"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "common-nouns"},
+      "subcategories": [{"slug": "objects"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "city",
+      "translation": "şehir",
+      "definition": "A large place where many people live and work.",
+      "notes": "Larger than a town.",
+      "examples": ["I live in a big city.", "The city is busy."],
+      "tags": ["noun", "places"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "common-nouns"},
+      "subcategories": [{"slug": "places"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

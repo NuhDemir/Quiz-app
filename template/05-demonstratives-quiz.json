@@ -1,0 +1,423 @@
+{
+  "quiz": {
+    "title": "Demonstratives (this/that/these/those) - A1 Level",
+    "slug": "demonstratives-this-that-these-those-a1",
+    "description": "Master demonstratives for near and far objects in singular and plural forms at A1 level.",
+    "category": "grammar",
+    "level": "A1",
+    "difficulty": "easy",
+    "tags": [
+      "demonstratives",
+      "this",
+      "that",
+      "these",
+      "those",
+      "near",
+      "far",
+      "grammar",
+      "beginner"
+    ],
+    "timeLimitSec": 1350,
+    "isPublished": false
+  },
+  "questions": [
+    {
+      "prompt": "____ is my book. (pointing to a book near you)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "This",
+      "explanation": "Use 'This' for singular objects near you.",
+      "hint": "Is the book near or far? Is it singular or plural?",
+      "points": 10,
+      "tags": ["demonstratives", "this", "near", "singular"]
+    },
+    {
+      "prompt": "____ are my pens. (pointing to pens near you)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "These",
+      "explanation": "Use 'These' for plural objects near you.",
+      "hint": "Are the pens near or far? Are they singular or plural?",
+      "points": 10,
+      "tags": ["demonstratives", "these", "near", "plural"]
+    },
+    {
+      "prompt": "____ is her car. (pointing to a car far away)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "That",
+      "explanation": "Use 'That' for singular objects far from you.",
+      "hint": "Is the car near or far? Is it singular or plural?",
+      "points": 10,
+      "tags": ["demonstratives", "that", "far", "singular"]
+    },
+    {
+      "prompt": "____ are their bags. (pointing to bags far away)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "Those",
+      "explanation": "Use 'Those' for plural objects far from you.",
+      "hint": "Are the bags near or far? Are they singular or plural?",
+      "points": 10,
+      "tags": ["demonstratives", "those", "far", "plural"]
+    },
+    {
+      "prompt": "What is ____? (holding something in your hand)",
+      "options": ["this", "that", "these", "those"],
+      "correctAnswer": "this",
+      "explanation": "Use 'this' for singular objects very close to you.",
+      "hint": "Is the object in your hand near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "this", "near", "singular"]
+    },
+    {
+      "prompt": "Who are ____? (pointing to people near you)",
+      "options": ["this", "that", "these", "those"],
+      "correctAnswer": "these",
+      "explanation": "Use 'these' for plural people or things near you.",
+      "hint": "Are the people near or far? Are they singular or plural?",
+      "points": 10,
+      "tags": ["demonstratives", "these", "near", "plural"]
+    },
+    {
+      "prompt": "I like ____ dress. (pointing to a dress in a shop window)",
+      "options": ["this", "that", "these", "those"],
+      "correctAnswer": "that",
+      "explanation": "Use 'that' for singular objects at a distance.",
+      "hint": "Is the dress near you or far away?",
+      "points": 10,
+      "tags": ["demonstratives", "that", "far", "singular"]
+    },
+    {
+      "prompt": "____ shoes are expensive. (pointing to shoes in a display case)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "Those",
+      "explanation": "Use 'Those' for plural objects at a distance.",
+      "hint": "Are the shoes near or far? Are they singular or plural?",
+      "points": 10,
+      "tags": ["demonstratives", "those", "far", "plural"]
+    },
+    {
+      "prompt": "____ chair is comfortable. (sitting on a chair)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "This",
+      "explanation": "Use 'This' for singular objects very close to you.",
+      "hint": "Is the chair you're sitting on near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "this", "near", "singular"]
+    },
+    {
+      "prompt": "____ books are heavy. (carrying books)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "These",
+      "explanation": "Use 'These' for plural objects you are holding or very close to.",
+      "hint": "Are the books you're carrying near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "these", "near", "plural"]
+    },
+    {
+      "prompt": "Can you see ____ building? (pointing across the street)",
+      "options": ["this", "that", "these", "those"],
+      "correctAnswer": "that",
+      "explanation": "Use 'that' for singular objects at a distance.",
+      "hint": "Is the building across the street near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "that", "far", "singular"]
+    },
+    {
+      "prompt": "____ flowers smell nice. (smelling flowers in your hand)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "These",
+      "explanation": "Use 'These' for plural objects very close to you.",
+      "hint": "Are the flowers in your hand near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "these", "near", "plural"]
+    },
+    {
+      "prompt": "Is ____ your phone? (pointing to a phone on the table near you)",
+      "options": ["this", "that", "these", "those"],
+      "correctAnswer": "this",
+      "explanation": "Use 'this' for singular objects near you.",
+      "hint": "Is the phone on the table near you or far away?",
+      "points": 10,
+      "tags": ["demonstratives", "this", "near", "singular"]
+    },
+    {
+      "prompt": "Are ____ your keys? (pointing to keys on a distant table)",
+      "options": ["this", "that", "these", "those"],
+      "correctAnswer": "those",
+      "explanation": "Use 'those' for plural objects far from you.",
+      "hint": "Are the keys on the distant table near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "those", "far", "plural"]
+    },
+    {
+      "prompt": "____ apple tastes good. (eating an apple)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "This",
+      "explanation": "Use 'This' for singular objects you are using or very close to.",
+      "hint": "Is the apple you're eating near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "this", "near", "singular"]
+    },
+    {
+      "prompt": "____ cookies are delicious. (eating cookies)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "These",
+      "explanation": "Use 'These' for plural objects you are using or very close to.",
+      "hint": "Are the cookies you're eating near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "these", "near", "plural"]
+    },
+    {
+      "prompt": "I want ____ toy. (pointing to a toy in a shop window)",
+      "options": ["this", "that", "these", "those"],
+      "correctAnswer": "that",
+      "explanation": "Use 'that' for singular objects at a distance.",
+      "hint": "Is the toy in the shop window near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "that", "far", "singular"]
+    },
+    {
+      "prompt": "____ students are studying hard. (pointing to students in another classroom)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "Those",
+      "explanation": "Use 'Those' for plural people at a distance.",
+      "hint": "Are the students in another classroom near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "those", "far", "plural"]
+    },
+    {
+      "prompt": "____ coffee is hot. (drinking coffee)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "This",
+      "explanation": "Use 'This' for singular objects you are using.",
+      "hint": "Is the coffee you're drinking near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "this", "near", "singular"]
+    },
+    {
+      "prompt": "____ glasses are mine. (wearing glasses)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "These",
+      "explanation": "Use 'These' for plural objects you are wearing or very close to.",
+      "hint": "Are the glasses you're wearing near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "these", "near", "plural"]
+    },
+    {
+      "prompt": "Look at ____ bird! (pointing to a bird in a tree far away)",
+      "options": ["this", "that", "these", "those"],
+      "correctAnswer": "that",
+      "explanation": "Use 'that' for singular objects at a distance.",
+      "hint": "Is the bird in the tree far away near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "that", "far", "singular"]
+    },
+    {
+      "prompt": "____ pencils are sharp. (using pencils on your desk)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "These",
+      "explanation": "Use 'These' for plural objects on your desk or very close to you.",
+      "hint": "Are the pencils on your desk near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "these", "near", "plural"]
+    },
+    {
+      "prompt": "____ house is beautiful. (pointing to a house across the field)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "That",
+      "explanation": "Use 'That' for singular objects at a distance.",
+      "hint": "Is the house across the field near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "that", "far", "singular"]
+    },
+    {
+      "prompt": "____ children are playing. (watching children in a playground from your window)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "Those",
+      "explanation": "Use 'Those' for plural people at a distance.",
+      "hint": "Are the children in the playground (viewed from your window) near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "those", "far", "plural"]
+    },
+    {
+      "prompt": "____ sandwich is tasty. (eating a sandwich)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "This",
+      "explanation": "Use 'This' for singular objects you are using or eating.",
+      "hint": "Is the sandwich you're eating near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "this", "near", "singular"]
+    }
+,
+
+    {
+      "prompt": "____ papers are important. (holding papers)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "These",
+      "explanation": "Use 'These' for plural objects you are holding.",
+      "hint": "Are the papers you're holding near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "these", "near", "plural"]
+    },
+    {
+      "prompt": "Do you like ____ song? (listening to music on your phone)",
+      "options": ["this", "that", "these", "those"],
+      "correctAnswer": "this",
+      "explanation": "Use 'this' for singular things you are currently experiencing.",
+      "hint": "Is the song playing on your phone near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "this", "near", "singular"]
+    },
+    {
+      "prompt": "____ cars are expensive. (looking at cars in a distant parking lot)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "Those",
+      "explanation": "Use 'Those' for plural objects at a distance.",
+      "hint": "Are the cars in the distant parking lot near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "those", "far", "plural"]
+    },
+    {
+      "prompt": "____ watch is expensive. (looking at your own watch)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "This",
+      "explanation": "Use 'This' for singular objects you are wearing or very close to.",
+      "hint": "Is your own watch near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "this", "near", "singular"]
+    },
+    {
+      "prompt": "____ shoes are comfortable. (wearing shoes)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "These",
+      "explanation": "Use 'These' for plural objects you are wearing.",
+      "hint": "Are the shoes you're wearing near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "these", "near", "plural"]
+    },
+    {
+      "prompt": "I can't reach ____ book. (pointing to a book on a high shelf)",
+      "options": ["this", "that", "these", "those"],
+      "correctAnswer": "that",
+      "explanation": "Use 'that' for singular objects that are not easily reachable or at a distance.",
+      "hint": "Is the book on the high shelf near or far from your reach?",
+      "points": 10,
+      "tags": ["demonstratives", "that", "far", "singular"]
+    },
+    {
+      "prompt": "____ magazines are old. (pointing to magazines on a shelf across the room)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "Those",
+      "explanation": "Use 'Those' for plural objects across the room or at a distance.",
+      "hint": "Are the magazines across the room near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "those", "far", "plural"]
+    },
+    {
+      "prompt": "____ computer works well. (using your computer)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "This",
+      "explanation": "Use 'This' for singular objects you are currently using.",
+      "hint": "Is the computer you're using near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "this", "near", "singular"]
+    },
+    {
+      "prompt": "____ headphones are loud. (wearing headphones)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "These",
+      "explanation": "Use 'These' for plural objects you are wearing or using.",
+      "hint": "Are the headphones you're wearing near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "these", "near", "plural"]
+    },
+    {
+      "prompt": "Can you see ____ star? (pointing to a star in the sky)",
+      "options": ["this", "that", "these", "those"],
+      "correctAnswer": "that",
+      "explanation": "Use 'that' for singular objects very far away like stars.",
+      "hint": "Is the star in the sky near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "that", "far", "singular"]
+    },
+    {
+      "prompt": "____ clouds look like animals. (looking at clouds in the sky)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "Those",
+      "explanation": "Use 'Those' for plural objects very far away like clouds.",
+      "hint": "Are the clouds in the sky near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "those", "far", "plural"]
+    },
+    {
+      "prompt": "____ pizza is delicious. (eating pizza)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "This",
+      "explanation": "Use 'This' for singular food you are currently eating.",
+      "hint": "Is the pizza you're eating near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "this", "near", "singular"]
+    },
+    {
+      "prompt": "____ grapes are sweet. (eating grapes)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "These",
+      "explanation": "Use 'These' for plural food you are currently eating.",
+      "hint": "Are the grapes you're eating near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "these", "near", "plural"]
+    },
+    {
+      "prompt": "____ mountain is very high. (looking at a mountain in the distance)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "That",
+      "explanation": "Use 'That' for singular objects very far away like mountains.",
+      "hint": "Is the mountain in the distance near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "that", "far", "singular"]
+    },
+    {
+      "prompt": "____ trees are very tall. (looking at trees on a distant hill)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "Those",
+      "explanation": "Use 'Those' for plural objects at a distance like trees on a hill.",
+      "hint": "Are the trees on the distant hill near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "those", "far", "plural"]
+    },
+    {
+      "prompt": "____ ring is beautiful. (looking at a ring on your finger)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "This",
+      "explanation": "Use 'This' for singular objects you are wearing.",
+      "hint": "Is the ring on your finger near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "this", "near", "singular"]
+    },
+    {
+      "prompt": "____ earrings are pretty. (wearing earrings)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "These",
+      "explanation": "Use 'These' for plural objects you are wearing.",
+      "hint": "Are the earrings you're wearing near or far?",
+      "points": 10,
+      "tags": ["demonstratives", "these", "near", "plural"]
+    },
+    {
+      "prompt": "____ movie is boring. (watching a movie in a cinema)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "This",
+      "explanation": "Use 'This' for singular things you are currently experiencing.",
+      "hint": "Is the movie you're watching near or far from your experience?",
+      "points": 10,
+      "tags": ["demonstratives", "this", "near", "singular"]
+    },
+    {
+      "prompt": "____ people are friendly. (talking about people you just met)",
+      "options": ["This", "That", "These", "Those"],
+      "correctAnswer": "These",
+      "explanation": "Use 'These' for plural people you are currently with or just interacted with.",
+      "hint": "Are the people you just met near or far from your current experience?",
+      "points": 10,
+      "tags": ["demonstratives", "these", "near", "plural"]
+    }
+  ]
+}

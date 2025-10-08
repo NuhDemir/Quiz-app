@@ -1,0 +1,146 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "family", "relationships"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Family and Relationships",
+      "slug": "family-relationships",
+      "description": "Family members and basic relationships.",
+      "level": "A1",
+      "color": "#be185d",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "mother",
+      "translation": "anne",
+      "definition": "A female parent.",
+      "notes": "Also called 'mom' or 'mum'.",
+      "examples": ["My mother is kind.", "I love my mother."],
+      "tags": ["family", "parent"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "family-relationships"},
+      "subcategories": [{"slug": "family"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "father",
+      "translation": "baba",
+      "definition": "A male parent.",
+      "notes": "Also called 'dad' or 'papa'.",
+      "examples": ["My father works hard.", "I help my father."],
+      "tags": ["family", "parent"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "family-relationships"},
+      "subcategories": [{"slug": "family"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "sister",
+      "translation": "kız kardeş",
+      "definition": "A female sibling.",
+      "notes": "A girl who has the same parents as you.",
+      "examples": ["My sister is younger than me.", "I have one sister."],
+      "tags": ["family", "sibling"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "family-relationships"},
+      "subcategories": [{"slug": "family"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "friend",
+      "translation": "arkadaş",
+      "definition": "A person you like and know well.",
+      "notes": "Someone you enjoy spending time with.",
+      "examples": ["She is my best friend.", "I have many friends."],
+      "tags": ["relationship", "social"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "family-relationships"},
+      "subcategories": [{"slug": "relationships"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "husband",
+      "translation": "koca, eş",
+      "definition": "A married man.",
+      "notes": "A woman's male partner in marriage.",
+      "examples": ["He is my husband.", "My husband is tall."],
+      "tags": ["relationship", "marriage"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "family-relationships"},
+      "subcategories": [{"slug": "marriage"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "wife",
+      "translation": "karı, eş",
+      "definition": "A married woman.",
+      "notes": "A man's female partner in marriage.",
+      "examples": ["She is my wife.", "My wife is beautiful."],
+      "tags": ["relationship", "marriage"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "family-relationships"},
+      "subcategories": [{"slug": "marriage"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

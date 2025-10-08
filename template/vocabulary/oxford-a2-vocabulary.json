@@ -1,0 +1,524 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A2",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "oxford", "a2"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Oxford A2 Vocabulary",
+      "slug": "oxford-a2",
+      "description": "Pre-intermediate vocabulary from Oxford A2 word list.",
+      "level": "A2",
+      "color": "#3b82f6",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "ability",
+      "translation": "hüner, kabiliyet, yetenek",
+      "definition": "The power or skill to do something.",
+      "notes": "Often followed by 'to' and a verb.",
+      "examples": ["She has the ability to solve complex problems.", "His ability in mathematics is impressive."],
+      "tags": ["noun", "skill"],
+      "level": "A2",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a2"},
+      "subcategories": [{"slug": "personal-qualities"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "able",
+      "translation": "hünerli, kadir, gücü yeten",
+      "definition": "Having the power, skill, means, or opportunity to do something.",
+      "notes": "Often used with 'to be able to'.",
+      "examples": ["Will you be able to come to the party?", "He is able to speak three languages."],
+      "tags": ["adjective", "skill"],
+      "level": "A2",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a2"},
+      "subcategories": [{"slug": "personal-qualities"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "abroad",
+      "translation": "yurt dışında, gurbet, yurt dışı",
+      "definition": "In or to a foreign country or countries.",
+      "notes": "",
+      "examples": ["I have never lived abroad.", "She is planning to study abroad next year."],
+      "tags": ["adverb", "travel"],
+      "level": "A2",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a2"},
+      "subcategories": [{"slug": "travel"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "accept",
+      "translation": "kabullenmek, kabul etmek, almak",
+      "definition": "To agree to receive or take something offered.",
+      "notes": "Often used in formal contexts.",
+      "examples": ["I accept your invitation.", "Do you accept credit cards?"],
+      "tags": ["verb", "agreement"],
+      "level": "A2",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a2"},
+      "subcategories": [{"slug": "actions"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "accident",
+      "translation": "rastlantı, kaza, beklenmedik olay",
+      "definition": "An unfortunate incident that happens unexpectedly and unintentionally.",
+      "notes": "Usually involves injury or damage.",
+      "examples": ["There was a car accident.", "I broke the vase by accident."],
+      "tags": ["noun", "events"],
+      "level": "A2",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a2"},
+      "subcategories": [{"slug": "events"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+        "term": "according to",
+        "translation": "göre, uyarınca, üzere",
+        "definition": "As stated by or in.",
+        "notes": "",
+        "examples": ["According to the weather forecast, it will rain tomorrow.", "Everything went according to plan."],
+        "tags": ["preposition"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "prepositions"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "achieve",
+        "translation": "elde etmek, başarmak, ulaşmak",
+        "definition": "To successfully bring about or reach a desired objective or result by effort, skill, or courage.",
+        "notes": "",
+        "examples": ["She worked hard to achieve her goals.", "It's a difficult task, but we will achieve it."],
+        "tags": ["verb", "success"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "actions"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "act",
+        "translation": "davranmak, hareket etmek, eylem",
+        "definition": "To take action; do something.",
+        "notes": "",
+        "examples": ["We must act now before it's too late.", "He acted strangely yesterday."],
+        "tags": ["verb", "noun"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "actions"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "active",
+        "translation": "faal, aktif, etkin",
+        "definition": "Engaging or ready to engage in physically energetic pursuits.",
+        "notes": "",
+        "examples": ["My grandfather is still very active at 80.", "It's important to lead an active lifestyle."],
+        "tags": ["adjective", "lifestyle"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "adjectives"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "actually",
+        "translation": "fiilen, aslında, hem",
+        "definition": "As the truth or facts of a situation; really.",
+        "notes": "Used to emphasize truth or correct information.",
+        "examples": ["I actually like vegetables.", "Actually, I'm not busy today."],
+        "tags": ["adverb", "emphasis"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "adverbs"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "adult",
+        "translation": "yetişkin, er kişi, yetişkin kişi",
+        "definition": "A person who is fully grown or developed.",
+        "notes": "Usually 18 years old or older.",
+        "examples": ["Adults pay full price.", "She is an adult now."],
+        "tags": ["noun", "people"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "people"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "advantage",
+        "translation": "avantaj, fayda, yarar",
+        "definition": "A condition or circumstance that puts one in a favorable or superior position.",
+        "notes": "",
+        "examples": ["His height gives him an advantage in basketball.", "There are many advantages to living in a city."],
+        "tags": ["noun"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "concepts"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "adventure",
+        "translation": "macera, serüven, atılmak",
+        "definition": "An unusual and exciting or daring experience.",
+        "notes": "",
+        "examples": ["Traveling through the jungle was a great adventure.", "I'm looking for a new adventure."],
+        "tags": ["noun", "verb"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "activities"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "advertise",
+        "translation": "reklamını yapmak, tanıtım yapmak, ilan etmek",
+        "definition": "To describe or draw attention to a product, service, or event in a public medium in order to promote sales or attendance.",
+        "notes": "",
+        "examples": ["They advertise their products on TV.", "We need to advertise the concert."],
+        "tags": ["verb", "business"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "communication"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "advertisement",
+        "translation": "reklam, tanıtım, duyuru",
+        "definition": "A notice or announcement in a public medium promoting a product, service, or event or publicizing a job vacancy.",
+        "notes": "Often shortened to 'ad' or 'advert'.",
+        "examples": ["I saw an advertisement for a new car.", "She replied to the advertisement in the newspaper."],
+        "tags": ["noun", "business"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "communication"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "advertising",
+        "translation": "reklamcılık, reklam, gibi",
+        "definition": "The activity or profession of producing advertisements for commercial products or services.",
+        "notes": "",
+        "examples": ["He works in the advertising industry.", "Advertising can be very persuasive."],
+        "tags": ["noun", "business"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "business"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "advice",
+        "translation": "tavsiye, öğüt",
+        "definition": "Guidance or recommendations offered with regard to prudent future action.",
+        "notes": "Uncountable noun - use 'a piece of advice'.",
+        "examples": ["Can you give me some advice?", "I took your advice and it worked."],
+        "tags": ["noun", "communication"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "communication"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "affect",
+        "translation": "etkilemek, tesir etmek, davranmak",
+        "definition": "To have an effect on; make a difference to.",
+        "notes": "Not to be confused with 'effect' (noun).",
+        "examples": ["The weather can affect my mood.", "His decision will affect the entire team."],
+        "tags": ["verb"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "actions"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "after",
+        "translation": "sonra, öğleden sonra, sonra gelen",
+        "definition": "Following in time, place, or order.",
+        "notes": "",
+        "examples": ["Let's meet after class.", "He arrived after me."],
+        "tags": ["preposition", "adverb", "conjunction"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "time"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "against",
+        "translation": "aykırı, karşı, ters olarak",
+        "definition": "In opposition to.",
+        "notes": "",
+        "examples": ["It's against the law to park here.", "She voted against the proposal."],
+        "tags": ["preposition"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "prepositions"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "ah",
+        "translation": "of, ya, vah",
+        "definition": "An exclamation expressing various emotions such as surprise, pleasure, or realization.",
+        "notes": "",
+        "examples": ["Ah, I see what you mean.", "Ah, that feels good."],
+        "tags": ["interjection"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "exclamations"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "airline",
+        "translation": "hava yolu, havayolu, düz hat",
+        "definition": "A company that provides regular flights to take people and goods to different places.",
+        "notes": "",
+        "examples": ["Which airline did you fly with?", "He works for a major airline."],
+        "tags": ["noun", "travel"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "travel"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "airport",
+        "translation": "havaalanı, havalimanı",
+        "definition": "A place where planes take off and land.",
+        "notes": "Important for travel vocabulary.",
+        "examples": ["I'm going to the airport.", "The airport is very busy."],
+        "tags": ["noun", "travel"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "travel"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "alive",
+        "translation": "diri, canlı, sağ",
+        "definition": "Living, not dead.",
+        "notes": "",
+        "examples": ["The plant is still alive.", "It's good to be alive."],
+        "tags": ["adjective", "life"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "adjectives"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "all",
+        "translation": "tüm, bütün, hepsi",
+        "definition": "The whole quantity or extent of a particular group or thing.",
+        "notes": "",
+        "examples": ["All the students passed the exam.", "I ate all of the cake."],
+        "tags": ["determiner", "pronoun", "adverb"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "quantifiers"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "all right",
+        "translation": "kuşkusuz ki, elbette ki, yolunda",
+        "definition": "Satisfactory but not especially good; acceptable.",
+        "notes": "Can also be spelled 'alright'.",
+        "examples": ["Are you all right?", "The movie was all right."],
+        "tags": ["adjective", "adverb", "phrase"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "phrases"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      },
+      {
+        "term": "allow",
+        "translation": "izin vermek, müsaade etmek, kabul etmek",
+        "definition": "To permit (someone) to do something.",
+        "notes": "",
+        "examples": ["My parents don't allow me to stay out late.", "Smoking is not allowed here."],
+        "tags": ["verb"],
+        "level": "A2",
+        "difficulty": "easy",
+        "status": "published",
+        "category": {"slug": "oxford-a2"},
+        "subcategories": [{"slug": "actions"}],
+        "decks": {
+          "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+          "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+        },
+        "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+      }
+  ]
+}

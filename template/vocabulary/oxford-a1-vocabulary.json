@@ -1,0 +1,920 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "oxford", "a1"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Oxford A1 Vocabulary",
+      "slug": "oxford-a1",
+      "description": "Essential vocabulary from Oxford A1 word list for beginners.",
+      "level": "A1",
+      "color": "#22c55e",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "about",
+      "translation": "hemen hemen, aşağı yukarı, yaklaşık",
+      "definition": "On the subject of; concerning.",
+      "notes": "Common preposition used in many contexts.",
+      "examples": ["Tell me about your family.", "What about lunch?"],
+      "tags": ["adverb", "preposition"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "adverbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "above",
+      "translation": "üzerine, yukarısında, yukarıda",
+      "definition": "At a higher level or position.",
+      "notes": "",
+      "examples": ["The plane flies above the clouds.", "Please read the text above."],
+      "tags": ["adverb", "preposition"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "prepositions"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "across",
+      "translation": "karşıya, (deniz/okyanus) aşırı, karşı karşıya",
+      "definition": "From one side to the other of something.",
+      "notes": "",
+      "examples": ["The pharmacy is across the street.", "He walked across the room."],
+      "tags": ["adverb", "preposition"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "prepositions"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "action",
+      "translation": "çalışma, davranış, aksiyon",
+      "definition": "The process of doing something.",
+      "notes": "",
+      "examples": ["The movie has a lot of action.", "We must take action now."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "activity",
+      "translation": "etkinlik, faaliyet, meşguliyet",
+      "definition": "A thing that a person or group does or has done.",
+      "notes": "",
+      "examples": ["What is your favorite activity?", "There is a lot of activity in the city center."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "actor",
+      "translation": "oyuncu, erkek oyuncu, artist",
+      "definition": "A person who performs in plays, movies, or television.",
+      "notes": "",
+      "examples": ["He is a famous actor.", "My brother wants to be an actor."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "people"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "actress",
+      "translation": "oyuncu, artist, aktris",
+      "definition": "A woman who performs in plays, movies, or television.",
+      "notes": "",
+      "examples": ["She is a talented actress.", "The actress won an award."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "people"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "add",
+      "translation": "toplamak, eklemek, ilave etmek",
+      "definition": "To put something with something else.",
+      "notes": "",
+      "examples": ["Please add sugar to my coffee.", "If you add 2 and 3, you get 5."],
+      "tags": ["verb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "address",
+      "translation": "hitap etmek, söylev, adres",
+      "definition": "The details of the place where someone lives or an organization is situated.",
+      "notes": "",
+      "examples": ["What is your home address?", "Please write down your name and address."],
+      "tags": ["noun", "verb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "communication"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "adult",
+      "translation": "yetişkin, er kişi, yetişkin kişi",
+      "definition": "A person who is fully grown or developed.",
+      "notes": "",
+      "examples": ["This movie is for adults only.", "He is an adult now, not a child."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "people"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "advice",
+      "translation": "nasihat, tavsiye, öğüt",
+      "definition": "Guidance or recommendations offered with regard to prudent future action.",
+      "notes": "",
+      "examples": ["Can I ask for your advice?", "My father gave me some good advice."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "communication"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "afraid",
+      "translation": "korkmuş, korkan, ürkmüş",
+      "definition": "Feeling fear or anxiety; frightened.",
+      "notes": "",
+      "examples": ["I'm afraid of spiders.", "Don't be afraid."],
+      "tags": ["adjective"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "feelings"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "after",
+      "translation": "sonra, öğleden sonra, sonra gelen",
+      "definition": "Following in time, place, or order.",
+      "notes": "Used to show sequence in time.",
+      "examples": ["After lunch, I go to work.", "See you after class."],
+      "tags": ["preposition", "adverb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "time"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "afternoon",
+      "translation": "öğleden sonra, bir şeyin orta ve son bölümü, son kısım",
+      "definition": "The time from noon or lunchtime to evening.",
+      "notes": "",
+      "examples": ["I will see you tomorrow afternoon.", "We spent the afternoon at the beach."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "time"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "again",
+      "translation": "bir daha, daha, tekrar",
+      "definition": "Once more; another time.",
+      "notes": "Used to indicate repetition.",
+      "examples": ["Please say that again.", "I want to visit again."],
+      "tags": ["adverb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "adverbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "age",
+      "translation": "yaş, çağ, devir",
+      "definition": "The length of time that a person has lived or a thing has existed.",
+      "notes": "",
+      "examples": ["What is your age?", "He is the same age as my brother."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "people"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "ago",
+      "translation": "evvel, önce, önce",
+      "definition": "Before the present; earlier.",
+      "notes": "",
+      "examples": ["He left a long time ago.", "I met her three years ago."],
+      "tags": ["adverb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "time"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "agree",
+      "translation": "aynı fikirde olmak, anlaşmak, razı olmak",
+      "definition": "To have the same opinion about something; to concur.",
+      "notes": "",
+      "examples": ["I agree with you.", "They agreed to meet at 8 p.m."],
+      "tags": ["verb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "communication"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "air",
+      "translation": "havalandırmak, yayına girmek, hava",
+      "definition": "The invisible gaseous substance surrounding the earth, a mixture mainly of oxygen and nitrogen.",
+      "notes": "",
+      "examples": ["I need some fresh air.", "Please open the window to let some air in."],
+      "tags": ["noun", "verb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "nature"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "airport",
+      "translation": "havalimanı, havaalanı, hava limanı",
+      "definition": "A place where aircraft regularly take off and land, with buildings for passengers to wait in.",
+      "notes": "",
+      "examples": ["We need to go to the airport.", "My flight leaves from Terminal 2 at the airport."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "places"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "all",
+      "translation": "tüm, bütün, hepsi",
+      "definition": "The whole quantity or extent of a particular group or thing.",
+      "notes": "Used to refer to the complete amount.",
+      "examples": ["All students are here.", "I ate all the cake."],
+      "tags": ["determiner", "adverb", "pronoun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "determiners"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "also",
+      "translation": "ayrıca, yine, de/da",
+      "definition": "In addition; too.",
+      "notes": "Used to add information.",
+      "examples": ["I also like pizza.", "She is also coming."],
+      "tags": ["adverb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "adverbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "always",
+      "translation": "hep, her zaman, daima",
+      "definition": "At all times; on every occasion.",
+      "notes": "Frequency adverb indicating 100% of the time.",
+      "examples": ["I always brush my teeth.", "She is always happy."],
+      "tags": ["adverb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "frequency"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "amazing",
+      "translation": "şaşırtıcı, şaşırtma, hayrete düşürücü",
+      "definition": "Causing great surprise or wonder; astonishing.",
+      "notes": "",
+      "examples": ["The view from the top is amazing.", "You are an amazing person."],
+      "tags": ["adjective"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "and",
+      "translation": "ile, ve, sonra",
+      "definition": "Used to connect words of the same part of speech, clauses, or sentences that are to be taken jointly.",
+      "notes": "Most common conjunction in English.",
+      "examples": ["Tom and Mary are friends.", "I like tea and coffee."],
+      "tags": ["conjunction"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "conjunctions"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "angry",
+      "translation": "kızmış, sinirli, hiddetli",
+      "definition": "Feeling or showing strong annoyance, displeasure, or hostility.",
+      "notes": "",
+      "examples": ["My dad was angry with me.", "Please don't be angry."],
+      "tags": ["adjective"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "feelings"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "animal",
+      "translation": "hayvan, hayvan, hayvani",
+      "definition": "A living organism that feeds on organic matter, typically having specialized sense organs and nervous system and able to respond rapidly to stimuli.",
+      "notes": "",
+      "examples": ["A lion is a wild animal.", "What is your favorite animal?"],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "animals"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "another",
+      "translation": "öbür, başka, ikinci bir",
+      "definition": "Used to refer to an additional person or thing of the same type as one already mentioned or known about.",
+      "notes": "",
+      "examples": ["Can I have another piece of cake?", "Let's meet another day."],
+      "tags": ["determiner", "pronoun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "determiners"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "answer",
+      "translation": "yanıt vermek, cevaplamak, cevap vermek",
+      "definition": "A thing said, written, or done to deal with or as a reaction to a question, statement, or situation.",
+      "notes": "Can be used as a noun or verb.",
+      "examples": ["What is the answer?", "Please answer the question."],
+      "tags": ["noun", "verb", "communication"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "communication"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "any",
+      "translation": "lalettayin, bazı, her",
+      "definition": "Used to refer to one or some of a thing or number of things, no matter how much or how many.",
+      "notes": "Used in questions and negative sentences.",
+      "examples": ["Do you have any money?", "I don't have any time."],
+      "tags": ["determiner", "pronoun", "adverb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "determiners"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "anyone",
+      "translation": "hiç kimse, kimse, herhangi bir kimse",
+      "definition": "Any person or people.",
+      "notes": "",
+      "examples": ["Is anyone home?", "Anyone can answer this question."],
+      "tags": ["pronoun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "pronouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "anything",
+      "translation": "hiçbir şey, her şey, bir şey",
+      "definition": "A thing of any kind.",
+      "notes": "",
+      "examples": ["Can I get you anything?", "I don't know anything about it."],
+      "tags": ["pronoun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "pronouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "apartment",
+      "translation": "daire, apartman katı, apartman dairesi",
+      "definition": "A suite of rooms forming one residence, typically in a building containing a number of these.",
+      "notes": "",
+      "examples": ["I live in a small apartment.", "They are looking for a new apartment."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "places"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "apple",
+      "translation": "elma, elma",
+      "definition": "A round fruit with firm, white flesh and a green or red skin.",
+      "notes": "",
+      "examples": ["I eat an apple every day.", "She is cutting an apple."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "food"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "April",
+      "translation": "nisan, yılın dördüncü ayı, nisan ayı",
+      "definition": "The fourth month of the year.",
+      "notes": "",
+      "examples": ["My birthday is in April.", "April is a spring month."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "time"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "area",
+      "translation": "alan, saha, bölge",
+      "definition": "A region or part of a town, a country, or the world.",
+      "notes": "",
+      "examples": ["This is a quiet area.", "Many people live in this area."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "places"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "arm",
+      "translation": "kol, sarılmak, destek olmak",
+      "definition": "Each of the two upper limbs of the human body from the shoulder to the hand.",
+      "notes": "",
+      "examples": ["My left arm hurts.", "He has a tattoo on his arm."],
+      "tags": ["noun", "verb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "body"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "around",
+      "translation": "sularında, çevrede, etrafında",
+      "definition": "Located or situated on every side.",
+      "notes": "",
+      "examples": ["We walked around the lake.", "He looked around the room."],
+      "tags": ["preposition", "adverb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "prepositions"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "arrive",
+      "translation": "varmak, ulaşmak, gelip çatmak",
+      "definition": "Reach a place at the end of a journey or a stage in a journey.",
+      "notes": "",
+      "examples": ["What time did you arrive?", "The train will arrive soon."],
+      "tags": ["verb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "art",
+      "translation": "sanat, beceri, maharet",
+      "definition": "The expression or application of human creative skill and imagination.",
+      "notes": "",
+      "examples": ["I like modern art.", "She is studying art at college."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "hobbies"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "article",
+      "translation": "bent, madde, (sözleşmede) madde",
+      "definition": "A piece of writing included with others in a newspaper, magazine, or other publication.",
+      "notes": "",
+      "examples": ["I read an interesting article today.", "She wrote an article about her trip."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "communication"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "artist",
+      "translation": "artist, sanatkar, sanatçı",
+      "definition": "A person who creates paintings or drawings as a profession or hobby.",
+      "notes": "",
+      "examples": ["Picasso was a great artist.", "My friend is a talented artist."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "people"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "as",
+      "translation": "olarak, gibi, dahi",
+      "definition": "Used to refer to the function or character that someone or something has.",
+      "notes": "",
+      "examples": ["He works as a doctor.", "She used her coat as a blanket."],
+      "tags": ["preposition", "adverb", "conjunction"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "prepositions"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "ask",
+      "translation": "soru sormak, istemek, çağırmak",
+      "definition": "To say something in order to obtain an answer or some information.",
+      "notes": "Common verb for requesting.",
+      "examples": ["Ask me a question.", "I will ask for help."],
+      "tags": ["verb", "communication"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "communication"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "at",
+      "translation": "üzere, nezdinde, haliyle",
+      "definition": "Expressing location or arrival in a particular place or position.",
+      "notes": "",
+      "examples": ["We are at the station.", "The meeting is at 3 p.m."],
+      "tags": ["preposition"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "prepositions"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "August",
+      "translation": "ağustos, yılın sekizinci ayı, ağustos ayı",
+      "definition": "The eighth month of the year.",
+      "notes": "",
+      "examples": ["We are going on vacation in August.", "My birthday is in August."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "time"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "aunt",
+      "translation": "hala, teyze, yenge",
+      "definition": "The sister of one's father or mother or the wife of one's uncle.",
+      "notes": "",
+      "examples": ["My aunt lives in London.", "I am going to visit my aunt tomorrow."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "family"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "autumn",
+      "translation": "güz, sonbahar, hazan",
+      "definition": "The season after summer and before winter, when leaves fall from the trees.",
+      "notes": "Called 'fall' in American English.",
+      "examples": ["The leaves change color in autumn.", "Autumn is my favorite season."],
+      "tags": ["noun"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "seasons"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "away",
+      "translation": "uzak, uzağa, uzakta",
+      "definition": "To or at a distance from a particular place, person, or thing.",
+      "notes": "",
+      "examples": ["Please go away.", "The beach is five miles away."],
+      "tags": ["adverb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "oxford-a1"},
+      "subcategories": [{"slug": "adverbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

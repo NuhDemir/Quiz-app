@@ -52,6 +52,72 @@ const LevelStatSchema = new mongoose.Schema(
   { _id: false }
 );
 
+const VocabularyAwardSchema = new mongoose.Schema(
+  {
+    type: { type: String },
+    label: { type: String },
+    xp: { type: Number },
+    awardedAt: { type: Date, default: Date.now },
+  },
+  { _id: false }
+);
+
+const VocabularySessionAchievementSchema = new mongoose.Schema(
+  {
+    code: { type: String },
+    type: { type: String },
+    label: { type: String },
+    awardedAt: { type: Date, default: Date.now },
+  },
+  { _id: false }
+);
+
+const VocabularySessionSchema = new mongoose.Schema(
+  {
+    startedAt: { type: Date },
+    lastActivityAt: { type: Date },
+    xp: { type: Number, default: 0 },
+    combo: { type: Number, default: 0 },
+    maxCombo: { type: Number, default: 0 },
+    achievements: {
+      type: [VocabularySessionAchievementSchema],
+      default: [],
+    },
+  },
+  { _id: false }
+);
+
+const VocabularyDailySchema = new mongoose.Schema(
+  {
+    date: { type: String },
+    reviews: { type: Number, default: 0 },
+    successes: { type: Number, default: 0 },
+    xp: { type: Number, default: 0 },
+    goal: { type: Number, default: 0 },
+  },
+  { _id: false }
+);
+
+const VocabularyStatsSchema = new mongoose.Schema(
+  {
+    xp: { type: Number, default: 0 },
+    streak: { type: Number, default: 0 },
+    longestStreak: { type: Number, default: 0 },
+    combo: { type: Number, default: 0 },
+    maxCombo: { type: Number, default: 0 },
+    totalReviews: { type: Number, default: 0 },
+    successCount: { type: Number, default: 0 },
+    failureCount: { type: Number, default: 0 },
+    skipCount: { type: Number, default: 0 },
+    daily: { type: VocabularyDailySchema, default: undefined },
+    unlockedDecks: { type: [String], default: [] },
+    cooldownUntil: { type: Date },
+    lastAward: { type: VocabularyAwardSchema, default: null },
+    session: { type: VocabularySessionSchema, default: undefined },
+  },
+  { _id: false }
+);
+
 const UserSchema = new mongoose.Schema(
   {
     username: { type: String, required: true, trim: true, unique: true },
@@ -115,6 +181,11 @@ const UserSchema = new mongoose.Schema(
       totalReviews: { type: Number, default: 0 },
       grammarTopicsStarted: { type: Number, default: 0 },
       grammarTopicsCompleted: { type: Number, default: 0 },
+    },
+
+    vocabularyStats: {
+      type: VocabularyStatsSchema,
+      default: undefined,
     },
   },
   { timestamps: true }

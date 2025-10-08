@@ -1,8 +1,9 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { fetchQuizList } from "../../store/quizSlice";
+import { fetchGrammarQuizList } from "../../store/quizSlice";
 import { fetchProgress } from "../../store/userSlice";
+import levels from "../../data/levels.json";
 import {
   LibraryBooksIcon,
   TargetIcon,
@@ -14,39 +15,64 @@ import {
   BoltIcon,
 } from "../../components/icons";
 
+const LEVEL_OPTIONS = [{ id: "", nameTr: "Tümü" }, ...levels];
+const DIFFICULTY_OPTIONS = [
+  { id: "", label: "Tümü" },
+  { id: "easy", label: "Kolay" },
+  { id: "medium", label: "Orta" },
+  { id: "hard", label: "Zor" },
+];
+
+const defaultCategoryState = Object.freeze({
+  items: [],
+  meta: null,
+  loading: false,
+  error: null,
+  loaded: false,
+  lastFetched: null,
+});
+
 const Grammar = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { list, listLoading, listError, listLoaded } = useSelector(
-    (state) => state.quiz
-  );
+  const categoryLists = useSelector((state) => state.quiz.categoryLists);
+  const {
+    items: grammarQuizzes,
+    loading: grammarLoading,
+    error: grammarError,
+  } = categoryLists?.grammar || defaultCategoryState;
   const { progress, stats } = useSelector((state) => state.user);
   const { user } = useSelector((state) => state.auth);
   const [activeQuizId, setActiveQuizId] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [levelFilter, setLevelFilter] = useState("");
+  const [difficultyFilter, setDifficultyFilter] = useState("");
+  const [appliedFilters, setAppliedFilters] = useState({
+    search: "",
+    level: "",
+    difficulty: "",
+  });
 
   useEffect(() => {
-    if (!listLoaded && !listLoading) {
-      dispatch(fetchQuizList());
-    }
-  }, [dispatch, listLoaded, listLoading]);
+    const payload = {
+      search: appliedFilters.search ? appliedFilters.search.trim() : undefined,
+      level: appliedFilters.level || undefined,
+      difficulty: appliedFilters.difficulty || undefined,
+    };
+
+    dispatch(fetchGrammarQuizList(payload));
+  }, [
+    dispatch,
+    appliedFilters.search,
+    appliedFilters.level,
+    appliedFilters.difficulty,
+  ]);
 
   useEffect(() => {
     if (user && !progress) {
       dispatch(fetchProgress({ userId: user._id || user.id }));
     }
   }, [dispatch, user, progress]);
-
-  const grammarQuizzes = useMemo(() => {
-    if (!list.length) return [];
-    return list.filter((quiz) => {
-      const base = (quiz.category || quiz.slug || quiz.id || "")
-        .toString()
-        .toLowerCase();
-      if (!base) return false;
-      if (base === "grammar" || base === "gramer") return true;
-      return base.includes("grammar");
-    });
-  }, [list]);
 
   const grammarStats = useMemo(() => {
     const serverStats = progress?.categoryStats?.grammar;
@@ -73,6 +99,23 @@ const Grammar = () => {
   const handlePreview = (quiz) => {
     const key = getQuizKey(quiz);
     setActiveQuizId((prev) => (prev === key ? null : key));
+  };
+
+  const handleApplyFilters = () => {
+    setAppliedFilters({
+      search: searchTerm.trim(),
+      level: levelFilter,
+      difficulty: difficultyFilter,
+    });
+    setActiveQuizId(null);
+  };
+
+  const handleResetFilters = () => {
+    setSearchTerm("");
+    setLevelFilter("");
+    setDifficultyFilter("");
+    setAppliedFilters({ search: "", level: "", difficulty: "" });
+    setActiveQuizId(null);
   };
 
   const handleStartQuiz = (quiz) => {
@@ -148,14 +191,84 @@ const Grammar = () => {
             </div>
           )}
         </div>
-        {listLoading && (
+        {grammarLoading && (
           <div className="text-sm text-secondary">Quizler yükleniyor...</div>
         )}
-        {listError && (
+        {grammarError && (
           <div className="text-sm text-red-500">
-            Quizler alınırken hata: {listError}
+            Quizler alınırken hata: {grammarError}
           </div>
         )}
+      </section>
+
+      <section className="categories-section surface-card card-content">
+        <form
+          className="grid gap-4 md:grid-cols-4"
+          onSubmit={(event) => {
+            event.preventDefault();
+            handleApplyFilters();
+          }}
+        >
+          <div className="md:col-span-2">
+            <label className="form-label" htmlFor="grammar-search">
+              Quiz ara
+            </label>
+            <input
+              id="grammar-search"
+              type="search"
+              value={searchTerm}
+              onChange={(event) => setSearchTerm(event.target.value)}
+              placeholder="Başlık veya açıklamada ara"
+              className="form-input"
+            />
+          </div>
+          <div>
+            <label className="form-label" htmlFor="grammar-level">
+              Seviye
+            </label>
+            <select
+              id="grammar-level"
+              value={levelFilter}
+              onChange={(event) => setLevelFilter(event.target.value)}
+              className="form-input"
+            >
+              {LEVEL_OPTIONS.map((option) => (
+                <option key={option.id || "all-levels"} value={option.id}>
+                  {option.nameTr || option.id || "Tümü"}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <label className="form-label" htmlFor="grammar-difficulty">
+              Zorluk
+            </label>
+            <select
+              id="grammar-difficulty"
+              value={difficultyFilter}
+              onChange={(event) => setDifficultyFilter(event.target.value)}
+              className="form-input"
+            >
+              {DIFFICULTY_OPTIONS.map((option) => (
+                <option key={option.id || "all-difficulty"} value={option.id}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="md:col-span-4 flex justify-end gap-3">
+            <button
+              type="button"
+              onClick={handleResetFilters}
+              className="secondary-button"
+            >
+              Temizle
+            </button>
+            <button type="submit" className="primary-button">
+              Filtrele
+            </button>
+          </div>
+        </form>
       </section>
 
       {featuredQuiz && activeQuizId === getQuizKey(featuredQuiz) && (
@@ -189,7 +302,7 @@ const Grammar = () => {
             {grammarQuizzes.length} quiz bulundu
           </span>
         </div>
-        {grammarQuizzes.length === 0 && !listLoading ? (
+        {grammarQuizzes.length === 0 && !grammarLoading ? (
           <div className="category-empty-state">
             Bu kategori için yayınlanmış quiz bulunmuyor. Lütfen daha sonra
             tekrar kontrol edin.

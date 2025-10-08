@@ -76,11 +76,14 @@ export const buildSessionHeatmapData = (recentSessions = []) => {
 };
 export const buildAggregatedProgress = ({ progress, stats, attempts } = {}) => {
   if (progress) {
+    const vocabulary = progress.vocabulary || null;
+    const xp = vocabulary?.xp ?? progress.xp ?? 0;
+    const streak = vocabulary?.streak ?? progress.streak ?? 0;
     return {
       totalQuizzes: progress.totalQuizzes || 0,
       accuracy: progress.accuracy || 0,
-      streak: progress.streak || 0,
-      xp: progress.xp || 0,
+      streak,
+      xp,
       badges: Array.isArray(progress.badges) ? progress.badges : [],
       recentSessions: Array.isArray(progress.recentSessions)
         ? progress.recentSessions
@@ -89,6 +92,7 @@ export const buildAggregatedProgress = ({ progress, stats, attempts } = {}) => {
       levelStats: progress.levelStats || {},
       userId: progress.userId || null,
       updatedAt: progress.updatedAt || null,
+      vocabulary,
     };
   }
 
@@ -109,6 +113,7 @@ export const buildAggregatedProgress = ({ progress, stats, attempts } = {}) => {
     levelStats: stats?.levelStats || {},
     userId: stats?.userId || null,
     updatedAt: stats?.updatedAt || null,
+    vocabulary: null,
   };
 };
 

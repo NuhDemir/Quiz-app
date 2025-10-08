@@ -321,41 +321,7 @@ const Home = ({ darkMode, toggleDarkMode }) => {
         )}
       </section>
 
-      <section className="home-section">
-        <h2 className="section-heading">Son Denemeler</h2>
-        {attempts.loading && (
-          <p className="text-secondary text-sm">Yükleniyor...</p>
-        )}
-        {!attempts.loading && !attempts.items.length && (
-          <p className="text-secondary text-sm">Henüz deneme yok.</p>
-        )}
-        <div className="flex flex-col gap-3">
-          {attempts.items.slice(0, 5).map((att) => (
-            <div
-              key={att.id || att._id}
-              className="surface-card p-3 rounded-xl flex items-center justify-between"
-            >
-              <div className="flex flex-col">
-                <span className="font-medium text-sm">
-                  {att.quizTitle || att.quizId || "Quiz"}
-                </span>
-                <span className="text-xs text-secondary mt-0.5">
-                  Skor: {att.score != null ? att.score : att.correctCount || 0}%
-                </span>
-              </div>
-              <span className="text-xs opacity-70">
-                {new Date(
-                  att.createdAt || att.date || Date.now()
-                ).toLocaleDateString()}
-              </span>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section>
-        <Progress userId={stats?.userId || "guest-user"} />
-      </section>
+      <section className="home-section"></section>
     </div>
   );
 };

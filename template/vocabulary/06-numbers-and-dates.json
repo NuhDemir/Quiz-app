@@ -1,0 +1,164 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "numbers", "dates"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Numbers and Dates",
+      "slug": "numbers-dates",
+      "description": "Numbers, days, months and time expressions.",
+      "level": "A1",
+      "color": "#059669",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "one",
+      "translation": "bir",
+      "definition": "The number 1.",
+      "notes": "First cardinal number.",
+      "examples": ["I have one book.", "One apple, please."],
+      "tags": ["number", "cardinal"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "numbers-dates"},
+      "subcategories": [{"slug": "numbers"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "two",
+      "translation": "iki",
+      "definition": "The number 2.",
+      "notes": "Second cardinal number.",
+      "examples": ["I have two cats.", "Two cups of tea."],
+      "tags": ["number", "cardinal"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "numbers-dates"},
+      "subcategories": [{"slug": "numbers"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "Monday",
+      "translation": "Pazartesi",
+      "definition": "The first day of the work week.",
+      "notes": "Days of the week are always capitalized.",
+      "examples": ["I work on Monday.", "Monday is busy."],
+      "tags": ["day", "week"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "numbers-dates"},
+      "subcategories": [{"slug": "days"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "January",
+      "translation": "Ocak",
+      "definition": "The first month of the year.",
+      "notes": "Months are always capitalized.",
+      "examples": ["My birthday is in January.", "January is cold."],
+      "tags": ["month", "year"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "numbers-dates"},
+      "subcategories": [{"slug": "months"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "today",
+      "translation": "bugün",
+      "definition": "This day, now.",
+      "notes": "Time expression for present day.",
+      "examples": ["Today is Monday.", "I am busy today."],
+      "tags": ["time", "present"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "numbers-dates"},
+      "subcategories": [{"slug": "time"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "tomorrow",
+      "translation": "yarın",
+      "definition": "The day after today.",
+      "notes": "Time expression for future day.",
+      "examples": ["Tomorrow is Tuesday.", "I will go tomorrow."],
+      "tags": ["time", "future"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "numbers-dates"},
+      "subcategories": [{"slug": "time"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "morning",
+      "translation": "sabah",
+      "definition": "The early part of the day.",
+      "notes": "Time of day from sunrise to noon.",
+      "examples": ["Good morning!", "I work in the morning."],
+      "tags": ["time", "day-part"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "numbers-dates"},
+      "subcategories": [{"slug": "time"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

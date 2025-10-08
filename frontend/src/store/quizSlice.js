@@ -1,6 +1,15 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { quizApi } from "../utils/endpoints";
 
+const createCategoryState = () => ({
+  items: [],
+  meta: null,
+  loading: false,
+  error: null,
+  loaded: false,
+  lastFetched: null,
+});
+
 const initialState = {
   currentSession: null,
   questions: [],
@@ -15,10 +24,21 @@ const initialState = {
   listError: null,
   listLoaded: false,
   listLastFetched: null,
+  listMeta: null,
   detailLoading: false,
   detailError: null,
   submitLoading: false,
   submitError: null,
+  categoryLists: {
+    grammar: createCategoryState(),
+  },
+};
+
+const ensureCategoryState = (state, key) => {
+  if (!state.categoryLists[key]) {
+    state.categoryLists[key] = createCategoryState();
+  }
+  return state.categoryLists[key];
 };
 
 export const fetchQuizList = createAsyncThunk(
@@ -26,6 +46,18 @@ export const fetchQuizList = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const data = await quizApi.list();
+      return data;
+    } catch (error) {
+      return rejectWithValue(error.data || { error: error.message });
+    }
+  }
+);
+
+export const fetchGrammarQuizList = createAsyncThunk(
+  "quiz/list/grammar",
+  async (params, { rejectWithValue }) => {
+    try {
+      const data = await quizApi.listGrammar(params || {});
       return data;
     } catch (error) {
       return rejectWithValue(error.data || { error: error.message });
@@ -143,6 +175,9 @@ const quizSlice = createSlice({
       state.listError = null;
       state.detailError = null;
       state.submitError = null;
+      Object.values(state.categoryLists || {}).forEach((cat) => {
+        if (cat) cat.error = null;
+      });
     },
   },
   extraReducers: (builder) => {
@@ -154,14 +189,46 @@ const quizSlice = createSlice({
       })
       .addCase(fetchQuizList.fulfilled, (state, action) => {
         state.listLoading = false;
-        state.list = action.payload || [];
+        const payload = action.payload;
+        state.list = Array.isArray(payload)
+          ? payload
+          : Array.isArray(payload?.items)
+          ? payload.items
+          : [];
+        state.listMeta = payload?.meta || null;
         state.listLoaded = true;
         state.listLastFetched = Date.now();
       })
       .addCase(fetchQuizList.rejected, (state, action) => {
         state.listLoading = false;
         state.listError = action.payload?.error || action.error?.message;
+        state.listMeta = null;
         state.listLoaded = false;
+      })
+      .addCase(fetchGrammarQuizList.pending, (state) => {
+        const grammarState = ensureCategoryState(state, "grammar");
+        grammarState.loading = true;
+        grammarState.error = null;
+      })
+      .addCase(fetchGrammarQuizList.fulfilled, (state, action) => {
+        const grammarState = ensureCategoryState(state, "grammar");
+        grammarState.loading = false;
+        const payload = action.payload;
+        grammarState.items = Array.isArray(payload)
+          ? payload
+          : Array.isArray(payload?.items)
+          ? payload.items
+          : [];
+        grammarState.meta = payload?.meta || null;
+        grammarState.loaded = true;
+        grammarState.lastFetched = Date.now();
+      })
+      .addCase(fetchGrammarQuizList.rejected, (state, action) => {
+        const grammarState = ensureCategoryState(state, "grammar");
+        grammarState.loading = false;
+        grammarState.error = action.payload?.error || action.error?.message;
+        grammarState.meta = null;
+        grammarState.loaded = false;
       })
       // Detail
       .addCase(fetchQuizDetail.pending, (state) => {

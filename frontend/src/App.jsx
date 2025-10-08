@@ -9,6 +9,7 @@ import Categories from "./pages/Categories";
 import Grammar from "./pages/categories/Grammar";
 import Settings from "./pages/Settings";
 import Stats from "./pages/Stats";
+import Vocabulary from "./pages/Vocabulary";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 // Şifre sıfırlama ve email doğrulama sayfaları kaldırıldı
@@ -19,6 +20,7 @@ import AdminRoute from "./pages/admin/AdminRoute";
 import AdminLayout from "./pages/admin/AdminLayout";
 import AdminLogin from "./pages/admin/AdminLogin";
 import QuizManager from "./pages/admin/QuizManager";
+import VocabularyManager from "./pages/admin/VocabularyManager";
 import useGsapAnimations from "./hooks/useGsapAnimations";
 import { fetchCurrentUser } from "./store/authSlice";
 
@@ -120,10 +122,12 @@ function App() {
           >
             <Route index element={<QuizManager />} />
             <Route path="quizzes" element={<QuizManager />} />
+            <Route path="vocabulary" element={<VocabularyManager />} />
           </Route>
           {/* Forgot / Reset / Verify routes removed */}
           <Route element={<ProtectedRoute />}>
             <Route path="/profile" element={<Profile />} />
+            <Route path="/vocabulary" element={<Vocabulary />} />
             <Route
               path="/settings"
               element={

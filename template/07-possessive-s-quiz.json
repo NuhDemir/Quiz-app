@@ -1,0 +1,421 @@
+{
+  "quiz": {
+    "title": "Possessive 's - A1 Level",
+    "slug": "possessive-s-a1",
+    "description": "Master possessive 's with singular and plural nouns at A1 level.",
+    "category": "grammar",
+    "level": "A1",
+    "difficulty": "easy",
+    "tags": [
+      "possessive s",
+      "apostrophe s",
+      "ownership",
+      "singular",
+      "plural",
+      "grammar",
+      "beginner"
+    ],
+    "timeLimitSec": 1350,
+    "isPublished": false
+  },
+  "questions": [
+    {
+      "prompt": "This is ____ book. (John)",
+      "options": ["John", "Johns", "John's", "Johns'"],
+      "correctAnswer": "John's",
+      "explanation": "Use 's after a singular name to show possession.",
+      "hint": "How do you show that something belongs to John?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "name"]
+    },
+    {
+      "prompt": "The ____ car is red. (teacher)",
+      "options": ["teacher", "teachers", "teacher's", "teachers'"],
+      "correctAnswer": "teacher's",
+      "explanation": "Use 's after a singular noun to show possession.",
+      "hint": "How do you show that something belongs to the teacher?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "noun"]
+    },
+    {
+      "prompt": "I like ____ dress. (Mary)",
+      "options": ["Mary", "Marys", "Mary's", "Marys'"],
+      "correctAnswer": "Mary's",
+      "explanation": "Use 's after a singular name to show possession.",
+      "hint": "How do you show that something belongs to Mary?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "name"]
+    },
+    {
+      "prompt": "The ____ toys are colorful. (children)",
+      "options": ["children", "childrens", "children's", "childrens'"],
+      "correctAnswer": "children's",
+      "explanation": "Use 's after irregular plural nouns to show possession.",
+      "hint": "Children is already plural. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "irregular plural"]
+    },
+    {
+      "prompt": "The ____ books are on the shelf. (students)",
+      "options": ["students", "student's", "students'", "students's"],
+      "correctAnswer": "students'",
+      "explanation": "Use ' (apostrophe only) after regular plural nouns ending in 's'.",
+      "hint": "Students already ends in 's'. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "regular plural"]
+    },
+    {
+      "prompt": "____ house is big. (Tom)",
+      "options": ["Tom", "Toms", "Tom's", "Toms'"],
+      "correctAnswer": "Tom's",
+      "explanation": "Use 's after a singular name to show possession.",
+      "hint": "How do you show that something belongs to Tom?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "name"]
+    },
+    {
+      "prompt": "The ____ office is upstairs. (manager)",
+      "options": ["manager", "managers", "manager's", "managers'"],
+      "correctAnswer": "manager's",
+      "explanation": "Use 's after a singular noun to show possession.",
+      "hint": "How do you show that something belongs to the manager?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "noun"]
+    },
+    {
+      "prompt": "The ____ room is clean. (girls)",
+      "options": ["girls", "girl's", "girls'", "girls's"],
+      "correctAnswer": "girls'",
+      "explanation": "Use ' (apostrophe only) after regular plural nouns ending in 's'.",
+      "hint": "Girls already ends in 's'. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "regular plural"]
+    },
+    {
+      "prompt": "____ bicycle is new. (Peter)",
+      "options": ["Peter", "Peters", "Peter's", "Peters'"],
+      "correctAnswer": "Peter's",
+      "explanation": "Use 's after a singular name to show possession.",
+      "hint": "How do you show that something belongs to Peter?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "name"]
+    },
+    {
+      "prompt": "The ____ food is delicious. (cat)",
+      "options": ["cat", "cats", "cat's", "cats'"],
+      "correctAnswer": "cat's",
+      "explanation": "Use 's after a singular noun to show possession.",
+      "hint": "How do you show that something belongs to the cat?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "animal"]
+    },
+    {
+      "prompt": "The ____ homework is difficult. (boys)",
+      "options": ["boys", "boy's", "boys'", "boys's"],
+      "correctAnswer": "boys'",
+      "explanation": "Use ' (apostrophe only) after regular plural nouns ending in 's'.",
+      "hint": "Boys already ends in 's'. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "regular plural"]
+    },
+    {
+      "prompt": "____ phone is ringing. (Sarah)",
+      "options": ["Sarah", "Sarahs", "Sarah's", "Sarahs'"],
+      "correctAnswer": "Sarah's",
+      "explanation": "Use 's after a singular name to show possession.",
+      "hint": "How do you show that something belongs to Sarah?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "name"]
+    },
+    {
+      "prompt": "The ____ shoes are expensive. (women)",
+      "options": ["women", "womens", "women's", "womens'"],
+      "correctAnswer": "women's",
+      "explanation": "Use 's after irregular plural nouns to show possession.",
+      "hint": "Women is already plural. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "irregular plural"]
+    },
+    {
+      "prompt": "The ____ tail is long. (dog)",
+      "options": ["dog", "dogs", "dog's", "dogs'"],
+      "correctAnswer": "dog's",
+      "explanation": "Use 's after a singular noun to show possession.",
+      "hint": "How do you show that something belongs to the dog?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "animal"]
+    },
+    {
+      "prompt": "The ____ classroom is big. (teachers)",
+      "options": ["teachers", "teacher's", "teachers'", "teachers's"],
+      "correctAnswer": "teachers'",
+      "explanation": "Use ' (apostrophe only) after regular plural nouns ending in 's'.",
+      "hint": "Teachers already ends in 's'. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "regular plural"]
+    },
+    {
+      "prompt": "____ computer is fast. (David)",
+      "options": ["David", "Davids", "David's", "Davids'"],
+      "correctAnswer": "David's",
+      "explanation": "Use 's after a singular name to show possession.",
+      "hint": "How do you show that something belongs to David?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "name"]
+    },
+    {
+      "prompt": "The ____ nest is in the tree. (bird)",
+      "options": ["bird", "birds", "bird's", "birds'"],
+      "correctAnswer": "bird's",
+      "explanation": "Use 's after a singular noun to show possession.",
+      "hint": "How do you show that something belongs to the bird?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "animal"]
+    },
+    {
+      "prompt": "The ____ bags are heavy. (tourists)",
+      "options": ["tourists", "tourist's", "tourists'", "tourists's"],
+      "correctAnswer": "tourists'",
+      "explanation": "Use ' (apostrophe only) after regular plural nouns ending in 's'.",
+      "hint": "Tourists already ends in 's'. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "regular plural"]
+    },
+    {
+      "prompt": "____ garden is beautiful. (Emma)",
+      "options": ["Emma", "Emmas", "Emma's", "Emmas'"],
+      "correctAnswer": "Emma's",
+      "explanation": "Use 's after a singular name to show possession.",
+      "hint": "How do you show that something belongs to Emma?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "name"]
+    },
+    {
+      "prompt": "The ____ teeth are white. (men)",
+      "options": ["men", "mens", "men's", "mens'"],
+      "correctAnswer": "men's",
+      "explanation": "Use 's after irregular plural nouns to show possession.",
+      "hint": "Men is already plural. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "irregular plural"]
+    },
+    {
+      "prompt": "The ____ collar is blue. (cat)",
+      "options": ["cat", "cats", "cat's", "cats'"],
+      "correctAnswer": "cat's",
+      "explanation": "Use 's after a singular noun to show possession.",
+      "hint": "How do you show that something belongs to the cat?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "animal"]
+    },
+    {
+      "prompt": "The ____ uniforms are clean. (nurses)",
+      "options": ["nurses", "nurse's", "nurses'", "nurses's"],
+      "correctAnswer": "nurses'",
+      "explanation": "Use ' (apostrophe only) after regular plural nouns ending in 's'.",
+      "hint": "Nurses already ends in 's'. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "regular plural"]
+    },
+    {
+      "prompt": "____ wallet is on the table. (James)",
+      "options": ["James", "James'", "James's", "Jameses"],
+      "correctAnswer": "James's",
+      "explanation": "Use 's after singular names, even if they end in 's'.",
+      "hint": "James is singular. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "name ending in s"]
+    },
+    {
+      "prompt": "The ____ wings are colorful. (butterfly)",
+      "options": ["butterfly", "butterflys", "butterfly's", "butterflys'"],
+      "correctAnswer": "butterfly's",
+      "explanation": "Use 's after a singular noun to show possession.",
+      "hint": "How do you show that something belongs to the butterfly?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "animal"]
+    },
+    {
+      "prompt": "The ____ desks are organized. (secretaries)",
+      "options": ["secretaries", "secretary's", "secretaries'", "secretaries's"],
+      "correctAnswer": "secretaries'",
+      "explanation": "Use ' (apostrophe only) after regular plural nouns ending in 's'.",
+      "hint": "Secretaries already ends in 's'. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "regular plural"]
+    }
+,
+
+    {
+      "prompt": "____ backpack is heavy. (Lisa)",
+      "options": ["Lisa", "Lisas", "Lisa's", "Lisas'"],
+      "correctAnswer": "Lisa's",
+      "explanation": "Use 's after a singular name to show possession.",
+      "hint": "How do you show that something belongs to Lisa?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "name"]
+    },
+    {
+      "prompt": "The ____ ears are long. (rabbit)",
+      "options": ["rabbit", "rabbits", "rabbit's", "rabbits'"],
+      "correctAnswer": "rabbit's",
+      "explanation": "Use 's after a singular noun to show possession.",
+      "hint": "How do you show that something belongs to the rabbit?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "animal"]
+    },
+    {
+      "prompt": "The ____ pencils are sharp. (artists)",
+      "options": ["artists", "artist's", "artists'", "artists's"],
+      "correctAnswer": "artists'",
+      "explanation": "Use ' (apostrophe only) after regular plural nouns ending in 's'.",
+      "hint": "Artists already ends in 's'. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "regular plural"]
+    },
+    {
+      "prompt": "____ lunch is delicious. (Michael)",
+      "options": ["Michael", "Michaels", "Michael's", "Michaels'"],
+      "correctAnswer": "Michael's",
+      "explanation": "Use 's after a singular name to show possession.",
+      "hint": "How do you show that something belongs to Michael?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "name"]
+    },
+    {
+      "prompt": "The ____ hooves are clean. (horses)",
+      "options": ["horses", "horse's", "horses'", "horses's"],
+      "correctAnswer": "horses'",
+      "explanation": "Use ' (apostrophe only) after regular plural nouns ending in 's'.",
+      "hint": "Horses already ends in 's'. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "regular plural"]
+    },
+    {
+      "prompt": "The ____ feet are small. (baby)",
+      "options": ["baby", "babys", "baby's", "babys'"],
+      "correctAnswer": "baby's",
+      "explanation": "Use 's after a singular noun to show possession.",
+      "hint": "How do you show that something belongs to the baby?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "noun"]
+    },
+    {
+      "prompt": "The ____ coats are warm. (people)",
+      "options": ["people", "peoples", "people's", "peoples'"],
+      "correctAnswer": "people's",
+      "explanation": "Use 's after irregular plural nouns to show possession.",
+      "hint": "People is already plural. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "irregular plural"]
+    },
+    {
+      "prompt": "____ glasses are on the table. (Anna)",
+      "options": ["Anna", "Annas", "Anna's", "Annas'"],
+      "correctAnswer": "Anna's",
+      "explanation": "Use 's after a singular name to show possession.",
+      "hint": "How do you show that something belongs to Anna?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "name"]
+    },
+    {
+      "prompt": "The ____ horns are sharp. (bull)",
+      "options": ["bull", "bulls", "bull's", "bulls'"],
+      "correctAnswer": "bull's",
+      "explanation": "Use 's after a singular noun to show possession.",
+      "hint": "How do you show that something belongs to the bull?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "animal"]
+    },
+    {
+      "prompt": "The ____ reports are ready. (doctors)",
+      "options": ["doctors", "doctor's", "doctors'", "doctors's"],
+      "correctAnswer": "doctors'",
+      "explanation": "Use ' (apostrophe only) after regular plural nouns ending in 's'.",
+      "hint": "Doctors already ends in 's'. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "regular plural"]
+    },
+    {
+      "prompt": "____ watch is expensive. (Charles)",
+      "options": ["Charles", "Charles'", "Charles's", "Charleses"],
+      "correctAnswer": "Charles's",
+      "explanation": "Use 's after singular names, even if they end in 's'.",
+      "hint": "Charles is singular. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "name ending in s"]
+    },
+    {
+      "prompt": "The ____ stripes are black and white. (zebra)",
+      "options": ["zebra", "zebras", "zebra's", "zebras'"],
+      "correctAnswer": "zebra's",
+      "explanation": "Use 's after a singular noun to show possession.",
+      "hint": "How do you show that something belongs to the zebra?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "animal"]
+    },
+    {
+      "prompt": "The ____ instruments are expensive. (musicians)",
+      "options": ["musicians", "musician's", "musicians'", "musicians's"],
+      "correctAnswer": "musicians'",
+      "explanation": "Use ' (apostrophe only) after regular plural nouns ending in 's'.",
+      "hint": "Musicians already ends in 's'. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "regular plural"]
+    },
+    {
+      "prompt": "____ homework is finished. (Robert)",
+      "options": ["Robert", "Roberts", "Robert's", "Roberts'"],
+      "correctAnswer": "Robert's",
+      "explanation": "Use 's after a singular name to show possession.",
+      "hint": "How do you show that something belongs to Robert?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "name"]
+    },
+    {
+      "prompt": "The ____ wool is soft. (sheep)",
+      "options": ["sheep", "sheeps", "sheep's", "sheeps'"],
+      "correctAnswer": "sheep's",
+      "explanation": "Use 's after singular nouns. 'Sheep' is the same in singular and plural.",
+      "hint": "This sheep is singular. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "irregular noun"]
+    },
+    {
+      "prompt": "The ____ equipment is modern. (firefighters)",
+      "options": ["firefighters", "firefighter's", "firefighters'", "firefighters's"],
+      "correctAnswer": "firefighters'",
+      "explanation": "Use ' (apostrophe only) after regular plural nouns ending in 's'.",
+      "hint": "Firefighters already ends in 's'. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "regular plural"]
+    },
+    {
+      "prompt": "____ keys are missing. (Jessica)",
+      "options": ["Jessica", "Jessicas", "Jessica's", "Jessicas'"],
+      "correctAnswer": "Jessica's",
+      "explanation": "Use 's after a singular name to show possession.",
+      "hint": "How do you show that something belongs to Jessica?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "name"]
+    },
+    {
+      "prompt": "The ____ antlers are big. (deer)",
+      "options": ["deer", "deers", "deer's", "deers'"],
+      "correctAnswer": "deer's",
+      "explanation": "Use 's after singular nouns. 'Deer' is the same in singular and plural.",
+      "hint": "This deer is singular. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "singular", "irregular noun"]
+    },
+    {
+      "prompt": "The ____ projects are creative. (designers)",
+      "options": ["designers", "designer's", "designers'", "designers's"],
+      "correctAnswer": "designers'",
+      "explanation": "Use ' (apostrophe only) after regular plural nouns ending in 's'.",
+      "hint": "Designers already ends in 's'. How do you add possession?",
+      "points": 10,
+      "tags": ["possessive s", "regular plural"]
+    }
+  ]
+}

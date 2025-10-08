@@ -1,0 +1,146 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "weather"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Weather",
+      "slug": "weather",
+      "description": "Weather conditions and related words.",
+      "level": "A1",
+      "color": "#06b6d4",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "sunny",
+      "translation": "güneşli",
+      "definition": "When the sun is shining brightly.",
+      "notes": "Good weather condition.",
+      "examples": ["Today is sunny.", "I like sunny days."],
+      "tags": ["weather", "good"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "weather"},
+      "subcategories": [{"slug": "conditions"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "rainy",
+      "translation": "yağmurlu",
+      "definition": "When water falls from the sky.",
+      "notes": "You need an umbrella.",
+      "examples": ["It is rainy today.", "I don't like rainy weather."],
+      "tags": ["weather", "wet"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "weather"},
+      "subcategories": [{"slug": "conditions"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "cold",
+      "translation": "soğuk",
+      "definition": "Low temperature, not warm.",
+      "notes": "Opposite of hot.",
+      "examples": ["It is cold outside.", "I feel cold."],
+      "tags": ["weather", "temperature"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "weather"},
+      "subcategories": [{"slug": "temperature"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "hot",
+      "translation": "sıcak",
+      "definition": "High temperature, very warm.",
+      "notes": "Opposite of cold.",
+      "examples": ["Summer is hot.", "The coffee is hot."],
+      "tags": ["weather", "temperature"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "weather"},
+      "subcategories": [{"slug": "temperature"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "cloudy",
+      "translation": "bulutlu",
+      "definition": "When there are many clouds in the sky.",
+      "notes": "The sun is hidden by clouds.",
+      "examples": ["It is cloudy today.", "Cloudy weather is cool."],
+      "tags": ["weather", "sky"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "weather"},
+      "subcategories": [{"slug": "conditions"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "snow",
+      "translation": "kar",
+      "definition": "White frozen water that falls from the sky.",
+      "notes": "Falls in winter when it's very cold.",
+      "examples": ["I like snow.", "Snow is white and cold."],
+      "tags": ["weather", "winter"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "weather"},
+      "subcategories": [{"slug": "precipitation"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

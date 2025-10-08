@@ -1,0 +1,110 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "activities", "daily"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Daily Activities",
+      "slug": "daily-activities",
+      "description": "Actions done in daily routines.",
+      "level": "A1",
+      "color": "#f59e0b",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "wake up",
+      "translation": "uyanmak",
+      "definition": "To stop sleeping and become awake.",
+      "notes": "First thing you do in the morning.",
+      "examples": ["I wake up at 7 AM.", "Wake up! It's morning."],
+      "tags": ["activity", "morning"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "daily-activities"},
+      "subcategories": [{"slug": "morning"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "eat breakfast",
+      "translation": "kahvaltı yapmak",
+      "definition": "To have the first meal of the day.",
+      "notes": "Important meal to start the day.",
+      "examples": ["I eat breakfast at home.", "Eat breakfast before school."],
+      "tags": ["activity", "food", "morning"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "daily-activities"},
+      "subcategories": [{"slug": "eating"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "go to work",
+      "translation": "işe gitmek",
+      "definition": "To travel to your job.",
+      "notes": "Daily routine for working people.",
+      "examples": ["I go to work by bus.", "She goes to work early."],
+      "tags": ["activity", "work", "travel"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "daily-activities"},
+      "subcategories": [{"slug": "work"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "sleep",
+      "translation": "uyumak",
+      "definition": "To rest with your eyes closed.",
+      "notes": "What you do at night.",
+      "examples": ["I sleep 8 hours.", "Sleep well!"],
+      "tags": ["activity", "night", "rest"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "daily-activities"},
+      "subcategories": [{"slug": "night"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

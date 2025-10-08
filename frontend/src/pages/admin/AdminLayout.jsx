@@ -10,6 +10,11 @@ const navItems = [
     end: true,
     icon: "🧠",
   },
+  {
+    to: "/admin/vocabulary",
+    label: "Kelime yönetimi",
+    icon: "📚",
+  },
 ];
 
 const AdminLayout = () => {
@@ -55,8 +60,8 @@ const AdminLayout = () => {
           <div>
             <h1>Admin Paneli</h1>
             <p className="text-secondary">
-              Quiz içeriklerinizi yönetin, yeni sorular ekleyin ve yayın akışını
-              kontrol edin.
+              Quiz ve kelime içeriklerinizi yönetin, yeni kayıtlar ekleyin ve
+              yayın akışını kontrol edin.
             </p>
           </div>
           <div className="admin-header__actions">

@@ -1,3 +1,4 @@
+const mongoose = require("mongoose");
 const connectDB = require("./db");
 const Quiz = require("../../models/Quiz");
 const Question = require("../../models/Question");
@@ -33,18 +34,42 @@ exports.handler = async (event) => {
     await connectDB();
 
     const payload = parseBody(event.body);
-    const { quizId, answers, durationSec = 0 } = payload;
+    const { quizId, quizSlug, answers, durationSec = 0 } = payload;
 
-    if (!quizId || !Array.isArray(answers)) {
+    if ((!quizId && !quizSlug) || !Array.isArray(answers)) {
       return {
         statusCode: 400,
         body: JSON.stringify({
-          error: "quizId and answers array are required",
+          error: "quizId (veya quizSlug) ve answers alanı gerekli",
         }),
       };
     }
 
-    const quiz = await Quiz.findById(quizId).populate("questions");
+    const normalizedId = typeof quizId === "string" ? quizId.trim() : "";
+    const normalizedSlug =
+      typeof quizSlug === "string"
+        ? quizSlug.trim().toLowerCase()
+        : normalizedId && !mongoose.Types.ObjectId.isValid(normalizedId)
+        ? normalizedId.trim().toLowerCase()
+        : "";
+
+    let quizQuery = null;
+    if (normalizedId && mongoose.Types.ObjectId.isValid(normalizedId)) {
+      quizQuery = { _id: normalizedId };
+    } else if (normalizedSlug) {
+      quizQuery = { slug: normalizedSlug };
+    }
+
+    if (!quizQuery) {
+      return {
+        statusCode: 400,
+        body: JSON.stringify({
+          error: "Geçerli bir quizId veya quizSlug belirtmelisiniz",
+        }),
+      };
+    }
+
+    const quiz = await Quiz.findOne(quizQuery).populate("questions");
 
     if (!quiz) {
       return {

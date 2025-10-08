@@ -1,0 +1,423 @@
+{
+  "quiz": {
+    "title": "Subject Pronouns - A1 Level",
+    "slug": "subject-pronouns-a1",
+    "description": "Master subject pronouns and person-pronoun agreement at A1 level.",
+    "category": "grammar",
+    "level": "A1",
+    "difficulty": "easy",
+    "tags": [
+      "subject pronouns",
+      "I",
+      "you",
+      "he",
+      "she",
+      "it",
+      "we",
+      "they",
+      "grammar",
+      "beginner"
+    ],
+    "timeLimitSec": 1350,
+    "isPublished": false
+  },
+  "questions": [
+    {
+      "prompt": "John is a student. ____ is 20 years old.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "He",
+      "explanation": "Use 'He' to replace a male person's name.",
+      "hint": "John is a boy's name.",
+      "points": 10,
+      "tags": ["subject pronouns", "he"]
+    },
+    {
+      "prompt": "Mary is my sister. ____ is very kind.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "She",
+      "explanation": "Use 'She' to replace a female person's name.",
+      "hint": "Mary is a girl's name.",
+      "points": 10,
+      "tags": ["subject pronouns", "she"]
+    },
+    {
+      "prompt": "The cat is sleeping. ____ is very tired.",
+      "options": ["He", "She", "It", "They"],
+      "correctAnswer": "It",
+      "explanation": "Use 'It' for animals and things.",
+      "hint": "What pronoun do we use for animals?",
+      "points": 10,
+      "tags": ["subject pronouns", "it"]
+    },
+    {
+      "prompt": "My friends are coming. ____ are very excited.",
+      "options": ["He", "She", "It", "They"],
+      "correctAnswer": "They",
+      "explanation": "Use 'They' for plural people or things.",
+      "hint": "'Friends' is plural.",
+      "points": 10,
+      "tags": ["subject pronouns", "they"]
+    },
+    {
+      "prompt": "My brother and I are students. ____ study English.",
+      "options": ["I", "You", "He", "We"],
+      "correctAnswer": "We",
+      "explanation": "Use 'We' when talking about yourself and others.",
+      "hint": "'My brother and I' = ?",
+      "points": 10,
+      "tags": ["subject pronouns", "we"]
+    },
+    {
+      "prompt": "____ am a teacher.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "I",
+      "explanation": "Use 'I' when talking about yourself.",
+      "hint": "Who is speaking?",
+      "points": 10,
+      "tags": ["subject pronouns", "I"]
+    },
+    {
+      "prompt": "____ are my best friend.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "You",
+      "explanation": "Use 'You' when talking to someone.",
+      "hint": "Who are you talking to?",
+      "points": 10,
+      "tags": ["subject pronouns", "you"]
+    },
+    {
+      "prompt": "The book is on the table. ____ is very interesting.",
+      "options": ["He", "She", "It", "They"],
+      "correctAnswer": "It",
+      "explanation": "Use 'It' for things.",
+      "hint": "What pronoun do we use for objects?",
+      "points": 10,
+      "tags": ["subject pronouns", "it"]
+    },
+    {
+      "prompt": "Tom and Lisa are married. ____ live in London.",
+      "options": ["He", "She", "We", "They"],
+      "correctAnswer": "They",
+      "explanation": "Use 'They' for two or more people.",
+      "hint": "Tom and Lisa = how many people?",
+      "points": 10,
+      "tags": ["subject pronouns", "they"]
+    },
+    {
+      "prompt": "My mother is a doctor. ____ works in a hospital.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "She",
+      "explanation": "Use 'She' for a female person.",
+      "hint": "Mother is female.",
+      "points": 10,
+      "tags": ["subject pronouns", "she"]
+    },
+    {
+      "prompt": "My father is tall. ____ is 45 years old.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "He",
+      "explanation": "Use 'He' for a male person.",
+      "hint": "Father is male.",
+      "points": 10,
+      "tags": ["subject pronouns", "he"]
+    },
+    {
+      "prompt": "The dogs are playing. ____ are very happy.",
+      "options": ["He", "She", "It", "They"],
+      "correctAnswer": "They",
+      "explanation": "Use 'They' for plural animals.",
+      "hint": "'Dogs' is plural.",
+      "points": 10,
+      "tags": ["subject pronouns", "they"]
+    },
+    {
+      "prompt": "My sister and you are friends. ____ like music.",
+      "options": ["I", "You", "We", "They"],
+      "correctAnswer": "You",
+      "explanation": "Use 'You' when talking about the person you're speaking to and others.",
+      "hint": "Who are you talking to?",
+      "points": 10,
+      "tags": ["subject pronouns", "you"]
+    },
+    {
+      "prompt": "The car is red. ____ is very fast.",
+      "options": ["He", "She", "It", "They"],
+      "correctAnswer": "It",
+      "explanation": "Use 'It' for vehicles and objects.",
+      "hint": "What pronoun do we use for cars?",
+      "points": 10,
+      "tags": ["subject pronouns", "it"]
+    },
+    {
+      "prompt": "My parents are kind. ____ help me a lot.",
+      "options": ["He", "She", "We", "They"],
+      "correctAnswer": "They",
+      "explanation": "Use 'They' for plural people.",
+      "hint": "'Parents' means mother and father.",
+      "points": 10,
+      "tags": ["subject pronouns", "they"]
+    },
+    {
+      "prompt": "Anna and I are classmates. ____ sit together.",
+      "options": ["I", "You", "We", "They"],
+      "correctAnswer": "We",
+      "explanation": "Use 'We' when including yourself with others.",
+      "hint": "'Anna and I' includes the speaker.",
+      "points": 10,
+      "tags": ["subject pronouns", "we"]
+    },
+    {
+      "prompt": "The teacher is nice. ____ explains everything clearly.",
+      "options": ["He", "She", "It", "They"],
+      "correctAnswer": "She",
+      "explanation": "Use 'She' or 'He' depending on the teacher's gender. Here we assume female.",
+      "hint": "What gender is the teacher?",
+      "points": 10,
+      "tags": ["subject pronouns", "she"]
+    },
+    {
+      "prompt": "My grandfather is old. ____ is 80 years old.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "He",
+      "explanation": "Use 'He' for a male family member.",
+      "hint": "Grandfather is male.",
+      "points": 10,
+      "tags": ["subject pronouns", "he"]
+    },
+    {
+      "prompt": "The children are playing. ____ are in the garden.",
+      "options": ["He", "She", "It", "They"],
+      "correctAnswer": "They",
+      "explanation": "Use 'They' for plural people.",
+      "hint": "'Children' is plural.",
+      "points": 10,
+      "tags": ["subject pronouns", "they"]
+    },
+    {
+      "prompt": "The phone is ringing. ____ is very loud.",
+      "options": ["He", "She", "It", "They"],
+      "correctAnswer": "It",
+      "explanation": "Use 'It' for objects and devices.",
+      "hint": "What pronoun do we use for phones?",
+      "points": 10,
+      "tags": ["subject pronouns", "it"]
+    },
+    {
+      "prompt": "____ and my friend study together.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "I",
+      "explanation": "Use 'I' when talking about yourself.",
+      "hint": "Who is the speaker?",
+      "points": 10,
+      "tags": ["subject pronouns", "I"]
+    },
+    {
+      "prompt": "Sarah is my cousin. ____ lives in Paris.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "She",
+      "explanation": "Use 'She' for a female person.",
+      "hint": "Sarah is a girl's name.",
+      "points": 10,
+      "tags": ["subject pronouns", "she"]
+    },
+    {
+      "prompt": "The birds are singing. ____ are very beautiful.",
+      "options": ["He", "She", "It", "They"],
+      "correctAnswer": "They",
+      "explanation": "Use 'They' for plural animals.",
+      "hint": "'Birds' is plural.",
+      "points": 10,
+      "tags": ["subject pronouns", "they"]
+    },
+    {
+      "prompt": "My uncle is funny. ____ tells good jokes.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "He",
+      "explanation": "Use 'He' for a male family member.",
+      "hint": "Uncle is male.",
+      "points": 10,
+      "tags": ["subject pronouns", "he"]
+    },
+    {
+      "prompt": "The house is big. ____ has five rooms.",
+      "options": ["He", "She", "It", "They"],
+      "correctAnswer": "It",
+      "explanation": "Use 'It' for buildings and places.",
+      "hint": "What pronoun do we use for houses?",
+      "points": 10,
+      "tags": ["subject pronouns", "it"]
+    }
+,
+ {
+      "prompt": "You and I are team members. ____ work well together.",
+      "options": ["I", "You", "We", "They"],
+      "correctAnswer": "We",
+      "explanation": "Use 'We' when including yourself and the person you're talking to.",
+      "hint": "'You and I' = ?",
+      "points": 10,
+      "tags": ["subject pronouns", "we"]
+    },
+    {
+      "prompt": "The flowers are pretty. ____ smell nice too.",
+      "options": ["He", "She", "It", "They"],
+      "correctAnswer": "They",
+      "explanation": "Use 'They' for plural things.",
+      "hint": "'Flowers' is plural.",
+      "points": 10,
+      "tags": ["subject pronouns", "they"]
+    },
+    {
+      "prompt": "My aunt is a nurse. ____ works at night.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "She",
+      "explanation": "Use 'She' for a female family member.",
+      "hint": "Aunt is female.",
+      "points": 10,
+      "tags": ["subject pronouns", "she"]
+    },
+    {
+      "prompt": "The computer is new. ____ works very fast.",
+      "options": ["He", "She", "It", "They"],
+      "correctAnswer": "It",
+      "explanation": "Use 'It' for machines and devices.",
+      "hint": "What pronoun do we use for computers?",
+      "points": 10,
+      "tags": ["subject pronouns", "it"]
+    },
+    {
+      "prompt": "Peter and Mark are brothers. ____ look similar.",
+      "options": ["He", "She", "We", "They"],
+      "correctAnswer": "They",
+      "explanation": "Use 'They' for two or more people.",
+      "hint": "Peter and Mark = how many people?",
+      "points": 10,
+      "tags": ["subject pronouns", "they"]
+    },
+    {
+      "prompt": "____ are a good student.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "You",
+      "explanation": "Use 'You' when talking to someone.",
+      "hint": "Who are you talking to?",
+      "points": 10,
+      "tags": ["subject pronouns", "you"]
+    },
+    {
+      "prompt": "My grandmother is wise. ____ gives good advice.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "She",
+      "explanation": "Use 'She' for a female family member.",
+      "hint": "Grandmother is female.",
+      "points": 10,
+      "tags": ["subject pronouns", "she"]
+    },
+    {
+      "prompt": "The students are studying. ____ have an exam tomorrow.",
+      "options": ["He", "She", "We", "They"],
+      "correctAnswer": "They",
+      "explanation": "Use 'They' for plural people.",
+      "hint": "'Students' is plural.",
+      "points": 10,
+      "tags": ["subject pronouns", "they"]
+    },
+    {
+      "prompt": "The door is open. ____ needs to be closed.",
+      "options": ["He", "She", "It", "They"],
+      "correctAnswer": "It",
+      "explanation": "Use 'It' for objects and things.",
+      "hint": "What pronoun do we use for doors?",
+      "points": 10,
+      "tags": ["subject pronouns", "it"]
+    },
+    {
+      "prompt": "My friends and I are going shopping. ____ need new clothes.",
+      "options": ["I", "You", "We", "They"],
+      "correctAnswer": "We",
+      "explanation": "Use 'We' when including yourself with others.",
+      "hint": "'My friends and I' includes the speaker.",
+      "points": 10,
+      "tags": ["subject pronouns", "we"]
+    },
+    {
+      "prompt": "Robert is my neighbor. ____ is very friendly.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "He",
+      "explanation": "Use 'He' for a male person.",
+      "hint": "Robert is a boy's name.",
+      "points": 10,
+      "tags": ["subject pronouns", "he"]
+    },
+    {
+      "prompt": "The chairs are comfortable. ____ are made of wood.",
+      "options": ["He", "She", "It", "They"],
+      "correctAnswer": "They",
+      "explanation": "Use 'They' for plural objects.",
+      "hint": "'Chairs' is plural.",
+      "points": 10,
+      "tags": ["subject pronouns", "they"]
+    },
+    {
+      "prompt": "____ like to read books.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "I",
+      "explanation": "Use 'I' when talking about yourself.",
+      "hint": "Who is speaking about their preference?",
+      "points": 10,
+      "tags": ["subject pronouns", "I"]
+    },
+    {
+      "prompt": "The window is dirty. ____ needs cleaning.",
+      "options": ["He", "She", "It", "They"],
+      "correctAnswer": "It",
+      "explanation": "Use 'It' for objects and parts of buildings.",
+      "hint": "What pronoun do we use for windows?",
+      "points": 10,
+      "tags": ["subject pronouns", "it"]
+    },
+    {
+      "prompt": "Emma is my best friend. ____ understands me well.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "She",
+      "explanation": "Use 'She' for a female person.",
+      "hint": "Emma is a girl's name.",
+      "points": 10,
+      "tags": ["subject pronouns", "she"]
+    },
+    {
+      "prompt": "The teachers are meeting. ____ are discussing the new curriculum.",
+      "options": ["He", "She", "We", "They"],
+      "correctAnswer": "They",
+      "explanation": "Use 'They' for plural people.",
+      "hint": "'Teachers' is plural.",
+      "points": 10,
+      "tags": ["subject pronouns", "they"]
+    },
+    {
+      "prompt": "My brother and sister are twins. ____ look exactly the same.",
+      "options": ["He", "She", "We", "They"],
+      "correctAnswer": "They",
+      "explanation": "Use 'They' for two or more people.",
+      "hint": "Brother and sister = how many people?",
+      "points": 10,
+      "tags": ["subject pronouns", "they"]
+    },
+    {
+      "prompt": "The clock is broken. ____ doesn't work.",
+      "options": ["He", "She", "It", "They"],
+      "correctAnswer": "It",
+      "explanation": "Use 'It' for objects and devices.",
+      "hint": "What pronoun do we use for clocks?",
+      "points": 10,
+      "tags": ["subject pronouns", "it"]
+    },
+    {
+      "prompt": "____ and your family are invited to the party.",
+      "options": ["I", "You", "He", "She"],
+      "correctAnswer": "You",
+      "explanation": "Use 'You' when talking to someone about them and their family.",
+      "hint": "Who are you talking to?",
+      "points": 10,
+      "tags": ["subject pronouns", "you"]
+    }
+  ]
+}

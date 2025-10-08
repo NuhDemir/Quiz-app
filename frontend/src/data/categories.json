@@ -18,7 +18,8 @@
     "descriptionTr": "İngilizce kelime dağarcığınızı genişletin",
     "icon": "TextFields",
     "color": "#4CAF50",
-    "totalQuestions": 3000
+    "totalQuestions": 3000,
+    "pagePath": "/vocabulary"
   },
   {
     "id": "reading",

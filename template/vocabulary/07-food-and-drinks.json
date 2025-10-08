@@ -1,0 +1,146 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "food", "drinks"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Food and Drinks",
+      "slug": "food-drinks",
+      "description": "Common food and drink names.",
+      "level": "A1",
+      "color": "#dc2626",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "bread",
+      "translation": "ekmek",
+      "definition": "A basic food made from flour and water.",
+      "notes": "Staple food in many cultures.",
+      "examples": ["I eat bread for breakfast.", "Fresh bread smells good."],
+      "tags": ["food", "basic"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "food-drinks"},
+      "subcategories": [{"slug": "food"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "water",
+      "translation": "su",
+      "definition": "Clear liquid that we drink.",
+      "notes": "Essential for life.",
+      "examples": ["I drink water every day.", "Water is healthy."],
+      "tags": ["drink", "basic"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "food-drinks"},
+      "subcategories": [{"slug": "drinks"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "milk",
+      "translation": "süt",
+      "definition": "White liquid from cows.",
+      "notes": "Good source of calcium.",
+      "examples": ["I drink milk with cookies.", "Milk is white."],
+      "tags": ["drink", "dairy"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "food-drinks"},
+      "subcategories": [{"slug": "drinks"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "apple",
+      "translation": "elma",
+      "definition": "A round fruit that is usually red or green.",
+      "notes": "Healthy fruit, often eaten raw.",
+      "examples": ["I eat an apple every day.", "Apples are sweet."],
+      "tags": ["food", "fruit"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "food-drinks"},
+      "subcategories": [{"slug": "fruit"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "coffee",
+      "translation": "kahve",
+      "definition": "A hot brown drink made from coffee beans.",
+      "notes": "Popular morning drink.",
+      "examples": ["I drink coffee in the morning.", "Coffee is hot."],
+      "tags": ["drink", "hot"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "food-drinks"},
+      "subcategories": [{"slug": "drinks"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "rice",
+      "translation": "pirinç",
+      "definition": "Small white grains that we cook and eat.",
+      "notes": "Staple food in many countries.",
+      "examples": ["We eat rice with chicken.", "Rice is good with vegetables."],
+      "tags": ["food", "grain"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "food-drinks"},
+      "subcategories": [{"slug": "food"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "animals"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Animals",
+      "slug": "animals",
+      "description": "Common animal names.",
+      "level": "A1",
+      "color": "#16a34a",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "dog",
+      "translation": "köpek",
+      "definition": "A friendly animal that people keep as pets.",
+      "notes": "Man's best friend.",
+      "examples": ["I have a dog.", "The dog is friendly."],
+      "tags": ["animal", "pet"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "animals"},
+      "subcategories": [{"slug": "pets"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "cat",
+      "translation": "kedi",
+      "definition": "A small animal that people keep as pets.",
+      "notes": "Likes to sleep and play.",
+      "examples": ["My cat is cute.", "The cat likes milk."],
+      "tags": ["animal", "pet"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "animals"},
+      "subcategories": [{"slug": "pets"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "bird",
+      "translation": "kuş",
+      "definition": "An animal that can fly and has wings.",
+      "notes": "Has feathers and lays eggs.",
+      "examples": ["The bird sings beautifully.", "I see a bird in the tree."],
+      "tags": ["animal", "wild"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "animals"},
+      "subcategories": [{"slug": "wild"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "fish",
+      "translation": "balık",
+      "definition": "An animal that lives in water.",
+      "notes": "Swims and breathes underwater.",
+      "examples": ["Fish live in the sea.", "I like to eat fish."],
+      "tags": ["animal", "water"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "animals"},
+      "subcategories": [{"slug": "water"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "horse",
+      "translation": "at",
+      "definition": "A large animal that people can ride.",
+      "notes": "Strong and fast animal.",
+      "examples": ["The horse runs fast.", "I want to ride a horse."],
+      "tags": ["animal", "farm"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "animals"},
+      "subcategories": [{"slug": "farm"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

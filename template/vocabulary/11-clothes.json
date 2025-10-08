@@ -1,0 +1,146 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "clothes"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Clothes",
+      "slug": "clothes",
+      "description": "Basic clothing items.",
+      "level": "A1",
+      "color": "#9333ea",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "shirt",
+      "translation": "gömlek",
+      "definition": "A piece of clothing for the upper body.",
+      "notes": "Usually has buttons and sleeves.",
+      "examples": ["I wear a white shirt.", "His shirt is blue."],
+      "tags": ["clothing", "upper-body"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "clothes"},
+      "subcategories": [{"slug": "upper-body"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "pants",
+      "translation": "pantolon",
+      "definition": "Clothing that covers your legs.",
+      "notes": "Also called 'trousers' in British English.",
+      "examples": ["I wear black pants.", "These pants are comfortable."],
+      "tags": ["clothing", "lower-body"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "clothes"},
+      "subcategories": [{"slug": "lower-body"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "shoes",
+      "translation": "ayakkabı",
+      "definition": "Things you wear on your feet.",
+      "notes": "Always plural in English.",
+      "examples": ["My shoes are new.", "I need comfortable shoes."],
+      "tags": ["clothing", "feet"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "clothes"},
+      "subcategories": [{"slug": "feet"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "dress",
+      "translation": "elbise",
+      "definition": "A piece of clothing for women that covers the body.",
+      "notes": "One piece clothing item.",
+      "examples": ["She wears a beautiful dress.", "The dress is red."],
+      "tags": ["clothing", "women"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "clothes"},
+      "subcategories": [{"slug": "women"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "hat",
+      "translation": "şapka",
+      "definition": "Something you wear on your head.",
+      "notes": "Protects from sun or cold.",
+      "examples": ["I wear a hat in summer.", "His hat is black."],
+      "tags": ["clothing", "head"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "clothes"},
+      "subcategories": [{"slug": "head"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "jacket",
+      "translation": "ceket",
+      "definition": "A piece of clothing you wear over other clothes.",
+      "notes": "Keeps you warm.",
+      "examples": ["I need a jacket today.", "The jacket is warm."],
+      "tags": ["clothing", "outer"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "clothes"},
+      "subcategories": [{"slug": "outer"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

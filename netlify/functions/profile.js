@@ -1,6 +1,7 @@
 const connectDB = require("./db");
 const User = require("../../models/User");
 const QuizAttempt = require("../../models/QuizAttempt");
+require("../../models/Quiz");
 const {
   respond,
   handleError,
@@ -9,6 +10,94 @@ const {
   sanitizeUser,
   createHttpError,
 } = require("./auth-helpers");
+
+const toIsoString = (value) => {
+  if (!value) return null;
+  const date = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(date.getTime())) return null;
+  return date.toISOString();
+};
+
+const formatVocabularyStats = (stats = {}) => {
+  if (!stats || typeof stats !== "object") {
+    return {
+      xp: 0,
+      streak: 0,
+      longestStreak: 0,
+      combo: 0,
+      maxCombo: 0,
+      totalReviews: 0,
+      successCount: 0,
+      failureCount: 0,
+      skipCount: 0,
+      daily: null,
+      session: null,
+      unlockedDecks: [],
+      cooldownUntil: null,
+      lastAward: null,
+    };
+  }
+
+  const toNumber = (value, fallback = 0) =>
+    Number.isFinite(value) ? value : fallback;
+
+  const daily = stats.daily
+    ? {
+        date: stats.daily.date || null,
+        reviews: toNumber(stats.daily.reviews),
+        successes: toNumber(stats.daily.successes),
+        xp: toNumber(stats.daily.xp),
+        goal:
+          stats.daily.goal !== undefined && stats.daily.goal !== null
+            ? Number(stats.daily.goal)
+            : null,
+      }
+    : null;
+
+  const session = stats.session
+    ? {
+        startedAt: toIsoString(stats.session.startedAt),
+        lastActivityAt: toIsoString(stats.session.lastActivityAt),
+        xp: toNumber(stats.session.xp),
+        combo: toNumber(stats.session.combo),
+        maxCombo: toNumber(stats.session.maxCombo),
+        achievements: Array.isArray(stats.session.achievements)
+          ? stats.session.achievements
+          : [],
+      }
+    : null;
+
+  const lastAward = stats.lastAward
+    ? {
+        type: stats.lastAward.type || null,
+        label: stats.lastAward.label || null,
+        xp:
+          stats.lastAward.xp !== undefined && stats.lastAward.xp !== null
+            ? Number(stats.lastAward.xp)
+            : null,
+        awardedAt: toIsoString(stats.lastAward.awardedAt),
+      }
+    : null;
+
+  return {
+    xp: toNumber(stats.xp),
+    streak: toNumber(stats.streak),
+    longestStreak: toNumber(stats.longestStreak),
+    combo: toNumber(stats.combo),
+    maxCombo: toNumber(stats.maxCombo),
+    totalReviews: toNumber(stats.totalReviews),
+    successCount: toNumber(stats.successCount),
+    failureCount: toNumber(stats.failureCount),
+    skipCount: toNumber(stats.skipCount),
+    daily,
+    session,
+    unlockedDecks: Array.isArray(stats.unlockedDecks)
+      ? stats.unlockedDecks
+      : [],
+    cooldownUntil: toIsoString(stats.cooldownUntil),
+    lastAward,
+  };
+};
 
 async function buildProgressAndInsights(user) {
   // Build progress dto from user + last attempts (similar shape to legacy)
@@ -48,9 +137,16 @@ async function buildProgressAndInsights(user) {
     createdAt: user.createdAt?.toISOString?.() || null,
   };
 
+  const vocabularyStats = formatVocabularyStats(user.vocabularyStats || {});
+  progress.vocabulary = vocabularyStats;
+
+  const quizXp = progress.xp || 0;
+  const vocabularyXp = vocabularyStats.xp || 0;
+
   // Insights (reuse previous logic with new fields)
-  const xp = progress.xp;
-  const streak = progress.streak;
+  const xp = quizXp > 0 ? quizXp : vocabularyXp;
+  const streak =
+    progress.streak || vocabularyStats.streak || qs.currentStreak || 0;
   const levelStep = 500;
   const level = Math.max(1, Math.floor(xp / levelStep) + 1);
   const levelFloor = (level - 1) * levelStep;
@@ -86,6 +182,20 @@ async function buildProgressAndInsights(user) {
     lastActiveAt,
     recentAccuracy,
     badgesEarned: progress.badges.length,
+    vocabulary: {
+      xp: vocabularyXp,
+      streak: vocabularyStats.streak || 0,
+      longestStreak:
+        vocabularyStats.longestStreak || vocabularyStats.streak || 0,
+      daily: vocabularyStats.daily,
+      session: vocabularyStats.session,
+    },
+    quiz: {
+      xp: quizXp,
+      streak: progress.streak || 0,
+      totalQuizzes: progress.totalQuizzes,
+      accuracy: progress.accuracy,
+    },
   };
 
   return { progress, insights };

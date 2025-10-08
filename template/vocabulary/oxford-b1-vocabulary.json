@@ -1,0 +1,218 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "B1",
+    "difficulty": "medium",
+    "status": "draft",
+    "tags": ["vocabulary", "oxford", "b1"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Oxford B1 Vocabulary",
+      "slug": "oxford-b1",
+      "description": "Intermediate vocabulary from Oxford B1 word list.",
+      "level": "B1",
+      "color": "#f59e0b",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "ability",
+      "translation": "yetenek",
+      "definition": "The skill or power to do something.",
+      "notes": "Often used with 'to' + infinitive.",
+      "examples": ["She has the ability to learn quickly.", "His ability in math is excellent."],
+      "tags": ["noun", "skills"],
+      "level": "B1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b1"},
+      "subcategories": [{"slug": "skills"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "absolutely",
+      "translation": "kesinlikle",
+      "definition": "Completely; totally.",
+      "notes": "Used for strong emphasis.",
+      "examples": ["You're absolutely right.", "It's absolutely necessary."],
+      "tags": ["adverb", "emphasis"],
+      "level": "B1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b1"},
+      "subcategories": [{"slug": "emphasis"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "academic",
+      "translation": "akademik",
+      "definition": "Related to education and learning.",
+      "notes": "Often used in university contexts.",
+      "examples": ["She has good academic results.", "This is an academic discussion."],
+      "tags": ["adjective", "education"],
+      "level": "B1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b1"},
+      "subcategories": [{"slug": "education"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "access",
+      "translation": "erişim",
+      "definition": "The ability to enter or use something.",
+      "notes": "Can be used as noun or verb.",
+      "examples": ["I need access to the computer.", "You can access the files online."],
+      "tags": ["noun", "verb", "technology"],
+      "level": "B1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b1"},
+      "subcategories": [{"slug": "technology"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "account",
+      "translation": "hesap",
+      "definition": "A record of money or an arrangement with a bank.",
+      "notes": "Also means 'explanation' or 'report'.",
+      "examples": ["I opened a bank account.", "Can you account for your absence?"],
+      "tags": ["noun", "finance"],
+      "level": "B1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b1"},
+      "subcategories": [{"slug": "finance"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "achieve",
+      "translation": "başarmak",
+      "definition": "To succeed in doing something.",
+      "notes": "Often used with goals and objectives.",
+      "examples": ["She achieved her goal.", "We need to achieve better results."],
+      "tags": ["verb", "success"],
+      "level": "B1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b1"},
+      "subcategories": [{"slug": "success"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "action",
+      "translation": "eylem, hareket",
+      "definition": "The process of doing something.",
+      "notes": "Can refer to physical or mental activities.",
+      "examples": ["We need to take action.", "The action in the movie was exciting."],
+      "tags": ["noun", "activity"],
+      "level": "B1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b1"},
+      "subcategories": [{"slug": "activities"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "advantage",
+      "translation": "avantaj",
+      "definition": "A condition that gives you a better chance of success.",
+      "notes": "Opposite of disadvantage.",
+      "examples": ["Speaking English is an advantage.", "What are the advantages of this plan?"],
+      "tags": ["noun", "benefit"],
+      "level": "B1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b1"},
+      "subcategories": [{"slug": "evaluation"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "adventure",
+      "translation": "macera",
+      "definition": "An exciting or dangerous experience.",
+      "notes": "Often involves risk or uncertainty.",
+      "examples": ["Traveling alone was an adventure.", "I love adventure stories."],
+      "tags": ["noun", "experience"],
+      "level": "B1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b1"},
+      "subcategories": [{"slug": "experiences"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "affect",
+      "translation": "etkilemek",
+      "definition": "To make a change to something.",
+      "notes": "Don't confuse with 'effect' (noun).",
+      "examples": ["The weather affects my mood.", "How did the news affect you?"],
+      "tags": ["verb", "influence"],
+      "level": "B1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-b1"},
+      "subcategories": [{"slug": "influence"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

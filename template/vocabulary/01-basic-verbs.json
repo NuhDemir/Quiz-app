@@ -1,0 +1,182 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "verbs"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Basic Verbs",
+      "slug": "basic-verbs",
+      "description": "Essential verbs used in daily conversations.",
+      "level": "A1",
+      "color": "#2563eb",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "go",
+      "translation": "gitmek",
+      "definition": "To move or travel to a different place.",
+      "notes": "One of the most common verbs in English.",
+      "examples": ["I go to school.", "We go home."],
+      "tags": ["verb", "movement"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "basic-verbs"},
+      "subcategories": [{"slug": "movement"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "come",
+      "translation": "gelmek",
+      "definition": "To move toward or arrive at a place.",
+      "notes": "Opposite of 'go'.",
+      "examples": ["Come here!", "She comes to work early."],
+      "tags": ["verb", "movement"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "basic-verbs"},
+      "subcategories": [{"slug": "movement"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "do",
+      "translation": "yapmak",
+      "definition": "To perform an action or activity.",
+      "notes": "Also used as auxiliary verb.",
+      "examples": ["I do my homework.", "What do you do?"],
+      "tags": ["verb", "action"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "basic-verbs"},
+      "subcategories": [{"slug": "action"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "make",
+      "translation": "yapmak, üretmek",
+      "definition": "To create or produce something.",
+      "notes": "Different from 'do' - used for creating things.",
+      "examples": ["I make breakfast.", "She makes a cake."],
+      "tags": ["verb", "creation"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "basic-verbs"},
+      "subcategories": [{"slug": "creation"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "eat",
+      "translation": "yemek",
+      "definition": "To put food in your mouth and swallow it.",
+      "notes": "Basic daily activity verb.",
+      "examples": ["I eat lunch at 12.", "We eat together."],
+      "tags": ["verb", "daily-activity"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "basic-verbs"},
+      "subcategories": [{"slug": "daily-activities"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "drink",
+      "translation": "içmek",
+      "definition": "To take liquid into your mouth and swallow it.",
+      "notes": "Essential daily activity.",
+      "examples": ["I drink water.", "He drinks coffee."],
+      "tags": ["verb", "daily-activity"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "basic-verbs"},
+      "subcategories": [{"slug": "daily-activities"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "see",
+      "translation": "görmek",
+      "definition": "To notice or become aware of something using your eyes.",
+      "notes": "One of the five senses.",
+      "examples": ["I see you.", "Can you see the bird?"],
+      "tags": ["verb", "senses"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "basic-verbs"},
+      "subcategories": [{"slug": "senses"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "like",
+      "translation": "sevmek, beğenmek",
+      "definition": "To enjoy something or find it pleasant.",
+      "notes": "Used to express preferences.",
+      "examples": ["I like pizza.", "She likes music."],
+      "tags": ["verb", "feelings"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "basic-verbs"},
+      "subcategories": [{"slug": "feelings"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

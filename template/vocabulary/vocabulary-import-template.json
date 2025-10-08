@@ -1,0 +1,82 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "B1",
+    "difficulty": "medium",
+    "status": "draft",
+    "tags": [
+      "grammar",
+      "verb"
+    ],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Verb Tenses",
+      "slug": "verb-tenses",
+      "description": "Practice the most common English verb tenses.",
+      "level": "B1",
+      "color": "#2563eb",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "go",
+      "translation": "gitmek",
+      "definition": "To move or travel to a different place.",
+      "notes": "Used for routines in the present simple tense.",
+      "examples": [
+        "I go to the gym every morning."
+      ],
+      "tags": [
+        "verb",
+        "present simple"
+      ],
+      "level": "B1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {
+        "slug": "verb-tenses"
+      },
+      "subcategories": [
+        {
+          "slug": "present-simple"
+        }
+      ],
+      "decks": {
+        "learn": {
+          "isEnabled": true,
+          "initialIntervalDays": 0,
+          "batchLimit": 20
+        },
+        "review": {
+          "isEnabled": true,
+          "intervalModifier": 1,
+          "maxIntervalDays": 30
+        }
+      },
+      "spacedRepetition": {
+        "easeFactor": 2.5,
+        "interval": 0,
+        "repetition": 0
+      }
+    }
+  ]
+}

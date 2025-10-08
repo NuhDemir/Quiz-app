@@ -1,0 +1,431 @@
+{
+  "quiz": {
+    "title": "Articles (a/an/the) - A1 Level",
+    "slug": "articles-a-an-the-a1",
+    "description": "Master indefinite articles (a/an), definite article (the), and zero article usage at A1 level.",
+    "category": "grammar",
+    "level": "A1",
+    "difficulty": "easy",
+    "tags": [
+      "articles",
+      "a",
+      "an",
+      "the",
+      "indefinite article",
+      "definite article",
+      "grammar",
+      "beginner"
+    ],
+    "timeLimitSec": 1350,
+    "isPublished": false
+  },
+  "questions": [
+    {
+      "prompt": "I have ____ cat.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "a",
+      "explanation": "Use 'a' before consonant sounds. 'Cat' starts with /k/ sound.",
+      "hint": "What sound does 'cat' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "a"]
+    },
+    {
+      "prompt": "She is ____ engineer.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "an",
+      "explanation": "Use 'an' before vowel sounds. 'Engineer' starts with /e/ sound.",
+      "hint": "What sound does 'engineer' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "an"]
+    },
+    {
+      "prompt": "____ sun is bright today.",
+      "options": ["A", "An", "The", "No article"],
+      "correctAnswer": "The",
+      "explanation": "Use 'the' with unique things. There is only one sun.",
+      "hint": "How many suns are there?",
+      "points": 10,
+      "tags": ["articles", "definite", "the"]
+    },
+    {
+      "prompt": "I need ____ umbrella.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "an",
+      "explanation": "Use 'an' before vowel sounds. 'Umbrella' starts with /ʌ/ sound.",
+      "hint": "What sound does 'umbrella' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "an"]
+    },
+    {
+      "prompt": "There is ____ book on the table.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "a",
+      "explanation": "Use 'a' when mentioning something for the first time. 'Book' starts with /b/ sound.",
+      "hint": "Is this the first time we mention the book?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "a"]
+    },
+    {
+      "prompt": "____ book on the table is mine.",
+      "options": ["A", "An", "The", "No article"],
+      "correctAnswer": "The",
+      "explanation": "Use 'the' when referring to something specific that was mentioned before.",
+      "hint": "Which book are we talking about?",
+      "points": 10,
+      "tags": ["articles", "definite", "the"]
+    },
+    {
+      "prompt": "He is ____ honest man.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "an",
+      "explanation": "Use 'an' before vowel sounds. 'Honest' starts with /ɒ/ sound (h is silent).",
+      "hint": "Is the 'h' in 'honest' pronounced?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "an"]
+    },
+    {
+      "prompt": "I like ____ music.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "no article",
+      "explanation": "Don't use articles with uncountable nouns in general statements.",
+      "hint": "Is 'music' countable or uncountable?",
+      "points": 10,
+      "tags": ["articles", "zero article"]
+    },
+    {
+      "prompt": "She works in ____ office.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "an",
+      "explanation": "Use 'an' before vowel sounds. 'Office' starts with /ɒ/ sound.",
+      "hint": "What sound does 'office' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "an"]
+    },
+    {
+      "prompt": "____ moon is beautiful tonight.",
+      "options": ["A", "An", "The", "No article"],
+      "correctAnswer": "The",
+      "explanation": "Use 'the' with unique things. There is only one moon.",
+      "hint": "How many moons does Earth have?",
+      "points": 10,
+      "tags": ["articles", "definite", "the"]
+    },
+    {
+      "prompt": "I want ____ apple.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "an",
+      "explanation": "Use 'an' before vowel sounds. 'Apple' starts with /æ/ sound.",
+      "hint": "What sound does 'apple' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "an"]
+    },
+    {
+      "prompt": "We live in ____ house.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "a",
+      "explanation": "Use 'a' before consonant sounds. 'House' starts with /h/ sound.",
+      "hint": "What sound does 'house' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "a"]
+    },
+    {
+      "prompt": "I love ____ chocolate.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "no article",
+      "explanation": "Don't use articles with uncountable nouns in general statements.",
+      "hint": "Is 'chocolate' countable or uncountable in general?",
+      "points": 10,
+      "tags": ["articles", "zero article"]
+    },
+    {
+      "prompt": "There is ____ university in our city.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "a",
+      "explanation": "Use 'a' before consonant sounds. 'University' starts with /j/ sound (you-niversity).",
+      "hint": "How do you pronounce the first sound of 'university'?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "a"]
+    },
+    {
+      "prompt": "____ Earth is round.",
+      "options": ["A", "An", "The", "No article"],
+      "correctAnswer": "The",
+      "explanation": "Use 'the' with unique things like planets.",
+      "hint": "How many Earths are there?",
+      "points": 10,
+      "tags": ["articles", "definite", "the"]
+    },
+    {
+      "prompt": "She bought ____ orange dress.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "an",
+      "explanation": "Use 'an' before vowel sounds. 'Orange' starts with /ɒ/ sound.",
+      "hint": "What sound does 'orange' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "an"]
+    },
+    {
+      "prompt": "I go to ____ school every day.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "no article",
+      "explanation": "Don't use articles with 'school' when talking about the activity of studying.",
+      "hint": "Are we talking about a building or an activity?",
+      "points": 10,
+      "tags": ["articles", "zero article"]
+    },
+    {
+      "prompt": "He is ____ teacher.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "a",
+      "explanation": "Use 'a' before consonant sounds. 'Teacher' starts with /t/ sound.",
+      "hint": "What sound does 'teacher' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "a"]
+    },
+    {
+      "prompt": "____ water is essential for life.",
+      "options": ["A", "An", "The", "No article"],
+      "correctAnswer": "No article",
+      "explanation": "Don't use articles with uncountable nouns in general statements.",
+      "hint": "Is this a general statement about water?",
+      "points": 10,
+      "tags": ["articles", "zero article"]
+    },
+    {
+      "prompt": "I saw ____ elephant at the zoo.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "an",
+      "explanation": "Use 'an' before vowel sounds. 'Elephant' starts with /e/ sound.",
+      "hint": "What sound does 'elephant' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "an"]
+    },
+    {
+      "prompt": "____ elephant I saw was very big.",
+      "options": ["A", "An", "The", "No article"],
+      "correctAnswer": "The",
+      "explanation": "Use 'the' when referring to something specific that was mentioned before.",
+      "hint": "Which elephant are we talking about?",
+      "points": 10,
+      "tags": ["articles", "definite", "the"]
+    },
+    {
+      "prompt": "She works as ____ nurse.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "a",
+      "explanation": "Use 'a' before consonant sounds. 'Nurse' starts with /n/ sound.",
+      "hint": "What sound does 'nurse' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "a"]
+    },
+    {
+      "prompt": "I like ____ coffee.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "no article",
+      "explanation": "Don't use articles with uncountable nouns in general statements.",
+      "hint": "Is this a general statement about coffee?",
+      "points": 10,
+      "tags": ["articles", "zero article"]
+    },
+    {
+      "prompt": "There is ____ hour left.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "an",
+      "explanation": "Use 'an' before vowel sounds. 'Hour' starts with /aʊ/ sound (h is silent).",
+      "hint": "Is the 'h' in 'hour' pronounced?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "an"]
+    },
+    {
+      "prompt": "____ President lives in the White House.",
+      "options": ["A", "An", "The", "No article"],
+      "correctAnswer": "The",
+      "explanation": "Use 'the' with unique positions or titles.",
+      "hint": "How many Presidents are there at one time?",
+      "points": 10,
+      "tags": ["articles", "definite", "the"]
+    }
+,
+    {
+
+      "prompt": "I need ____ pen to write.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "a",
+      "explanation": "Use 'a' before consonant sounds. 'Pen' starts with /p/ sound.",
+      "hint": "What sound does 'pen' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "a"]
+    },
+    {
+      "prompt": "She plays ____ piano very well.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "the",
+      "explanation": "Use 'the' with musical instruments.",
+      "hint": "What article do we use with musical instruments?",
+      "points": 10,
+      "tags": ["articles", "definite", "the"]
+    },
+    {
+      "prompt": "I eat ____ breakfast at 8 AM.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "no article",
+      "explanation": "Don't use articles with meals in general statements.",
+      "hint": "Do we use articles with meal names?",
+      "points": 10,
+      "tags": ["articles", "zero article"]
+    },
+    {
+      "prompt": "He bought ____ expensive car.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "an",
+      "explanation": "Use 'an' before vowel sounds. 'Expensive' starts with /ɪ/ sound.",
+      "hint": "What sound does 'expensive' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "an"]
+    },
+    {
+      "prompt": "____ car he bought is red.",
+      "options": ["A", "An", "The", "No article"],
+      "correctAnswer": "The",
+      "explanation": "Use 'the' when referring to something specific that was mentioned before.",
+      "hint": "Which car are we talking about?",
+      "points": 10,
+      "tags": ["articles", "definite", "the"]
+    },
+    {
+      "prompt": "I go to ____ bed at 10 PM.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "no article",
+      "explanation": "Don't use articles with 'bed' when talking about sleeping.",
+      "hint": "Are we talking about furniture or an activity?",
+      "points": 10,
+      "tags": ["articles", "zero article"]
+    },
+    {
+      "prompt": "She is ____ excellent student.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "an",
+      "explanation": "Use 'an' before vowel sounds. 'Excellent' starts with /e/ sound.",
+      "hint": "What sound does 'excellent' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "an"]
+    },
+    {
+      "prompt": "I love ____ dogs.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "no article",
+      "explanation": "Don't use articles with plural nouns in general statements.",
+      "hint": "Is this a general statement about all dogs?",
+      "points": 10,
+      "tags": ["articles", "zero article"]
+    },
+    {
+      "prompt": "There is ____ interesting movie on TV.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "an",
+      "explanation": "Use 'an' before vowel sounds. 'Interesting' starts with /ɪ/ sound.",
+      "hint": "What sound does 'interesting' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "an"]
+    },
+    {
+      "prompt": "____ movie on TV is very funny.",
+      "options": ["A", "An", "The", "No article"],
+      "correctAnswer": "The",
+      "explanation": "Use 'the' when referring to something specific that was mentioned before.",
+      "hint": "Which movie are we talking about?",
+      "points": 10,
+      "tags": ["articles", "definite", "the"]
+    },
+    {
+      "prompt": "He works in ____ hospital.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "a",
+      "explanation": "Use 'a' before consonant sounds. 'Hospital' starts with /h/ sound.",
+      "hint": "What sound does 'hospital' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "a"]
+    },
+    {
+      "prompt": "I study ____ English every day.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "no article",
+      "explanation": "Don't use articles with language names.",
+      "hint": "Do we use articles with language names?",
+      "points": 10,
+      "tags": ["articles", "zero article"]
+    },
+    {
+      "prompt": "She has ____ beautiful voice.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "a",
+      "explanation": "Use 'a' before consonant sounds. 'Beautiful' starts with /b/ sound.",
+      "hint": "What sound does 'beautiful' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "a"]
+    },
+    {
+      "prompt": "____ Atlantic Ocean is very big.",
+      "options": ["A", "An", "The", "No article"],
+      "correctAnswer": "The",
+      "explanation": "Use 'the' with names of oceans, seas, and rivers.",
+      "hint": "What article do we use with ocean names?",
+      "points": 10,
+      "tags": ["articles", "definite", "the"]
+    },
+    {
+      "prompt": "I want to be ____ doctor.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "a",
+      "explanation": "Use 'a' before consonant sounds. 'Doctor' starts with /d/ sound.",
+      "hint": "What sound does 'doctor' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "a"]
+    },
+    {
+      "prompt": "We had ____ lunch at 12 PM.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "no article",
+      "explanation": "Don't use articles with meals in general statements.",
+      "hint": "Do we use articles with meal names?",
+      "points": 10,
+      "tags": ["articles", "zero article"]
+    },
+    {
+      "prompt": "There is ____ old man in the park.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "an",
+      "explanation": "Use 'an' before vowel sounds. 'Old' starts with /oʊ/ sound.",
+      "hint": "What sound does 'old' start with?",
+      "points": 10,
+      "tags": ["articles", "indefinite", "an"]
+    },
+    {
+      "prompt": "____ old man in the park is feeding birds.",
+      "options": ["A", "An", "The", "No article"],
+      "correctAnswer": "The",
+      "explanation": "Use 'the' when referring to something specific that was mentioned before.",
+      "hint": "Which old man are we talking about?",
+      "points": 10,
+      "tags": ["articles", "definite", "the"]
+    },
+    {
+      "prompt": "I play ____ football on weekends.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "no article",
+      "explanation": "Don't use articles with sports names.",
+      "hint": "Do we use articles with sport names?",
+      "points": 10,
+      "tags": ["articles", "zero article"]
+    },
+    {
+      "prompt": "She lives in ____ United States.",
+      "options": ["a", "an", "the", "no article"],
+      "correctAnswer": "the",
+      "explanation": "Use 'the' with country names that include words like 'United', 'Republic', etc.",
+      "hint": "What article do we use with 'United States'?",
+      "points": 10,
+      "tags": ["articles", "definite", "the"]
+    }
+  ]
+}

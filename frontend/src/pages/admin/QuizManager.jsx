@@ -7,8 +7,11 @@ import {
   deleteAdminQuiz,
   fetchAdminQuizById,
   selectQuiz,
+  importAdminQuizJSON,
+  clearImportState,
 } from "../../store/adminQuizSlice";
 import QuizForm from "./QuizForm";
+import QuizImportDrawer from "./QuizImportDrawer";
 
 const formatDate = (value) =>
   value ? new Date(value).toLocaleString("tr-TR") : "—";
@@ -31,8 +34,12 @@ const QuizManager = () => {
     deletingIds,
     detailLoading,
     selectedQuiz,
+    importing,
+    importResult,
+    importError,
   } = useSelector((state) => state.adminQuizzes);
   const [showForm, setShowForm] = useState(false);
+  const [showImport, setShowImport] = useState(false);
   const [mode, setMode] = useState("create");
   const [activeQuizId, setActiveQuizId] = useState(null);
   const [searchTerm, setSearchTerm] = useState(filters?.search || "");
@@ -57,7 +64,9 @@ const QuizManager = () => {
     setMode("create");
     setActiveQuizId(null);
     setShowForm(true);
+    setShowImport(false);
     setStatus(null);
+    dispatch(clearImportState());
     dispatch(selectQuiz(null));
   };
 
@@ -65,7 +74,9 @@ const QuizManager = () => {
     setMode("edit");
     setActiveQuizId(quizId);
     setShowForm(true);
+    setShowImport(false);
     setStatus(null);
+    dispatch(clearImportState());
     try {
       await dispatch(fetchAdminQuizById(quizId)).unwrap();
     } catch (err) {
@@ -121,6 +132,41 @@ const QuizManager = () => {
     dispatch(selectQuiz(null));
   };
 
+  const openImportDrawer = () => {
+    setShowImport(true);
+    setShowForm(false);
+    setStatus(null);
+    dispatch(clearImportState());
+  };
+
+  const closeImportDrawer = () => {
+    setShowImport(false);
+    dispatch(clearImportState());
+  };
+
+  const handleImportSubmit = async (payload) => {
+    setStatus(null);
+    try {
+      const result = await dispatch(importAdminQuizJSON(payload)).unwrap();
+      setStatus({
+        type: "success",
+        message:
+          result?.message ||
+          "Quiz içe aktarma tamamlandı. Liste yenileniyor...",
+      });
+      await dispatch(
+        fetchAdminQuizzes({
+          ...(filters || {}),
+          page: 1,
+        })
+      );
+    } catch (err) {
+      const message = err?.message || "Quiz içe aktarımı tamamlanamadı";
+      setStatus({ type: "error", message });
+      throw err;
+    }
+  };
+
   return (
     <div className="admin-quiz-manager">
       <section className="surface-card admin-card">
@@ -132,6 +178,13 @@ const QuizManager = () => {
             </p>
           </div>
           <div className="admin-card__actions">
+            <button
+              type="button"
+              className="secondary-button"
+              onClick={openImportDrawer}
+            >
+              JSON’dan içe aktar
+            </button>
             <button
               type="button"
               className="primary-button"
@@ -307,6 +360,26 @@ const QuizManager = () => {
               }
               onSubmit={handleFormSubmit}
               onCancel={closeForm}
+            />
+          </div>
+        </div>
+      )}
+
+      {showImport && (
+        <div className="admin-drawer">
+          <button
+            type="button"
+            className="admin-drawer__backdrop"
+            onClick={closeImportDrawer}
+            aria-label="İçe aktarma panelini kapat"
+          />
+          <div className="admin-drawer__content admin-drawer__content--wide">
+            <QuizImportDrawer
+              importing={importing}
+              result={importResult}
+              error={importError}
+              onImport={handleImportSubmit}
+              onClose={closeImportDrawer}
             />
           </div>
         </div>

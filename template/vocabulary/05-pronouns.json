@@ -1,0 +1,236 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "pronouns"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Pronouns",
+      "slug": "pronouns",
+      "description": "Personal, possessive and demonstrative pronouns.",
+      "level": "A1",
+      "color": "#ea580c",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "I",
+      "translation": "ben",
+      "definition": "The person speaking.",
+      "notes": "Always written with capital letter.",
+      "examples": ["I am a student.", "I like coffee."],
+      "tags": ["pronoun", "personal"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "pronouns"},
+      "subcategories": [{"slug": "personal"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "you",
+      "translation": "sen, siz",
+      "definition": "The person being spoken to.",
+      "notes": "Same form for singular and plural.",
+      "examples": ["You are my friend.", "Are you ready?"],
+      "tags": ["pronoun", "personal"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "pronouns"},
+      "subcategories": [{"slug": "personal"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "he",
+      "translation": "o (erkek)",
+      "definition": "A male person not present.",
+      "notes": "Used for males.",
+      "examples": ["He is my brother.", "He works here."],
+      "tags": ["pronoun", "personal"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "pronouns"},
+      "subcategories": [{"slug": "personal"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "she",
+      "translation": "o (kadın)",
+      "definition": "A female person not present.",
+      "notes": "Used for females.",
+      "examples": ["She is my sister.", "She likes music."],
+      "tags": ["pronoun", "personal"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "pronouns"},
+      "subcategories": [{"slug": "personal"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "it",
+      "translation": "o (nesne/hayvan)",
+      "definition": "A thing or animal.",
+      "notes": "Used for objects and animals.",
+      "examples": ["It is a book.", "It is raining."],
+      "tags": ["pronoun", "personal"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "pronouns"},
+      "subcategories": [{"slug": "personal"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "we",
+      "translation": "biz",
+      "definition": "The speaker and other people.",
+      "notes": "Includes the speaker.",
+      "examples": ["We are students.", "We live here."],
+      "tags": ["pronoun", "personal"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "pronouns"},
+      "subcategories": [{"slug": "personal"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "they",
+      "translation": "onlar",
+      "definition": "Other people or things.",
+      "notes": "Plural form for people or things.",
+      "examples": ["They are my friends.", "They work together."],
+      "tags": ["pronoun", "personal"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "pronouns"},
+      "subcategories": [{"slug": "personal"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "my",
+      "translation": "benim",
+      "definition": "Belonging to me.",
+      "notes": "Possessive adjective.",
+      "examples": ["My name is John.", "This is my car."],
+      "tags": ["pronoun", "possessive"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "pronouns"},
+      "subcategories": [{"slug": "possessive"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "your",
+      "translation": "senin, sizin",
+      "definition": "Belonging to you.",
+      "notes": "Possessive adjective.",
+      "examples": ["Your book is here.", "What is your name?"],
+      "tags": ["pronoun", "possessive"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "pronouns"},
+      "subcategories": [{"slug": "possessive"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "this",
+      "translation": "bu",
+      "definition": "Something near the speaker.",
+      "notes": "Demonstrative pronoun for near objects.",
+      "examples": ["This is my house.", "I like this book."],
+      "tags": ["pronoun", "demonstrative"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "pronouns"},
+      "subcategories": [{"slug": "demonstrative"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "that",
+      "translation": "şu, o",
+      "definition": "Something far from the speaker.",
+      "notes": "Demonstrative pronoun for distant objects.",
+      "examples": ["That is a nice car.", "I want that book."],
+      "tags": ["pronoun", "demonstrative"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "pronouns"},
+      "subcategories": [{"slug": "demonstrative"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

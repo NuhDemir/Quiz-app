@@ -48,6 +48,7 @@ export { default as BronzeMedalIcon } from "@mui/icons-material/WorkspacePremium
 export { default as SpellcheckIcon } from "@mui/icons-material/Spellcheck";
 export { default as TextFieldsIcon } from "@mui/icons-material/TextFields";
 export { default as MenuBookIcon } from "@mui/icons-material/MenuBook";
+export { default as MenuIcon } from "@mui/icons-material/Menu";
 export { default as AccountTreeIcon } from "@mui/icons-material/AccountTree";
 export { default as EmojiObjectsIcon } from "@mui/icons-material/EmojiObjects";
 export { default as LooksOneIcon } from "@mui/icons-material/LooksOne";

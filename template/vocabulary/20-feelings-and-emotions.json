@@ -1,0 +1,128 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "feelings", "emotions"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Feelings and Emotions",
+      "slug": "feelings-emotions",
+      "description": "Basic emotions and feelings.",
+      "level": "A1",
+      "color": "#be185d",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "happy",
+      "translation": "mutlu",
+      "definition": "Feeling good and pleased.",
+      "notes": "Positive emotion.",
+      "examples": ["I am happy today.", "She looks happy."],
+      "tags": ["emotion", "positive"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "feelings-emotions"},
+      "subcategories": [{"slug": "positive"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "sad",
+      "translation": "üzgün",
+      "definition": "Feeling unhappy or sorrowful.",
+      "notes": "Opposite of happy.",
+      "examples": ["He is sad today.", "Don't be sad."],
+      "tags": ["emotion", "negative"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "feelings-emotions"},
+      "subcategories": [{"slug": "negative"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "tired",
+      "translation": "yorgun",
+      "definition": "Feeling like you need rest.",
+      "notes": "Need sleep or rest.",
+      "examples": ["I am tired after work.", "She looks tired."],
+      "tags": ["feeling", "physical"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "feelings-emotions"},
+      "subcategories": [{"slug": "physical"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "angry",
+      "translation": "kızgın",
+      "definition": "Feeling mad or upset.",
+      "notes": "Strong negative emotion.",
+      "examples": ["He is angry with me.", "Don't be angry."],
+      "tags": ["emotion", "negative"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "feelings-emotions"},
+      "subcategories": [{"slug": "negative"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "afraid",
+      "translation": "korkmuş",
+      "definition": "Feeling scared or frightened.",
+      "notes": "Feeling fear.",
+      "examples": ["I am afraid of spiders.", "Don't be afraid."],
+      "tags": ["emotion", "fear"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "feelings-emotions"},
+      "subcategories": [{"slug": "fear"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

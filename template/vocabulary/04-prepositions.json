@@ -1,0 +1,146 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "prepositions"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Prepositions",
+      "slug": "prepositions",
+      "description": "Words that show place, time and direction.",
+      "level": "A1",
+      "color": "#7c3aed",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "in",
+      "translation": "içinde, -de/-da",
+      "definition": "Inside something or at a place.",
+      "notes": "Used for enclosed spaces and time periods.",
+      "examples": ["The book is in the bag.", "I live in Turkey."],
+      "tags": ["preposition", "place", "time"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "prepositions"},
+      "subcategories": [{"slug": "place"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "on",
+      "translation": "üzerinde, -de/-da",
+      "definition": "Touching the surface of something.",
+      "notes": "Used for surfaces and days.",
+      "examples": ["The cup is on the table.", "On Monday I work."],
+      "tags": ["preposition", "place", "time"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "prepositions"},
+      "subcategories": [{"slug": "place"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "at",
+      "translation": "-de/-da, -te/-ta",
+      "definition": "At a specific place or time.",
+      "notes": "Used for specific locations and times.",
+      "examples": ["I am at school.", "At 3 o'clock."],
+      "tags": ["preposition", "place", "time"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "prepositions"},
+      "subcategories": [{"slug": "place"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "under",
+      "translation": "altında",
+      "definition": "Below or beneath something.",
+      "notes": "Opposite of over/above.",
+      "examples": ["The cat is under the table.", "Under the bridge."],
+      "tags": ["preposition", "place"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "prepositions"},
+      "subcategories": [{"slug": "place"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "between",
+      "translation": "arasında",
+      "definition": "In the middle of two things.",
+      "notes": "Used with two objects or places.",
+      "examples": ["I sit between Tom and Mary.", "Between the houses."],
+      "tags": ["preposition", "place"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "prepositions"},
+      "subcategories": [{"slug": "place"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "next to",
+      "translation": "yanında",
+      "definition": "Very close to something.",
+      "notes": "Same as 'beside'.",
+      "examples": ["The bank is next to the shop.", "Sit next to me."],
+      "tags": ["preposition", "place"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "prepositions"},
+      "subcategories": [{"slug": "place"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

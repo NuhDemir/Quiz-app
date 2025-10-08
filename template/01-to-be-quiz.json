@@ -1,0 +1,428 @@
+{
+  "quiz": {
+    "title": "To Be (am / is / are) - A1 Level",
+    "slug": "to-be-am-is-are-a1",
+    "description": "Master the verb 'to be' with positive, negative, and question forms at A1 level.",
+    "category": "grammar",
+    "level": "A1",
+    "difficulty": "easy",
+    "tags": [
+      "to be",
+      "am",
+      "is",
+      "are",
+      "grammar",
+      "beginner"
+    ],
+    "timeLimitSec": 1350,
+    "isPublished": false
+  },
+  "questions": [
+    {
+      "prompt": "I ____ a student.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "am",
+      "explanation": "Use 'am' with 'I'.",
+      "hint": "What form of 'to be' goes with 'I'?",
+      "points": 10,
+      "tags": ["to be", "positive"]
+    },
+    {
+      "prompt": "She ____ a teacher.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "is",
+      "explanation": "Use 'is' with 'she', 'he', 'it'.",
+      "hint": "What form goes with third person singular?",
+      "points": 10,
+      "tags": ["to be", "positive"]
+    },
+    {
+      "prompt": "They ____ happy.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "are",
+      "explanation": "Use 'are' with 'they', 'we', 'you'.",
+      "hint": "What form goes with plural subjects?",
+      "points": 10,
+      "tags": ["to be", "positive"]
+    },
+    {
+      "prompt": "We ____ friends.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "are",
+      "explanation": "Use 'are' with 'we'.",
+      "hint": "What form goes with 'we'?",
+      "points": 10,
+      "tags": ["to be", "positive"]
+    },
+    {
+      "prompt": "He ____ tall.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "is",
+      "explanation": "Use 'is' with 'he'.",
+      "hint": "What form goes with 'he'?",
+      "points": 10,
+      "tags": ["to be", "positive"]
+    },
+    {
+      "prompt": "You ____ nice.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "are",
+      "explanation": "Use 'are' with 'you'.",
+      "hint": "What form goes with 'you'?",
+      "points": 10,
+      "tags": ["to be", "positive"]
+    },
+    {
+      "prompt": "It ____ cold today.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "is",
+      "explanation": "Use 'is' with 'it'.",
+      "hint": "What form goes with 'it'?",
+      "points": 10,
+      "tags": ["to be", "positive"]
+    },
+    {
+      "prompt": "The cat ____ black.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "is",
+      "explanation": "Use 'is' with singular nouns.",
+      "hint": "Is 'cat' singular or plural?",
+      "points": 10,
+      "tags": ["to be", "positive"]
+    },
+    {
+      "prompt": "My parents ____ doctors.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "are",
+      "explanation": "Use 'are' with plural nouns.",
+      "hint": "Is 'parents' singular or plural?",
+      "points": 10,
+      "tags": ["to be", "positive"]
+    },
+    {
+      "prompt": "The book ____ interesting.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "is",
+      "explanation": "Use 'is' with singular nouns.",
+      "hint": "Is 'book' singular or plural?",
+      "points": 10,
+      "tags": ["to be", "positive"]
+    },
+    {
+      "prompt": "I ____ not tired.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "am",
+      "explanation": "Use 'am not' for negative with 'I'.",
+      "hint": "What form goes with 'I' in negative?",
+      "points": 10,
+      "tags": ["to be", "negative"]
+    },
+    {
+      "prompt": "She ____ not at home.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "is",
+      "explanation": "Use 'is not' for negative with 'she'.",
+      "hint": "What form goes with 'she' in negative?",
+      "points": 10,
+      "tags": ["to be", "negative"]
+    },
+    {
+      "prompt": "They ____ not ready.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "are",
+      "explanation": "Use 'are not' for negative with 'they'.",
+      "hint": "What form goes with 'they' in negative?",
+      "points": 10,
+      "tags": ["to be", "negative"]
+    },
+    {
+      "prompt": "We ____ not late.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "are",
+      "explanation": "Use 'are not' for negative with 'we'.",
+      "hint": "What form goes with 'we' in negative?",
+      "points": 10,
+      "tags": ["to be", "negative"]
+    },
+    {
+      "prompt": "He ____ not hungry.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "is",
+      "explanation": "Use 'is not' for negative with 'he'.",
+      "hint": "What form goes with 'he' in negative?",
+      "points": 10,
+      "tags": ["to be", "negative"]
+    },
+    {
+      "prompt": "____ you a student?",
+      "options": ["Am", "Is", "Are", "Be"],
+      "correctAnswer": "Are",
+      "explanation": "Use 'Are' to start questions with 'you'.",
+      "hint": "How do you start a question with 'you'?",
+      "points": 10,
+      "tags": ["to be", "question"]
+    },
+    {
+      "prompt": "____ she your sister?",
+      "options": ["Am", "Is", "Are", "Be"],
+      "correctAnswer": "Is",
+      "explanation": "Use 'Is' to start questions with 'she'.",
+      "hint": "How do you start a question with 'she'?",
+      "points": 10,
+      "tags": ["to be", "question"]
+    },
+    {
+      "prompt": "____ they from Spain?",
+      "options": ["Am", "Is", "Are", "Be"],
+      "correctAnswer": "Are",
+      "explanation": "Use 'Are' to start questions with 'they'.",
+      "hint": "How do you start a question with 'they'?",
+      "points": 10,
+      "tags": ["to be", "question"]
+    },
+    {
+      "prompt": "____ I right?",
+      "options": ["Am", "Is", "Are", "Be"],
+      "correctAnswer": "Am",
+      "explanation": "Use 'Am' to start questions with 'I'.",
+      "hint": "How do you start a question with 'I'?",
+      "points": 10,
+      "tags": ["to be", "question"]
+    },
+    {
+      "prompt": "____ it expensive?",
+      "options": ["Am", "Is", "Are", "Be"],
+      "correctAnswer": "Is",
+      "explanation": "Use 'Is' to start questions with 'it'.",
+      "hint": "How do you start a question with 'it'?",
+      "points": 10,
+      "tags": ["to be", "question"]
+    },
+    {
+      "prompt": "Are you happy? - Yes, I ____.",
+      "options": ["am", "is", "are", "do"],
+      "correctAnswer": "am",
+      "explanation": "Short answer: 'Yes, I am.'",
+      "hint": "What's the short positive answer with 'I'?",
+      "points": 10,
+      "tags": ["to be", "short answer"]
+    },
+    {
+      "prompt": "Is she a doctor? - No, she ____.",
+      "options": ["am not", "isn't", "aren't", "don't"],
+      "correctAnswer": "isn't",
+      "explanation": "Short answer: 'No, she isn't.'",
+      "hint": "What's the short negative answer with 'she'?",
+      "points": 10,
+      "tags": ["to be", "short answer"]
+    },
+    {
+      "prompt": "Are they students? - Yes, they ____.",
+      "options": ["am", "is", "are", "do"],
+      "correctAnswer": "are",
+      "explanation": "Short answer: 'Yes, they are.'",
+      "hint": "What's the short positive answer with 'they'?",
+      "points": 10,
+      "tags": ["to be", "short answer"]
+    },
+    {
+      "prompt": "Is it cold? - No, it ____.",
+      "options": ["am not", "isn't", "aren't", "don't"],
+      "correctAnswer": "isn't",
+      "explanation": "Short answer: 'No, it isn't.'",
+      "hint": "What's the short negative answer with 'it'?",
+      "points": 10,
+      "tags": ["to be", "short answer"]
+    },
+    {
+      "prompt": "Are we late? - No, we ____.",
+      "options": ["am not", "isn't", "aren't", "don't"],
+      "correctAnswer": "aren't",
+      "explanation": "Short answer: 'No, we aren't.'",
+      "hint": "What's the short negative answer with 'we'?",
+      "points": 10,
+      "tags": ["to be", "short answer"]
+    }
+,
+ {
+      "prompt": "My name ____ John.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "is",
+      "explanation": "Use 'is' with singular nouns like 'name'.",
+      "hint": "Is 'name' singular or plural?",
+      "points": 10,
+      "tags": ["to be", "positive"]
+    },
+    {
+      "prompt": "The dogs ____ in the garden.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "are",
+      "explanation": "Use 'are' with plural nouns like 'dogs'.",
+      "hint": "Is 'dogs' singular or plural?",
+      "points": 10,
+      "tags": ["to be", "positive"]
+    },
+    {
+      "prompt": "This ____ my car.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "is",
+      "explanation": "Use 'is' with 'this' + singular noun.",
+      "hint": "What form goes with 'this'?",
+      "points": 10,
+      "tags": ["to be", "positive"]
+    },
+    {
+      "prompt": "Those ____ my books.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "are",
+      "explanation": "Use 'are' with 'those' + plural noun.",
+      "hint": "What form goes with 'those'?",
+      "points": 10,
+      "tags": ["to be", "positive"]
+    },
+    {
+      "prompt": "The weather ____ nice today.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "is",
+      "explanation": "Use 'is' with singular nouns like 'weather'.",
+      "hint": "Is 'weather' singular or plural?",
+      "points": 10,
+      "tags": ["to be", "positive"]
+    },
+    {
+      "prompt": "The children ____ not in the park.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "are",
+      "explanation": "Use 'are not' with plural nouns like 'children'.",
+      "hint": "Is 'children' singular or plural?",
+      "points": 10,
+      "tags": ["to be", "negative"]
+    },
+    {
+      "prompt": "My brother ____ not a teacher.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "is",
+      "explanation": "Use 'is not' with singular nouns like 'brother'.",
+      "hint": "Is 'brother' singular or plural?",
+      "points": 10,
+      "tags": ["to be", "negative"]
+    },
+    {
+      "prompt": "The coffee ____ not hot.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "is",
+      "explanation": "Use 'is not' with singular nouns like 'coffee'.",
+      "hint": "Is 'coffee' singular or plural?",
+      "points": 10,
+      "tags": ["to be", "negative"]
+    },
+    {
+      "prompt": "You ____ not wrong.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "are",
+      "explanation": "Use 'are not' with 'you'.",
+      "hint": "What form goes with 'you' in negative?",
+      "points": 10,
+      "tags": ["to be", "negative"]
+    },
+    {
+      "prompt": "The flowers ____ not red.",
+      "options": ["am", "is", "are", "be"],
+      "correctAnswer": "are",
+      "explanation": "Use 'are not' with plural nouns like 'flowers'.",
+      "hint": "Is 'flowers' singular or plural?",
+      "points": 10,
+      "tags": ["to be", "negative"]
+    },
+    {
+      "prompt": "____ the door open?",
+      "options": ["Am", "Is", "Are", "Be"],
+      "correctAnswer": "Is",
+      "explanation": "Use 'Is' to start questions with singular nouns like 'door'.",
+      "hint": "Is 'door' singular or plural?",
+      "points": 10,
+      "tags": ["to be", "question"]
+    },
+    {
+      "prompt": "____ your parents at home?",
+      "options": ["Am", "Is", "Are", "Be"],
+      "correctAnswer": "Are",
+      "explanation": "Use 'Are' to start questions with plural nouns like 'parents'.",
+      "hint": "Is 'parents' singular or plural?",
+      "points": 10,
+      "tags": ["to be", "question"]
+    },
+    {
+      "prompt": "____ the cat sleeping?",
+      "options": ["Am", "Is", "Are", "Be"],
+      "correctAnswer": "Is",
+      "explanation": "Use 'Is' to start questions with singular nouns like 'cat'.",
+      "hint": "Is 'cat' singular or plural?",
+      "points": 10,
+      "tags": ["to be", "question"]
+    },
+    {
+      "prompt": "____ we friends?",
+      "options": ["Am", "Is", "Are", "Be"],
+      "correctAnswer": "Are",
+      "explanation": "Use 'Are' to start questions with 'we'.",
+      "hint": "How do you start a question with 'we'?",
+      "points": 10,
+      "tags": ["to be", "question"]
+    },
+    {
+      "prompt": "____ this your bag?",
+      "options": ["Am", "Is", "Are", "Be"],
+      "correctAnswer": "Is",
+      "explanation": "Use 'Is' to start questions with 'this' + singular noun.",
+      "hint": "What form goes with 'this'?",
+      "points": 10,
+      "tags": ["to be", "question"]
+    },
+    {
+      "prompt": "Is he your friend? - Yes, he ____.",
+      "options": ["am", "is", "are", "do"],
+      "correctAnswer": "is",
+      "explanation": "Short answer: 'Yes, he is.'",
+      "hint": "What's the short positive answer with 'he'?",
+      "points": 10,
+      "tags": ["to be", "short answer"]
+    },
+    {
+      "prompt": "Are you tired? - No, I ____.",
+      "options": ["am not", "isn't", "aren't", "don't"],
+      "correctAnswer": "am not",
+      "explanation": "Short answer: 'No, I am not.' or 'No, I'm not.'",
+      "hint": "What's the short negative answer with 'I'?",
+      "points": 10,
+      "tags": ["to be", "short answer"]
+    },
+    {
+      "prompt": "Is the book interesting? - Yes, it ____.",
+      "options": ["am", "is", "are", "do"],
+      "correctAnswer": "is",
+      "explanation": "Short answer: 'Yes, it is.'",
+      "hint": "What's the short positive answer with 'it'?",
+      "points": 10,
+      "tags": ["to be", "short answer"]
+    },
+    {
+      "prompt": "Are the children happy? - No, they ____.",
+      "options": ["am not", "isn't", "aren't", "don't"],
+      "correctAnswer": "aren't",
+      "explanation": "Short answer: 'No, they aren't.'",
+      "hint": "What's the short negative answer with 'they'?",
+      "points": 10,
+      "tags": ["to be", "short answer"]
+    },
+    {
+      "prompt": "Am I late? - Yes, you ____.",
+      "options": ["am", "is", "are", "do"],
+      "correctAnswer": "are",
+      "explanation": "Short answer: 'Yes, you are.'",
+      "hint": "What's the short positive answer with 'you'?",
+      "points": 10,
+      "tags": ["to be", "short answer"]
+    }
+  ]
+}

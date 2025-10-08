@@ -1,0 +1,423 @@
+{
+  "quiz": {
+    "title": "There is / There are - A1 Level",
+    "slug": "there-is-there-are-a1",
+    "description": "Master 'There is' and 'There are' in positive, negative, and question forms at A1 level.",
+    "category": "grammar",
+    "level": "A1",
+    "difficulty": "easy",
+    "tags": [
+      "there is",
+      "there are",
+      "singular",
+      "plural",
+      "positive",
+      "negative",
+      "questions",
+      "grammar",
+      "beginner"
+    ],
+    "timeLimitSec": 1350,
+    "isPublished": false
+  },
+  "questions": [
+    {
+      "prompt": "____ a book on the table.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There is",
+      "explanation": "Use 'There is' with singular nouns. 'Book' is singular.",
+      "hint": "Is 'book' singular or plural?",
+      "points": 10,
+      "tags": ["there is", "singular", "positive"]
+    },
+    {
+      "prompt": "____ three cats in the garden.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There are",
+      "explanation": "Use 'There are' with plural nouns. 'Cats' is plural.",
+      "hint": "Is 'cats' singular or plural?",
+      "points": 10,
+      "tags": ["there are", "plural", "positive"]
+    },
+    {
+      "prompt": "____ any milk in the fridge.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There isn't",
+      "explanation": "Use 'There isn't' for negative with uncountable nouns. 'Milk' is uncountable.",
+      "hint": "Is this positive or negative? Is 'milk' countable?",
+      "points": 10,
+      "tags": ["there isn't", "negative", "uncountable"]
+    },
+    {
+      "prompt": "____ any apples in the basket.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There aren't",
+      "explanation": "Use 'There aren't' for negative with plural nouns. 'Apples' is plural.",
+      "hint": "Is this positive or negative? Is 'apples' singular or plural?",
+      "points": 10,
+      "tags": ["there aren't", "negative", "plural"]
+    },
+    {
+      "prompt": "____ a dog in the park?",
+      "options": ["Is there", "Are there", "There is", "There are"],
+      "correctAnswer": "Is there",
+      "explanation": "Use 'Is there' for questions with singular nouns. 'Dog' is singular.",
+      "hint": "Is this a question? Is 'dog' singular or plural?",
+      "points": 10,
+      "tags": ["is there", "question", "singular"]
+    },
+    {
+      "prompt": "____ any students in the classroom?",
+      "options": ["Is there", "Are there", "There is", "There are"],
+      "correctAnswer": "Are there",
+      "explanation": "Use 'Are there' for questions with plural nouns. 'Students' is plural.",
+      "hint": "Is this a question? Is 'students' singular or plural?",
+      "points": 10,
+      "tags": ["are there", "question", "plural"]
+    },
+    {
+      "prompt": "____ a computer on the desk.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There is",
+      "explanation": "Use 'There is' with singular nouns. 'Computer' is singular.",
+      "hint": "Is 'computer' singular or plural?",
+      "points": 10,
+      "tags": ["there is", "singular", "positive"]
+    },
+    {
+      "prompt": "____ five chairs in the room.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There are",
+      "explanation": "Use 'There are' with plural nouns. 'Chairs' is plural.",
+      "hint": "Is 'chairs' singular or plural?",
+      "points": 10,
+      "tags": ["there are", "plural", "positive"]
+    },
+    {
+      "prompt": "____ a pen in my bag.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There isn't",
+      "explanation": "Use 'There isn't' for negative with singular nouns. 'Pen' is singular.",
+      "hint": "Is this positive or negative? Is 'pen' singular or plural?",
+      "points": 10,
+      "tags": ["there isn't", "negative", "singular"]
+    },
+    {
+      "prompt": "____ any cookies left.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There aren't",
+      "explanation": "Use 'There aren't' for negative with plural nouns. 'Cookies' is plural.",
+      "hint": "Is this positive or negative? Is 'cookies' singular or plural?",
+      "points": 10,
+      "tags": ["there aren't", "negative", "plural"]
+    },
+    {
+      "prompt": "____ a library in your town?",
+      "options": ["Is there", "Are there", "There is", "There are"],
+      "correctAnswer": "Is there",
+      "explanation": "Use 'Is there' for questions with singular nouns. 'Library' is singular.",
+      "hint": "Is this a question? Is 'library' singular or plural?",
+      "points": 10,
+      "tags": ["is there", "question", "singular"]
+    },
+    {
+      "prompt": "____ any parks near your house?",
+      "options": ["Is there", "Are there", "There is", "There are"],
+      "correctAnswer": "Are there",
+      "explanation": "Use 'Are there' for questions with plural nouns. 'Parks' is plural.",
+      "hint": "Is this a question? Is 'parks' singular or plural?",
+      "points": 10,
+      "tags": ["are there", "question", "plural"]
+    },
+    {
+      "prompt": "____ some water in the bottle.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There is",
+      "explanation": "Use 'There is' with uncountable nouns. 'Water' is uncountable.",
+      "hint": "Is 'water' countable or uncountable?",
+      "points": 10,
+      "tags": ["there is", "uncountable", "positive"]
+    },
+    {
+      "prompt": "____ many people at the party.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There are",
+      "explanation": "Use 'There are' with plural nouns. 'People' is plural.",
+      "hint": "Is 'people' singular or plural?",
+      "points": 10,
+      "tags": ["there are", "plural", "positive"]
+    },
+    {
+      "prompt": "____ a problem with my car.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There is",
+      "explanation": "Use 'There is' with singular nouns. 'Problem' is singular.",
+      "hint": "Is 'problem' singular or plural?",
+      "points": 10,
+      "tags": ["there is", "singular", "positive"]
+    },
+    {
+      "prompt": "____ any sugar in the coffee.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There isn't",
+      "explanation": "Use 'There isn't' for negative with uncountable nouns. 'Sugar' is uncountable.",
+      "hint": "Is this positive or negative? Is 'sugar' countable?",
+      "points": 10,
+      "tags": ["there isn't", "negative", "uncountable"]
+    },
+    {
+      "prompt": "____ two bathrooms in this house.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There are",
+      "explanation": "Use 'There are' with plural nouns. 'Bathrooms' is plural.",
+      "hint": "Is 'bathrooms' singular or plural?",
+      "points": 10,
+      "tags": ["there are", "plural", "positive"]
+    },
+    {
+      "prompt": "____ any bread for breakfast.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There isn't",
+      "explanation": "Use 'There isn't' for negative with uncountable nouns. 'Bread' is uncountable.",
+      "hint": "Is this positive or negative? Is 'bread' countable?",
+      "points": 10,
+      "tags": ["there isn't", "negative", "uncountable"]
+    },
+    {
+      "prompt": "____ a good restaurant near here?",
+      "options": ["Is there", "Are there", "There is", "There are"],
+      "correctAnswer": "Is there",
+      "explanation": "Use 'Is there' for questions with singular nouns. 'Restaurant' is singular.",
+      "hint": "Is this a question? Is 'restaurant' singular or plural?",
+      "points": 10,
+      "tags": ["is there", "question", "singular"]
+    },
+    {
+      "prompt": "____ any interesting movies on TV tonight?",
+      "options": ["Is there", "Are there", "There is", "There are"],
+      "correctAnswer": "Are there",
+      "explanation": "Use 'Are there' for questions with plural nouns. 'Movies' is plural.",
+      "hint": "Is this a question? Is 'movies' singular or plural?",
+      "points": 10,
+      "tags": ["are there", "question", "plural"]
+    },
+    {
+      "prompt": "____ a lot of traffic today.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There is",
+      "explanation": "Use 'There is' with uncountable nouns. 'Traffic' is uncountable.",
+      "hint": "Is 'traffic' countable or uncountable?",
+      "points": 10,
+      "tags": ["there is", "uncountable", "positive"]
+    },
+    {
+      "prompt": "____ some books on the shelf.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There are",
+      "explanation": "Use 'There are' with plural nouns. 'Books' is plural.",
+      "hint": "Is 'books' singular or plural?",
+      "points": 10,
+      "tags": ["there are", "plural", "positive"]
+    },
+    {
+      "prompt": "____ a cat under the table.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There isn't",
+      "explanation": "Use 'There isn't' for negative with singular nouns. 'Cat' is singular.",
+      "hint": "Is this positive or negative? Is 'cat' singular or plural?",
+      "points": 10,
+      "tags": ["there isn't", "negative", "singular"]
+    },
+    {
+      "prompt": "____ any flowers in the vase.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There aren't",
+      "explanation": "Use 'There aren't' for negative with plural nouns. 'Flowers' is plural.",
+      "hint": "Is this positive or negative? Is 'flowers' singular or plural?",
+      "points": 10,
+      "tags": ["there aren't", "negative", "plural"]
+    },
+    {
+      "prompt": "____ enough time to finish?",
+      "options": ["Is there", "Are there", "There is", "There are"],
+      "correctAnswer": "Is there",
+      "explanation": "Use 'Is there' for questions with uncountable nouns. 'Time' is uncountable.",
+      "hint": "Is this a question? Is 'time' countable?",
+      "points": 10,
+      "tags": ["is there", "question", "uncountable"]
+    }
+,
+
+    {
+      "prompt": "____ a new student in our class.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There is",
+      "explanation": "Use 'There is' with singular nouns. 'Student' is singular.",
+      "hint": "Is 'student' singular or plural?",
+      "points": 10,
+      "tags": ["there is", "singular", "positive"]
+    },
+    {
+      "prompt": "____ many cars in the parking lot.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There are",
+      "explanation": "Use 'There are' with plural nouns. 'Cars' is plural.",
+      "hint": "Is 'cars' singular or plural?",
+      "points": 10,
+      "tags": ["there are", "plural", "positive"]
+    },
+    {
+      "prompt": "____ any homework today.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There isn't",
+      "explanation": "Use 'There isn't' for negative with uncountable nouns. 'Homework' is uncountable.",
+      "hint": "Is this positive or negative? Is 'homework' countable?",
+      "points": 10,
+      "tags": ["there isn't", "negative", "uncountable"]
+    },
+    {
+      "prompt": "____ any children in the playground.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There aren't",
+      "explanation": "Use 'There aren't' for negative with plural nouns. 'Children' is plural.",
+      "hint": "Is this positive or negative? Is 'children' singular or plural?",
+      "points": 10,
+      "tags": ["there aren't", "negative", "plural"]
+    },
+    {
+      "prompt": "____ a bank on this street?",
+      "options": ["Is there", "Are there", "There is", "There are"],
+      "correctAnswer": "Is there",
+      "explanation": "Use 'Is there' for questions with singular nouns. 'Bank' is singular.",
+      "hint": "Is this a question? Is 'bank' singular or plural?",
+      "points": 10,
+      "tags": ["is there", "question", "singular"]
+    },
+    {
+      "prompt": "____ any good shops in this area?",
+      "options": ["Is there", "Are there", "There is", "There are"],
+      "correctAnswer": "Are there",
+      "explanation": "Use 'Are there' for questions with plural nouns. 'Shops' is plural.",
+      "hint": "Is this a question? Is 'shops' singular or plural?",
+      "points": 10,
+      "tags": ["are there", "question", "plural"]
+    },
+    {
+      "prompt": "____ some money in my wallet.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There is",
+      "explanation": "Use 'There is' with uncountable nouns. 'Money' is uncountable.",
+      "hint": "Is 'money' countable or uncountable?",
+      "points": 10,
+      "tags": ["there is", "uncountable", "positive"]
+    },
+    {
+      "prompt": "____ ten students absent today.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There are",
+      "explanation": "Use 'There are' with plural nouns. 'Students' is plural.",
+      "hint": "Is 'students' singular or plural?",
+      "points": 10,
+      "tags": ["there are", "plural", "positive"]
+    },
+    {
+      "prompt": "____ a meeting tomorrow.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There isn't",
+      "explanation": "Use 'There isn't' for negative with singular nouns. 'Meeting' is singular.",
+      "hint": "Is this positive or negative? Is 'meeting' singular or plural?",
+      "points": 10,
+      "tags": ["there isn't", "negative", "singular"]
+    },
+    {
+      "prompt": "____ any eggs in the refrigerator.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There aren't",
+      "explanation": "Use 'There aren't' for negative with plural nouns. 'Eggs' is plural.",
+      "hint": "Is this positive or negative? Is 'eggs' singular or plural?",
+      "points": 10,
+      "tags": ["there aren't", "negative", "plural"]
+    },
+    {
+      "prompt": "____ a post office nearby?",
+      "options": ["Is there", "Are there", "There is", "There are"],
+      "correctAnswer": "Is there",
+      "explanation": "Use 'Is there' for questions with singular nouns. 'Post office' is singular.",
+      "hint": "Is this a question? Is 'post office' singular or plural?",
+      "points": 10,
+      "tags": ["is there", "question", "singular"]
+    },
+    {
+      "prompt": "____ any buses after 10 PM?",
+      "options": ["Is there", "Are there", "There is", "There are"],
+      "correctAnswer": "Are there",
+      "explanation": "Use 'Are there' for questions with plural nouns. 'Buses' is plural.",
+      "hint": "Is this a question? Is 'buses' singular or plural?",
+      "points": 10,
+      "tags": ["are there", "question", "plural"]
+    },
+    {
+      "prompt": "____ a lot of noise outside.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There is",
+      "explanation": "Use 'There is' with uncountable nouns. 'Noise' is uncountable.",
+      "hint": "Is 'noise' countable or uncountable?",
+      "points": 10,
+      "tags": ["there is", "uncountable", "positive"]
+    },
+    {
+      "prompt": "____ several messages on your phone.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There are",
+      "explanation": "Use 'There are' with plural nouns. 'Messages' is plural.",
+      "hint": "Is 'messages' singular or plural?",
+      "points": 10,
+      "tags": ["there are", "plural", "positive"]
+    },
+    {
+      "prompt": "____ a problem with the internet.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There isn't",
+      "explanation": "Use 'There isn't' for negative with singular nouns. 'Problem' is singular.",
+      "hint": "Is this positive or negative? Is 'problem' singular or plural?",
+      "points": 10,
+      "tags": ["there isn't", "negative", "singular"]
+    },
+    {
+      "prompt": "____ any clean towels in the bathroom.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There aren't",
+      "explanation": "Use 'There aren't' for negative with plural nouns. 'Towels' is plural.",
+      "hint": "Is this positive or negative? Is 'towels' singular or plural?",
+      "points": 10,
+      "tags": ["there aren't", "negative", "plural"]
+    },
+    {
+      "prompt": "____ a pharmacy in this shopping center?",
+      "options": ["Is there", "Are there", "There is", "There are"],
+      "correctAnswer": "Is there",
+      "explanation": "Use 'Is there' for questions with singular nouns. 'Pharmacy' is singular.",
+      "hint": "Is this a question? Is 'pharmacy' singular or plural?",
+      "points": 10,
+      "tags": ["is there", "question", "singular"]
+    },
+    {
+      "prompt": "____ any free tables at the restaurant?",
+      "options": ["Is there", "Are there", "There is", "There are"],
+      "correctAnswer": "Are there",
+      "explanation": "Use 'Are there' for questions with plural nouns. 'Tables' is plural.",
+      "hint": "Is this a question? Is 'tables' singular or plural?",
+      "points": 10,
+      "tags": ["are there", "question", "plural"]
+    },
+    {
+      "prompt": "____ some information about the course.",
+      "options": ["There is", "There are", "There isn't", "There aren't"],
+      "correctAnswer": "There is",
+      "explanation": "Use 'There is' with uncountable nouns. 'Information' is uncountable.",
+      "hint": "Is 'information' countable or uncountable?",
+      "points": 10,
+      "tags": ["there is", "uncountable", "positive"]
+    }
+  ]
+}

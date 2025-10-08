@@ -1,0 +1,146 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "time"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Time Expressions",
+      "slug": "time-expressions",
+      "description": "Daily time concepts and expressions.",
+      "level": "A1",
+      "color": "#84cc16",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "morning",
+      "translation": "sabah",
+      "definition": "The early part of the day.",
+      "notes": "From sunrise to about 12 PM.",
+      "examples": ["Good morning!", "I work in the morning."],
+      "tags": ["time", "day-part"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "time-expressions"},
+      "subcategories": [{"slug": "day-parts"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "afternoon",
+      "translation": "öğleden sonra",
+      "definition": "The middle part of the day.",
+      "notes": "From about 12 PM to 6 PM.",
+      "examples": ["Good afternoon!", "I sleep in the afternoon."],
+      "tags": ["time", "day-part"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "time-expressions"},
+      "subcategories": [{"slug": "day-parts"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "evening",
+      "translation": "akşam",
+      "definition": "The later part of the day.",
+      "notes": "From about 6 PM to bedtime.",
+      "examples": ["Good evening!", "I watch TV in the evening."],
+      "tags": ["time", "day-part"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "time-expressions"},
+      "subcategories": [{"slug": "day-parts"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "night",
+      "translation": "gece",
+      "definition": "The dark time when people sleep.",
+      "notes": "From sunset to sunrise.",
+      "examples": ["Good night!", "I sleep at night."],
+      "tags": ["time", "day-part"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "time-expressions"},
+      "subcategories": [{"slug": "day-parts"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "today",
+      "translation": "bugün",
+      "definition": "This day, now.",
+      "notes": "Present time reference.",
+      "examples": ["Today is Monday.", "I am busy today."],
+      "tags": ["time", "present"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "time-expressions"},
+      "subcategories": [{"slug": "relative"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "now",
+      "translation": "şimdi",
+      "definition": "At this moment.",
+      "notes": "Present time, right now.",
+      "examples": ["I am here now.", "Do it now."],
+      "tags": ["time", "present"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "time-expressions"},
+      "subcategories": [{"slug": "present"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

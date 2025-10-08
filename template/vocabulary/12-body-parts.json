@@ -1,0 +1,146 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "body"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Body Parts",
+      "slug": "body-parts",
+      "description": "Basic parts of the human body.",
+      "level": "A1",
+      "color": "#f59e0b",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "head",
+      "translation": "kafa, baş",
+      "definition": "The top part of your body with your brain.",
+      "notes": "Contains the brain, eyes, nose, mouth.",
+      "examples": ["My head hurts.", "He has a big head."],
+      "tags": ["body", "main"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "body-parts"},
+      "subcategories": [{"slug": "main"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "hand",
+      "translation": "el",
+      "definition": "The part at the end of your arm.",
+      "notes": "Used for holding and touching things.",
+      "examples": ["I write with my hand.", "Wash your hands."],
+      "tags": ["body", "limb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "body-parts"},
+      "subcategories": [{"slug": "limbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "leg",
+      "translation": "bacak",
+      "definition": "The part of your body you use for walking.",
+      "notes": "You have two legs.",
+      "examples": ["My leg is tired.", "He broke his leg."],
+      "tags": ["body", "limb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "body-parts"},
+      "subcategories": [{"slug": "limbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "arm",
+      "translation": "kol",
+      "definition": "The part of your body from shoulder to hand.",
+      "notes": "You have two arms.",
+      "examples": ["I hurt my arm.", "Raise your arms."],
+      "tags": ["body", "limb"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "body-parts"},
+      "subcategories": [{"slug": "limbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "eye",
+      "translation": "göz",
+      "definition": "The part of your body you use to see.",
+      "notes": "You have two eyes.",
+      "examples": ["I have brown eyes.", "Close your eyes."],
+      "tags": ["body", "face"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "body-parts"},
+      "subcategories": [{"slug": "face"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "ear",
+      "translation": "kulak",
+      "definition": "The part of your body you use to hear.",
+      "notes": "You have two ears.",
+      "examples": ["I can't hear with this ear.", "My ears are cold."],
+      "tags": ["body", "face"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "body-parts"},
+      "subcategories": [{"slug": "face"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

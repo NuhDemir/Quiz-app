@@ -1,0 +1,2107 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "C1",
+    "difficulty": "medium",
+    "status": "draft",
+    "tags": ["vocabulary", "oxford", "c1"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "Oxford C1 Vocabulary",
+      "slug": "oxford-c1",
+      "description": "Advanced vocabulary from Oxford C1 word list.",
+      "level": "C1",
+      "color": "#ef4444",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "abolish",
+      "translation": "feshetmek, yürürlükten kaldırmak, bozmak",
+      "definition": "To formally put an end to a system, practice, or institution.",
+      "notes": "",
+      "examples": [],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "abortion",
+      "translation": "bebek aldırma, kürtaj, çocuk aldırma",
+      "definition": "The deliberate termination of a human pregnancy.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "absence",
+      "translation": "bulunmayış, bulunmama, yokluk",
+      "definition": "The state of being away from a place or person.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "absent",
+      "translation": "hazır bulunmayan, mevcut olmayan, yok",
+      "definition": "Not present in a place, at an occasion, or as part of something.",
+      "notes": "",
+      "examples": [],
+      "tags": ["adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "absurd",
+      "translation": "absürt, saçma, uyumsuz",
+      "definition": "Wildly unreasonable, illogical, or inappropriate.",
+      "notes": "",
+      "examples": [],
+      "tags": ["adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "abundance",
+      "translation": "çokluk, bereket, bolluk",
+      "definition": "A very large quantity of something.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "abuse",
+      "translation": "suistimal etmek, kötüye kullanmak, suistimal",
+      "definition": "To use something to bad effect or for a bad purpose; cruel and violent treatment of a person or animal.",
+      "notes": "",
+      "examples": [],
+      "tags": ["verb", "noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}, {"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "academy",
+      "translation": "akademi, yüksekokul, yüksek okul",
+      "definition": "A place of study or training in a special field.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "education"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "accelerate",
+      "translation": "hızlanmak, hızlandırmak, gaza basmak",
+      "definition": "To begin to move more quickly.",
+      "notes": "",
+      "examples": [],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "acceptance",
+      "translation": "kabul, alma, üstlenme",
+      "definition": "The action of consenting to receive or undertake something offered.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "accessible",
+      "translation": "ulaşılabilir, erişilebilir, kolaylıkla görüşülebilen",
+      "definition": "Able to be reached or entered.",
+      "notes": "",
+      "examples": [],
+      "tags": ["adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "accomplishment",
+      "translation": "başarma, becerme, başarılan iş",
+      "definition": "Something that has been achieved successfully.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "accordance",
+      "translation": "uygunluk, verme, ahenk",
+      "definition": "In a manner conforming with.",
+      "notes": "Often used in the phrase 'in accordance with'.",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "accordingly",
+      "translation": "dolayısıyla, ona sebep, bu yüzden",
+      "definition": "In a way that is appropriate to the particular circumstances.",
+      "notes": "",
+      "examples": [],
+      "tags": ["adverb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adverbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "accountability",
+      "translation": "sorumluluk, mesuliyet, izlenebilirlik",
+      "definition": "The fact or condition of being accountable; responsibility.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "accountable",
+      "translation": "mesul, hesap verebilir, sorumlu",
+      "definition": "Required or expected to justify actions or decisions; responsible.",
+      "notes": "",
+      "examples": [],
+      "tags": ["adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "accumulate",
+      "translation": "biriktirmek, yığmak, birikmek",
+      "definition": "To gather together or acquire an increasing number or quantity of.",
+      "notes": "",
+      "examples": [],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "accumulation",
+      "translation": "birikim, birikinti, yığma",
+      "definition": "The acquisition or gradual gathering of something.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "accusation",
+      "translation": "itham, suçlama, itham etme",
+      "definition": "A charge or claim that someone has done something illegal or wrong.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "law"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "accused",
+      "translation": "zanlı, sanık, suçlu",
+      "definition": "A person or group of people who are charged with or on trial for a crime.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "law"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "acid",
+      "translation": "ekşime, asit, iğneleyici eleştiri",
+      "definition": "A chemical substance that neutralizes alkalis, dissolves some metals, and turns litmus red.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "science"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "acquisition",
+      "translation": "kazanma, edinme, kazanç",
+      "definition": "An asset or object bought or obtained.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "business"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "acre",
+      "translation": "arazi, ingiliz dönümü, akre",
+      "definition": "A unit of land area equal to 4,840 square yards (or 43,560 square feet).",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "measurement"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "activation",
+      "translation": "etkinleşme, hareketlenme, hareketlendirme",
+      "definition": "The action or process of making something active or operative.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "activist",
+      "translation": "etkinci, eylemci, aktivist",
+      "definition": "A person who campaigns to bring about political or social change.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "people"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "acute",
+      "translation": "şiddetli, akut, ani gelişen",
+      "definition": "Present or experienced to a severe or intense degree.",
+      "notes": "",
+      "examples": [],
+      "tags": ["adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "adaptation",
+      "translation": "intibak, uyum, adaptasyon",
+      "definition": "The action or process of adapting or being adapted.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "adhere",
+      "translation": "yapışmak, bağlı kalmak, bağlı olmak",
+      "definition": "To stick fast to (a surface or substance).",
+      "notes": "",
+      "examples": [],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "adjacent",
+      "translation": "komşu, bitişik, yakın",
+      "definition": "Next to or adjoining something else.",
+      "notes": "",
+      "examples": [],
+      "tags": ["adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "adjustment",
+      "translation": "ayarlama, ayar, intibak",
+      "definition": "A small alteration or movement made to achieve a desired fit, appearance, or result.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "administer",
+      "translation": "yönetmek, idare etmek, tatbik etmek",
+      "definition": "To manage and be responsible for the running of (a business, organization, etc.).",
+      "notes": "",
+      "examples": [],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "administrative",
+      "translation": "idari, yönetimle ilgili, yönetsel",
+      "definition": "Relating to the running of a business, organization, etc.",
+      "notes": "",
+      "examples": [],
+      "tags": ["adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "administrator",
+      "translation": "yönetici, idareci, müdür",
+      "definition": "A person responsible for running a business, organization, etc.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "people"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "admission",
+      "translation": "itiraf, kabul, giriş",
+      "definition": "A statement acknowledging the truth of something; the process or fact of entering or being allowed to enter a place, organization, or institution.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "adolescent",
+      "translation": "ergen, gençlik, genç",
+      "definition": "A young person who is developing into an adult.",
+      "notes": "",
+      "examples": [],
+      "tags": ["adjective", "noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "people"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "adoption",
+      "translation": "benimseme, evlat edinme, alma",
+      "definition": "The action or fact of adopting or being adopted.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "family"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "adverse",
+      "translation": "olumsuz, aksi, ters",
+      "definition": "Preventing success or development; harmful; unfavorable.",
+      "notes": "",
+      "examples": [],
+      "tags": ["adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "advocate",
+      "translation": "avukat, desteklemek, müdafaa etmek",
+      "definition": "A person who publicly supports or recommends a particular cause or policy.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun", "verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "people"}, {"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "aesthetic",
+      "translation": "güzelduyu, estetik, bedii",
+      "definition": "Concerned with beauty or the appreciation of beauty.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun", "adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "affection",
+      "translation": "alaka, etkileme, meyil",
+      "definition": "A gentle feeling of fondness or liking.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "feelings"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "aftermath",
+      "translation": "akıbet, hasattan sonra çıkan otlar, son",
+      "definition": "The consequences or aftereffects of a significant unpleasant event.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "aggression",
+      "translation": "saldırganlık, saldırı",
+      "definition": "Hostile or violent behavior or attitudes toward another; readiness to attack or confront.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "agricultural",
+      "translation": "tarım, ziraat, zirai",
+      "definition": "Relating to agriculture.",
+      "notes": "",
+      "examples": [],
+      "tags": ["adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "aide",
+      "translation": "buyruk kulu, emir kulu, emirber",
+      "definition": "An assistant to an important person, especially a political leader.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "people"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "albeit",
+      "translation": "yine, vakıa, fakat",
+      "definition": "Though.",
+      "notes": "",
+      "examples": [],
+      "tags": ["conjunction"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "conjunctions"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "alert",
+      "translation": "alarma geçirmek, gözünü açmak, ayık kalmak",
+      "definition": "To warn (someone) of a danger, threat, or problem.",
+      "notes": "",
+      "examples": [],
+      "tags": ["verb", "noun", "adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "alien",
+      "translation": "yabancı uyruklu kimse, yabancı kelime, uzaylı",
+      "definition": "A foreigner, especially one who is not a naturalized citizen of the country where they are living.",
+      "notes": "",
+      "examples": [],
+      "tags": ["noun", "adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "people"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "align",
+      "translation": "sıralanmak, dizmek",
+      "definition": "To place or arrange (things) in a straight line.",
+      "notes": "",
+      "examples": [],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+
+    {
+      "term": "alignment",
+      "translation": "sıra, hiza, işbirliği yapma",
+      "definition": "Arrangement in a straight line, or in correct relative positions.",
+      "notes": "",
+      "examples": ["The wheels are out of alignment.", "The two companies are in alignment on this issue."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "alike",
+      "translation": "benzeyen, hem, birbirine benzer",
+      "definition": "In a similar way.",
+      "notes": "",
+      "examples": ["The two brothers look very alike.", "Great minds think alike."],
+      "tags": ["adjective", "adverb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "allegation",
+      "translation": "iddia, suçlama, mazeret",
+      "definition": "A claim or assertion that someone has done something illegal or wrong, typically one made without proof.",
+      "notes": "",
+      "examples": ["He denied the allegations against him.", "The newspaper made a serious allegation about the minister."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "law"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "allege",
+      "translation": "iddia etmek, ileri sürmek, itham etmek",
+      "definition": "To claim or assert that someone has done something illegal or wrong, typically without proof.",
+      "notes": "",
+      "examples": ["The prosecution alleges that she is guilty.", "He is alleged to have stolen the money."],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "law"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "allegedly",
+      "translation": "iddia edildiğine göre, iddiaya göre, sözde",
+      "definition": "Used to convey that something is claimed to be the case or have taken place, although there is no proof.",
+      "notes": "",
+      "examples": ["He was allegedly involved in the robbery.", "The product allegedly caused health problems."],
+      "tags": ["adverb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "law"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "alliance",
+      "translation": "antlaşma, ittifak, pakt",
+      "definition": "A union or association formed for mutual benefit, especially between countries or organizations.",
+      "notes": "",
+      "examples": ["The two countries formed a military alliance.", "They have formed a strategic alliance to enter new markets."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "politics"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "allocate",
+      "translation": "tahsis etmek, pay etmek, bölüştürmek",
+      "definition": "To distribute (resources or duties) for a particular purpose.",
+      "notes": "",
+      "examples": ["The government allocated funds for the new hospital.", "We need to allocate tasks among the team members."],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "allocation",
+      "translation": "paylaştırma, pay ayırma, tahsisat",
+      "definition": "The action or process of allocating or distributing something.",
+      "notes": "",
+      "examples": ["The allocation of resources is a key responsibility.", "He was responsible for the budget allocation."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "allowance",
+      "translation": "izin, müsaade, harçlık",
+      "definition": "The amount of something that is permitted, especially within a set of regulations or for a specified purpose.",
+      "notes": "",
+      "examples": ["My parents give me a weekly allowance.", "What is the baggage allowance for this flight?"],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "ally",
+      "translation": "müttefik ülke, birleştirmek, katmak",
+      "definition": "A state formally cooperating with another for a military or other purpose.",
+      "notes": "",
+      "examples": ["The United States is a close ally of the United Kingdom.", "He is a strong ally in our cause."],
+      "tags": ["noun", "verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "politics"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "aluminium",
+      "translation": "alüminyum, alüminyum (simgesi al)",
+      "definition": "A light silvery-gray metal.",
+      "notes": "Spelled 'aluminum' in American English.",
+      "examples": ["Aluminium is used to make cans and foil.", "The window frames are made of aluminium."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "materials"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "amateur",
+      "translation": "amatör, hevesli",
+      "definition": "A person who engages in a pursuit, especially a sport, on an unpaid basis.",
+      "notes": "",
+      "examples": ["He is an amateur photographer.", "The competition is open to both amateurs and professionals."],
+      "tags": ["adjective", "noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "people"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "ambassador",
+      "translation": "elçi, büyükelçi, sefir",
+      "definition": "An accredited diplomat sent by a country as its official representative to a foreign country.",
+      "notes": "",
+      "examples": ["The French ambassador to the UK attended the meeting.", "She was appointed as the new ambassador."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "politics"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "amend",
+      "translation": "düzeltmek, onarmak, değişikliğe gitmek",
+      "definition": "To make minor changes to (a text, piece of legislation, etc.) in order to make it fairer, more accurate, or more up-to-date.",
+      "notes": "",
+      "examples": ["The law was amended to include new provisions.", "We need to amend the contract before signing."],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "law"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "amendment",
+      "translation": "yasayı değiştirme, tadilat, iyileştirme",
+      "definition": "A minor change or addition designed to improve a text, piece of legislation, etc.",
+      "notes": "",
+      "examples": ["They proposed an amendment to the constitution.", "The amendment was approved by a majority vote."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "law"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "amid",
+      "translation": "arasında, ortasına, arasına",
+      "definition": "Surrounded by; in the middle of.",
+      "notes": "",
+      "examples": ["He finished his speech amid applause.", "The hotel is set amid beautiful gardens."],
+      "tags": ["preposition"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "prepositions"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "analogy",
+      "translation": "mukayese, andırış, karşılaştırma",
+      "definition": "A comparison between two things, typically for the purpose of explanation or clarification.",
+      "notes": "",
+      "examples": ["He drew an analogy between the human heart and a pump.", "The teacher used an analogy to explain the concept."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "anchor",
+      "translation": "demir atmak, demirlemek, çapa",
+      "definition": "A heavy object attached to a cable or chain and used to moor a ship to the sea bottom.",
+      "notes": "",
+      "examples": ["The ship dropped anchor in the bay.", "He is the anchor of our team."],
+      "tags": ["verb", "noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}, {"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "angel",
+      "translation": "melek, melaike, melek gibi insan",
+      "definition": "A spiritual being believed to act as an attendant, agent, or messenger of God.",
+      "notes": "",
+      "examples": ["She was a true angel to me in my time of need.", "He believes in guardian angels."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "anonymous",
+      "translation": "anonim, adı meçhul, isimsiz",
+      "definition": "(of a person) Not identified by name; of unknown name.",
+      "notes": "",
+      "examples": ["The donation was made by an anonymous benefactor.", "She received an anonymous letter."],
+      "tags": ["adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "term": "apparatus",
+      "translation": "levazım, vasıta, aygıtlar",
+      "definition": "The technical equipment or machinery needed for a particular activity or purpose.",
+      "notes": "",
+      "examples": ["The laboratory has all the necessary apparatus for the experiment.", "Firefighters use breathing apparatus to enter burning buildings."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "equipment"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "appealing",
+      "translation": "isteme, duygulandırıcı, çekici",
+      "definition": "Attractive or interesting.",
+      "notes": "",
+      "examples": ["The idea of a long vacation is very appealing.", "He had an appealing smile."],
+      "tags": ["adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "appetite",
+      "translation": "iştah, arzu, istek",
+      "definition": "A natural desire to satisfy a bodily need, especially for food.",
+      "notes": "",
+      "examples": ["All that exercise has given me an appetite.", "She has a healthy appetite."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "food"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "applaud",
+      "translation": "alkışlamak, alkış tutmak, takdir etmek",
+      "definition": "To show approval or praise by clapping.",
+      "notes": "",
+      "examples": ["The audience applauded enthusiastically.", "I applaud your decision to go back to school."],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "applicable",
+      "translation": "uygulanabilir, kılgın, uyarlanabilir",
+      "definition": "Relevant or appropriate.",
+      "notes": "",
+      "examples": ["This rule is not applicable in your case.", "Please fill out the applicable sections of the form."],
+      "tags": ["adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "appoint",
+      "translation": "atamak, koymak, tayin etmek",
+      "definition": "To assign a job or role to (someone).",
+      "notes": "",
+      "examples": ["He was appointed as the new manager.", "The committee will appoint a new chairperson."],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "appreciation",
+      "translation": "takdir, minnettarlık, yüksek takdir",
+      "definition": "Recognition and enjoyment of the good qualities of someone or something.",
+      "notes": "",
+      "examples": ["She showed her appreciation with a gift.", "I have a deep appreciation for classical music."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "arbitrary",
+      "translation": "keyfi, saymaca, gaddar",
+      "definition": "Based on random choice or personal whim, rather than any reason or system.",
+      "notes": "",
+      "examples": ["The decision to fire him was completely arbitrary.", "The rules of the game seemed arbitrary and unfair."],
+      "tags": ["adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "architectural",
+      "translation": "mimarlığa ait, mimarlıkla ilgili, mimari",
+      "definition": "Relating to architecture.",
+      "notes": "",
+      "examples": ["The city is known for its architectural beauty.", "He is studying architectural design."],
+      "tags": ["adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "architecture"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "archive",
+      "translation": "belgelik, arşiv, arşivini tutmak",
+      "definition": "A collection of historical documents or records providing information about a place, institution, or group of people.",
+      "notes": "",
+      "examples": ["The national archive contains important historical documents.", "You can find the old photos in the family archive."],
+      "tags": ["noun", "verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "arena",
+      "translation": "arena, sahne, alan",
+      "definition": "A level area surrounded by seating, in which sports, entertainments, and other public events are held.",
+      "notes": "",
+      "examples": ["The band will be playing at the new sports arena.", "The political arena can be very competitive."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "places"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "arguably",
+      "translation": "muhtemelen, tartışılır şekilde",
+      "definition": "It may be argued (used to qualify a statement by saying that it is true in one's opinion).",
+      "notes": "",
+      "examples": ["She is arguably the best player in the world.", "This is arguably the most important book of the century."],
+      "tags": ["adverb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adverbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "array",
+      "translation": "sıralamak, sıraya dizmek, diziliş",
+      "definition": "An impressive display or range of a particular type of thing.",
+      "notes": "",
+      "examples": ["The store offers a wide array of products.", "There was a vast array of food on the table."],
+      "tags": ["noun", "verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "articulate",
+      "translation": "söylemek, açık bir şekilde telaffuz etmek",
+      "definition": "Having or showing the ability to speak fluently and coherently.",
+      "notes": "",
+      "examples": ["She is a highly articulate speaker.", "He was unable to articulate his feelings."],
+      "tags": ["verb", "adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "ash",
+      "translation": "kül, alıç",
+      "definition": "The powdery residue left after the burning of a substance.",
+      "notes": "",
+      "examples": ["The fire burned down, leaving only ash.", "Cigarette ash fell on the carpet."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "aspiration",
+      "translation": "büyük amaç, arzu, soluma",
+      "definition": "A hope or ambition of achieving something.",
+      "notes": "",
+      "examples": ["He has aspirations to become a doctor.", "Her main aspiration is to travel the world."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "aspire",
+      "translation": "heveslenmek, can atmak, talip olmak",
+      "definition": "To direct one's hopes or ambitions toward achieving something.",
+      "notes": "",
+      "examples": ["She aspires to be a successful writer.", "Many young people aspire to a career in music."],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "assassination",
+      "translation": "suikast, adam öldürme, cinayet",
+      "definition": "The action of assassinating someone.",
+      "notes": "",
+      "examples": ["The assassination of the president shocked the world.", "There was an assassination attempt on the prime minister."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "crime"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "assault",
+      "translation": "saldırmak, saldırı, üstüne varmak",
+      "definition": "A physical attack.",
+      "notes": "",
+      "examples": ["He was charged with assault.", "The soldiers launched an assault on the enemy fortress."],
+      "tags": ["verb", "noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "crime"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "assemble",
+      "translation": "toplaşmak, parçaları birleştirmek, bir araya koymak",
+      "definition": "To gather together in one place for a common purpose.",
+      "notes": "",
+      "examples": ["A crowd had assembled to hear the speech.", "It took a long time to assemble the furniture."],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "assembly",
+      "translation": "toplantı, birleştirme, montaj",
+      "definition": "A group of people gathered together in one place for a common purpose.",
+      "notes": "",
+      "examples": ["The school holds a weekly assembly.", "The assembly of the new machine was complicated."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "assert",
+      "translation": "öne sürmek, ileri sürmek, iddia etmek",
+      "definition": "To state a fact or belief confidently and forcefully.",
+      "notes": "",
+      "examples": ["He asserted that he was innocent.", "You need to assert yourself more in meetings."],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "assertion",
+      "translation": "sav, iddia, öne sürme",
+      "definition": "A confident and forceful statement of fact or belief.",
+      "notes": "",
+      "examples": ["His assertion that he was the best was not supported by evidence.", "She made a bold assertion about the company's future."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "assurance",
+      "translation": "güvence, teminat, itikat",
+      "definition": "A positive declaration intended to give confidence; a promise.",
+      "notes": "",
+      "examples": ["He gave me his assurance that he would help.", "Life assurance is a type of insurance."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "asylum",
+      "translation": "barınak, sığınak, iltica",
+      "definition": "The protection granted by a nation to someone who has left their native country as a political refugee.",
+      "notes": "",
+      "examples": ["He applied for political asylum.", "The country has a long history of granting asylum to refugees."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "politics"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "atrocity",
+      "translation": "berbatlık, vahşet, gaddarlık",
+      "definition": "An extremely wicked or cruel act, typically one involving physical violence or injury.",
+      "notes": "",
+      "examples": ["The soldiers were accused of committing atrocities.", "The documentary revealed the full atrocity of the war."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "crime"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+
+
+
+    {
+      "term": "attain",
+      "translation": "elde etmek, erişmek, ermek",
+      "definition": "To succeed in achieving something that one has worked for.",
+      "notes": "",
+      "examples": ["He attained the rank of captain.", "She has attained a high level of proficiency in her field."],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "attendance",
+      "translation": "katılma, katılım, devam",
+      "definition": "The action or state of going regularly to or being present at a place or event.",
+      "notes": "",
+      "examples": ["Attendance at the meeting is mandatory.", "The class has a high attendance rate."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "attorney",
+      "translation": "dava vekili, avukat, avukatlık",
+      "definition": "A lawyer, especially one who can act for someone in court.",
+      "notes": "",
+      "examples": ["She works as a defense attorney.", "He hired a top attorney for his case."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "law"}, {"slug": "people"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "attribute",
+      "translation": "bağlamak, atfetmek, dayandırmak",
+      "definition": "To regard something as being caused by a particular person or thing.",
+      "notes": "Can also be a noun meaning a quality or feature.",
+      "examples": ["He attributed his success to hard work.", "Patience is one of her best attributes."],
+      "tags": ["verb", "noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "audit",
+      "translation": "hesapları denetlemek, hesap denetimi, denetim",
+      "definition": "An official inspection of an organization's accounts, typically by an independent body.",
+      "notes": "",
+      "examples": ["The company has an annual audit.", "They will audit the financial records next week."],
+      "tags": ["verb", "noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "business"}, {"slug": "finance"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "authentic",
+      "translation": "özgün, hakiki, gerçek",
+      "definition": "Of undisputed origin; genuine.",
+      "notes": "",
+      "examples": ["This is an authentic painting by Picasso.", "The restaurant serves authentic Italian food."],
+      "tags": ["adjective"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "authorize",
+      "translation": "yetki vermek, memur etmek, ruhsat vermek",
+      "definition": "To give official permission for or approval to.",
+      "notes": "",
+      "examples": ["Only the manager can authorize this payment.", "I'm not authorized to access that information."],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}, {"slug": "law"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "auto",
+      "translation": "otomobil, araba ile gezmek, otomobille gezmek",
+      "definition": "A car (short for automobile).",
+      "notes": "",
+      "examples": ["He works in the auto industry.", "She just bought a new auto."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "transport"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "autonomy",
+      "translation": "özerklik, otonomi, bağımsızlık",
+      "definition": "The right or condition of self-government.",
+      "notes": "",
+      "examples": ["The region has been granted autonomy.", "Teachers are given a great deal of autonomy in their work."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "politics"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "availability",
+      "translation": "geçerlilik, var olma, uygunluk",
+      "definition": "The quality of being able to be used or obtained.",
+      "notes": "",
+      "examples": ["Please check the availability of the tickets.", "The availability of fresh water is a major concern."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "await",
+      "translation": "gözlemek, hazır olmak, beklemek",
+      "definition": "To wait for an event.",
+      "notes": "More formal than 'wait for'.",
+      "examples": ["We await your instructions.", "A surprise awaits you at home."],
+      "tags": ["verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "verbs"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "backdrop",
+      "translation": "arka fon eklemek, zemin",
+      "definition": "The setting or background for a scene, event, or situation.",
+      "notes": "",
+      "examples": ["The mountains provided a beautiful backdrop for the wedding.", "The story is set against a backdrop of war."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "backing",
+      "translation": "yardım, destek, ciro",
+      "definition": "Support, especially financial, for a person or project.",
+      "notes": "",
+      "examples": ["The project has strong financial backing.", "He has the backing of the entire community."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "backup",
+      "translation": "yedeğini almak, yedek, yardım",
+      "definition": "A copy of a file or other computer data made in case the original is lost or damaged.",
+      "notes": "",
+      "examples": ["Always make a backup of your important files.", "The police called for backup."],
+      "tags": ["noun", "verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "computing"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "bail",
+      "translation": "kefaletle serbest bırakmak, kefalet",
+      "definition": "The temporary release of an accused person awaiting trial, sometimes on condition that a sum of money be lodged to guarantee their appearance in court.",
+      "notes": "",
+      "examples": ["The defendant was released on bail.", "He was bailed out of jail by his friends."],
+      "tags": ["noun", "verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "law"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "ballot",
+      "translation": "oy vermek, oylama yapmak, oylama",
+      "definition": "A process of voting, in writing and typically in secret.",
+      "notes": "",
+      "examples": ["The winner was decided by a secret ballot.", "They will ballot the members on the new proposal."],
+      "tags": ["noun", "verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "politics"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "banner",
+      "translation": "pankart, afiş, sancak",
+      "definition": "A long strip of cloth bearing a slogan or design, carried in a demonstration or procession or hung in a public place.",
+      "notes": "",
+      "examples": ["Protesters carried banners and shouted slogans.", "A banner ad appeared on the website."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "nouns"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "bare",
+      "translation": "çıkarmak, açığa vurmak, çıplak",
+      "definition": "Not clothed or covered.",
+      "notes": "",
+      "examples": ["She likes to walk around in bare feet.", "The walls were bare except for a single painting."],
+      "tags": ["adjective", "verb"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "adjectives"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "barrel",
+      "translation": "varil, namlu, fıçı",
+      "definition": "A cylindrical container bulging out in the middle, traditionally made of wooden staves with metal hoops.",
+      "notes": "",
+      "examples": ["The oil was stored in large barrels.", "He stared down the barrel of a gun."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "containers"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "bass",
+      "translation": "bas, levrek",
+      "definition": "The lowest adult male singing voice.",
+      "notes": "Pronunciation differs depending on whether it refers to music or the fish.",
+      "examples": ["He sings bass in the choir.", "We caught a large bass in the lake."],
+      "tags": ["noun"],
+      "level": "C1",
+      "difficulty": "medium",
+      "status": "published",
+      "category": {"slug": "oxford-c1"},
+      "subcategories": [{"slug": "music"}, {"slug": "animals"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

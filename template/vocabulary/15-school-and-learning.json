@@ -1,0 +1,146 @@
+{
+  "defaults": {
+    "language": "en",
+    "level": "A1",
+    "difficulty": "easy",
+    "status": "draft",
+    "tags": ["vocabulary", "school", "education"],
+    "decks": {
+      "learn": {
+        "isEnabled": true,
+        "initialIntervalDays": 0,
+        "batchLimit": 20
+      },
+      "review": {
+        "isEnabled": true,
+        "intervalModifier": 1,
+        "maxIntervalDays": 30
+      }
+    },
+    "spacedRepetition": {
+      "easeFactor": 2.5,
+      "interval": 0,
+      "repetition": 0
+    }
+  },
+  "categories": [
+    {
+      "name": "School and Learning",
+      "slug": "school-learning",
+      "description": "Education-related vocabulary.",
+      "level": "A1",
+      "color": "#dc2626",
+      "isActive": true
+    }
+  ],
+  "words": [
+    {
+      "term": "student",
+      "translation": "öğrenci",
+      "definition": "A person who is learning at school.",
+      "notes": "Someone who studies.",
+      "examples": ["I am a student.", "The student is smart."],
+      "tags": ["education", "people"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "school-learning"},
+      "subcategories": [{"slug": "people"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "teacher",
+      "translation": "öğretmen",
+      "definition": "A person who teaches students.",
+      "notes": "Someone who helps others learn.",
+      "examples": ["My teacher is kind.", "The teacher explains well."],
+      "tags": ["education", "people", "job"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "school-learning"},
+      "subcategories": [{"slug": "people"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "classroom",
+      "translation": "sınıf",
+      "definition": "A room where students learn.",
+      "notes": "Place for lessons and teaching.",
+      "examples": ["Our classroom is big.", "I sit in the classroom."],
+      "tags": ["education", "place"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "school-learning"},
+      "subcategories": [{"slug": "places"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "lesson",
+      "translation": "ders",
+      "definition": "A period of learning or teaching.",
+      "notes": "What you learn in class.",
+      "examples": ["The lesson is interesting.", "I have an English lesson."],
+      "tags": ["education", "activity"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "school-learning"},
+      "subcategories": [{"slug": "activities"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "book",
+      "translation": "kitap",
+      "definition": "Something you read to learn.",
+      "notes": "Has pages with words and pictures.",
+      "examples": ["I read my book.", "This book is helpful."],
+      "tags": ["education", "object"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "school-learning"},
+      "subcategories": [{"slug": "objects"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    },
+    {
+      "term": "pen",
+      "translation": "kalem",
+      "definition": "Something you use to write.",
+      "notes": "Writing tool with ink.",
+      "examples": ["I write with a pen.", "My pen is blue."],
+      "tags": ["education", "object", "writing"],
+      "level": "A1",
+      "difficulty": "easy",
+      "status": "published",
+      "category": {"slug": "school-learning"},
+      "subcategories": [{"slug": "objects"}],
+      "decks": {
+        "learn": {"isEnabled": true, "initialIntervalDays": 0, "batchLimit": 20},
+        "review": {"isEnabled": true, "intervalModifier": 1, "maxIntervalDays": 30}
+      },
+      "spacedRepetition": {"easeFactor": 2.5, "interval": 0, "repetition": 0}
+    }
+  ]
+}

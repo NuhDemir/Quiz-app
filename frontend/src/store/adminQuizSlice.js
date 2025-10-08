@@ -17,6 +17,9 @@ const initialState = {
   selectedQuiz: null,
   draftQuiz: null,
   detailLoading: false,
+  importing: false,
+  importResult: null,
+  importError: null,
 };
 
 const ensureToken = (getState) => {
@@ -110,6 +113,22 @@ export const deleteAdminQuiz = createAsyncThunk(
   }
 );
 
+export const importAdminQuizJSON = createAsyncThunk(
+  "adminQuizzes/importJSON",
+  async (payload, { getState, rejectWithValue }) => {
+    try {
+      const token = ensureToken(getState);
+      const response = await adminQuizzesApi.importJSON({ token, payload });
+      return response;
+    } catch (error) {
+      return rejectWithValue({
+        message: error.data?.error || error.message,
+        status: error.status || 500,
+      });
+    }
+  }
+);
+
 const adminQuizSlice = createSlice({
   name: "adminQuizzes",
   initialState,
@@ -128,6 +147,10 @@ const adminQuizSlice = createSlice({
         ...state.filters,
         ...action.payload,
       };
+    },
+    clearImportState: (state) => {
+      state.importResult = null;
+      state.importError = null;
     },
   },
   extraReducers: (builder) => {
@@ -240,11 +263,45 @@ const adminQuizSlice = createSlice({
           state.deletingIds = state.deletingIds.filter((x) => x !== id);
         }
         state.error = action.payload?.message || action.error?.message;
+      })
+      .addCase(importAdminQuizJSON.pending, (state) => {
+        state.importing = true;
+        state.importError = null;
+        state.importResult = null;
+      })
+      .addCase(importAdminQuizJSON.fulfilled, (state, action) => {
+        state.importing = false;
+        state.importResult = action.payload;
+        const importedQuiz = action.payload?.quiz;
+        if (importedQuiz) {
+          const importedId = importedQuiz.id || importedQuiz._id;
+          const existingIndex = state.items.findIndex((item) => {
+            const itemId = item.id || item._id;
+            return (itemId && importedId && itemId === importedId) || item.slug === importedQuiz.slug;
+          });
+          if (existingIndex >= 0) {
+            state.items[existingIndex] = {
+              ...state.items[existingIndex],
+              ...importedQuiz,
+            };
+          } else {
+            state.items = [importedQuiz, ...state.items];
+          }
+        }
+      })
+      .addCase(importAdminQuizJSON.rejected, (state, action) => {
+        state.importing = false;
+        state.importError = action.payload?.message || action.error?.message;
       });
   },
 });
 
-export const { setDraftQuiz, clearDraftQuiz, selectQuiz, updateFilters } =
-  adminQuizSlice.actions;
+export const {
+  setDraftQuiz,
+  clearDraftQuiz,
+  selectQuiz,
+  updateFilters,
+  clearImportState,
+} = adminQuizSlice.actions;
 
 export default adminQuizSlice.reducer;
