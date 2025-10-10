@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;900&display=swap");
+
+@import "./base/reset.css";
+@import "./base/theme.css";
+@import "./base/typography.css";
+@import "./layout/structure.css";
+@import "./components/buttons.css";
+@import "./components/chips.css";
+/* Page and component specific styles (migration in progress) */
+
+/* vocabulary module moved to its own file for modular styles */
+@import "./pages/vocabulary.css";
+
+/* Vocabulary styles have been moved to ./pages/vocabulary.css.
+   Remaining page styles continue below. */
+
+/* --- stats styles follow --- */
+
+.dark .stats-highlight-card--primary .stats-highlight-card__icon {
+  background: rgba(0, 119, 255, 0.22);
+}
+
+.dark .stats-highlight-card--success .stats-highlight-card__icon {
+  background: rgba(52, 199, 89, 0.22);
+}
+
+.dark .stats-highlight-card--warning .stats-highlight-card__icon {
+  background: rgba(255, 149, 0, 0.22);
+}
+
+.dark .stats-highlight-card--danger .stats-highlight-card__icon {
+  background: rgba(255, 55, 95, 0.22);
+}
+
+.dark .stats-summary-card__icon {
+  background: rgba(0, 119, 255, 0.18);
+}
+
+.stats-page {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 4vw, 3rem);
+}
+
+.stats-grid {
+  display: grid;
+  gap: clamp(1.75rem, 4vw, 3rem);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.stats-layout__body {
+  display: grid;
+  gap: clamp(2.5rem, 5vw, 4rem);
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* The rest of the original file (quiz, admin, profile, etc.) is preserved below. */
+
+/* === Quiz Experience === */
+.quiz-page {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  min-height: calc(100vh - 6rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+}
+
+/* (snip: other non-vocabulary styles remain unchanged) */
