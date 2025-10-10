@@ -1,0 +1,96 @@
+@layer components {
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    background: var(--color-surface-muted);
+    color: var(--color-text-primary);
+  }
+
+  .dark .chip {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--color-text-primary);
+  }
+
+  .chip--accent {
+    background: rgba(0, 119, 255, 0.12);
+    color: var(--color-primary);
+  }
+
+  .chip--ghost {
+    background: transparent;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    color: var(--color-text-secondary);
+    padding-inline: 1rem;
+    transition: background-color var(--transition-base),
+      border-color var(--transition-base), color var(--transition-base);
+  }
+
+  .chip--ghost:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  .chip--ghost.is-active {
+    background: var(--color-primary);
+    color: #ffffff;
+    border-color: transparent;
+  }
+
+  .dark .chip--ghost {
+    border-color: rgba(255, 255, 255, 0.16);
+    color: rgba(226, 232, 240, 0.85);
+  }
+
+  .dark .chip--ghost.is-active {
+    background: var(--color-primary);
+    color: #ffffff;
+  }
+
+  .chip--primary {
+    background: rgba(0, 119, 255, 0.16);
+    color: var(--color-primary);
+  }
+
+  .chip--outline {
+    background: transparent;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+  }
+
+  .dark .chip--outline {
+    border-color: rgba(255, 255, 255, 0.18);
+  }
+
+  .chip--muted {
+    background: rgba(15, 23, 42, 0.06);
+  }
+
+  .dark .chip--muted {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .chip--success {
+    background: rgba(52, 199, 89, 0.16);
+    color: var(--color-success);
+  }
+
+  .chip--warning {
+    background: rgba(255, 149, 0, 0.16);
+    color: var(--color-warning);
+  }
+
+  .chip--danger {
+    background: rgba(255, 55, 95, 0.16);
+    color: var(--color-danger);
+  }
+
+  .chip-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+}

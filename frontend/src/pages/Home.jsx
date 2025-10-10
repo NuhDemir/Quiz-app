@@ -14,7 +14,6 @@ import {
   LeaderboardIcon,
 } from "../components/icons";
 import useGsapAnimations from "../hooks/useGsapAnimations";
-import Progress from "../components/Progress";
 import categories from "../data/categories.json"; // still used for fallback mapping if needed
 import levels from "../data/levels.json";
 import { fetchQuizList } from "../store/quizSlice";

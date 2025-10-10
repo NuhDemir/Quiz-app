@@ -1,0 +1,42 @@
+@layer components {
+  .form-control {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-family: inherit;
+    width: 100%;
+    border: 1px solid rgba(15, 23, 42, 0.12);
+    border-radius: var(--radius-sm);
+    padding: 0.75rem 1rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: var(--color-text-primary);
+    transition: border-color var(--transition-base),
+      box-shadow var(--transition-base);
+  }
+
+  .form-input:focus,
+  .form-select:focus,
+  .form-textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 4px rgba(0, 119, 255, 0.2);
+  }
+
+  .dark .form-input,
+  .dark .form-select,
+  .dark .form-textarea {
+    background-color: rgba(15, 23, 42, 0.75);
+    border-color: rgba(255, 255, 255, 0.08);
+    color: var(--color-text-primary);
+  }
+}

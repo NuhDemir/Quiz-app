@@ -1,0 +1,61 @@
+@layer base {
+  .app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-background);
+    transition: background var(--transition-base);
+  }
+
+  .app-main {
+    flex: 1;
+    padding-bottom: 6rem;
+  }
+
+  .layout-wrapper {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: clamp(2rem, 4vw, 3.5rem) clamp(1.5rem, 3vw, 2.5rem) 6rem;
+  }
+
+  .card-content {
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+  }
+
+  .grid-responsive {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .layout-wrapper {
+      padding: clamp(1.5rem, 6vw, 2.5rem) clamp(1rem, 5vw, 2rem) 5rem;
+    }
+
+    .primary-button,
+    .secondary-button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

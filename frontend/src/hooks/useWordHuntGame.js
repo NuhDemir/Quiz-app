@@ -266,7 +266,6 @@ export default function useWordHuntGame({ autoStart = false, category } = {}) {
     let page = 0;
 
     while (page < MAX_FETCH_PAGES && unique.size < MAX_POOL_SIZE) {
-      // eslint-disable-next-line no-await-in-loop
       const response = await vocabularyApi.list({
         category,
         limit: 100,
