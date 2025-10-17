@@ -1,0 +1,177 @@
+/**
+ * Leaderboard Page Styles
+ * Rankings, podium, leaderboard tables
+ */
+
+/* === Leaderboard === */
+.leaderboard-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.leaderboard-header {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.leaderboard-header__title {
+  font-size: clamp(1.8rem, 4vw, 2.25rem);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.leaderboard-header__subtitle {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.leaderboard-podium {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.leaderboard-podium__card {
+  position: relative;
+  padding: 1.15rem 1.15rem 1.35rem;
+  border-radius: 22px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.35);
+  transition: transform var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.leaderboard-podium__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 60px -12px rgba(15, 23, 42, 0.45);
+}
+
+.leaderboard-podium__badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.12);
+  color: #222;
+}
+.dark .leaderboard-podium__badge {
+  background: rgba(255, 255, 255, 0.18);
+  color: var(--color-text-primary);
+}
+
+.leaderboard-podium__meta {
+  margin-top: 0.4rem;
+  display: grid;
+  gap: 0.4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.leaderboard-podium__stat {
+  background: rgba(15, 23, 42, 0.06);
+  border-radius: 12px;
+  padding: 0.55rem 0.65rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.dark .leaderboard-podium__stat {
+  background: rgba(255, 255, 255, 0.1);
+}
+.leaderboard-podium__stat span:first-child {
+  font-size: 0.6rem;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.leaderboard-podium__stat span:last-child {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+/* Podium color themes */
+.podium--gold {
+  background: linear-gradient(135deg, #fff5c2, #ffe14d);
+  border: 2px solid #ffd700;
+}
+.podium--silver {
+  background: linear-gradient(135deg, #f0f0f0, #d9d9d9);
+  border: 2px solid #c0c0c0;
+}
+.podium--bronze {
+  background: linear-gradient(135deg, #f8e0d0, #e0a070);
+  border: 2px solid #cd7f32;
+}
+.dark .podium--silver {
+  background: linear-gradient(135deg, #cfd3d6, #9fa4a8);
+}
+
+.leaderboard-table-wrapper {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+.dark .leaderboard-table-wrapper {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+.leaderboard-table thead tr {
+  background: rgba(15, 23, 42, 0.05);
+}
+.dark .leaderboard-table thead tr {
+  background: rgba(255, 255, 255, 0.08);
+}
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  white-space: nowrap;
+}
+.leaderboard-table tbody tr:nth-child(even) {
+  background: rgba(15, 23, 42, 0.04);
+}
+.dark .leaderboard-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.06);
+}
+.leaderboard-table tbody tr:hover {
+  background: rgba(0, 119, 255, 0.08);
+}
+.dark .leaderboard-table tbody tr:hover {
+  background: rgba(0, 119, 255, 0.18);
+}
+
+@media (max-width: 640px) {
+  .leaderboard-table thead {
+    display: none;
+  }
+  .leaderboard-table tbody tr {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+    padding: 0.75rem 0.85rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .leaderboard-table tbody td {
+    padding: 0;
+    white-space: initial;
+  }
+  .leaderboard-table tbody td:first-child {
+    grid-column: 1 / -1;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+}
